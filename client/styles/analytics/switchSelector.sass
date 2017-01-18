@@ -1,0 +1,96 @@
+.switch-selector
+    width: 90px
+    background-color: #1a2942
+    box-shadow: 2px 1px 3px rgba(0, 0, 0, 0.3)
+    color: $color-white
+    position: static
+    display: inline-block
+    float: left
+    // position: absolute
+    // top: 0
+    // bottom: 0
+    // left: 100%
+    // z-index: 100
+    >div
+        max-height: calc(100vh - 96px) !important
+        .view
+            max-height: calc(100vh - 96px) !important
+    .title 
+        .lbl-18
+            opacity: .6
+            line-height: 20px
+    .lbl-18
+        line-height: 1
+        padding: 6px 8px
+        box-sizing: border-box
+    button
+        position: relative
+        line-height: 1
+        padding: 0
+        &.btn-default.active.focus, 
+        &.btn-default.active:focus, 
+        &.btn-default.active:hover, 
+        &.btn-default:active.focus, 
+        &.btn-default:active:focus, 
+        &.btn-default:active:hover, 
+        &.open>.btn-default.dropdown-toggle.focus,
+        &.open>.btn-default.dropdown-toggle:focus,
+        &.open>.btn-default.dropdown-toggle:hover
+            background-color: $palett-color-3
+            color: $color-white
+        &:not(:last-child)
+            margin-bottom: 20px
+        &:hover
+            .health-status
+                opacity: 1
+                width: 10px 
+        .health-status
+            opacity: .4
+            content: " "
+            height: 100%
+            width: 4px
+            background-color: #ff7c7f
+            position: absolute
+            top: 0
+            left: 0
+            border-radius: 0
+            transition: all .2s linear
+            &.active
+                opacity: 1
+                width: 10px
+    label
+        font-family: $main-font
+        font-size: 14px
+        font-weight: $font-weight-2
+        line-height: 0
+    .switch-list
+        height: 100%
+        min-height: 100vh
+        background-color: rgba(21,33,61,.25)
+        overflow: hidden    
+        button
+            >label
+                margin: 0 auto
+                display: block
+                text-align: left
+                padding: 10px 0 !important 
+        label
+            line-height: 1
+            white-space: nowrap
+            width: 55px
+            overflow: hidden
+            text-overflow: ellipsis
+            position: static
+.sidebar-wrapper
+    .list-group-item
+        .form-wrap 
+            &.switch-selector
+                width: 90px
+                .title 
+                    .lbl-18
+                        opacity: .6
+                        line-height: 20px
+                .lbl-18
+                    line-height: 1
+                    padding: 6px 8px
+                    box-sizing: border-box

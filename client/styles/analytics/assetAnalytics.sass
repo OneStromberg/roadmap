@@ -1,0 +1,174 @@
+.asset-analytics-wrapper
+    width: 100%
+    min-height: calc(100vh - $navbar-height - $subbar-height)
+    background-color: $palett-color-45
+    padding: 25px
+    position: relative
+.prediction-chart
+    background-color: $color-white
+    padding: 23px 20px
+    border-radius: 4px
+    position: relative
+    .form-wrap:not(.chart-wrapper)
+        position: absolute
+        right: 39px
+        top: 20px
+        width: auto
+        ul
+            display: inline-block
+            li
+                border: none
+                display: inline-block
+                padding: 0
+                &:not(:last-child)
+                    margin-right: 25px
+    >.chart-wrapper
+        height: 440px
+    .threshold-set
+        width: 140px
+        height: auto
+        display: inline-block
+        background-color: transparent
+        padding: 0
+        margin-right: 12px
+        label
+            cursor: pointer
+        img
+            display: inline-block
+            margin-left: 15px
+        &:hover
+            background-color: transparent
+    span
+        height: 6px
+        width: 6px 
+        border-radius: 50%
+        display: inline-block
+        margin-right: 4px
+button
+    >label
+        cursor: pointer
+.modal-layer
+    height: 100vh 
+    width: 100% 
+    position: absolute
+    background-color: rgba(0,0,0,0.1)
+    z-index: 100
+    .set-thresholds-modal
+        background-color: $color-white
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%) translateZ(0%)
+        .title
+            padding: 20px 0 20px 40px
+            background-color: $palett-color-25
+            .lbl-16
+                color: $color-white
+        >.form-wrap
+            padding: 25px 0 35px
+        .list-group-item
+            border: none
+            padding: 0
+            width: 318px
+            margin: auto
+            padding-left: 29px
+            border-radius: 5px
+            .form-control
+                height: 40px
+            .lbl-6
+                letter-spacing: $letter-spacing-6
+                margin-bottom: 8px
+                display: block
+            &:first-child
+                label
+                    color: #ff697f
+            &:nth-child(2)
+                label
+                    color: #ff9e6e
+            &:nth-child(3)
+                label
+                    color: #6b55da
+            >form
+                width: 195px
+                display: inline-block
+            .checkbox-wrap
+                width: 48px
+                display: inline-block
+                label
+                    padding: 0
+        .description
+            margin: 15px auto
+            text-align: center
+            width: 230px
+            display: block
+        button:not(.btn-4, .delete-button)
+            border: 1px solid #d1d4db
+            background-color: $transparent
+            height: 25px
+            >label
+                font-size: $font-size-4
+                color: $palett-color-16
+                font-weight: $font-weight-4
+        .save-button 
+            display: inline-block
+            height: 25px
+            width: 124px
+            padding: 0
+            >label
+                color: $color-white
+                font-size: $font-size-4
+        .cancel-button
+            @extend .save-button 
+            margin-right: 13px
+            margin-left: 36px
+            >label
+                color: $palett-color-16
+        .delete-button
+            width: auto
+            background-color: $transparent
+            padding: 0
+        .add-threshold-button
+            margin-right: 25px
+            padding: 0
+            width: 259px
+            margin: auto
+            display: block
+            
+
+// custom checkbox
+.threshold-toggle
+    height: 19px
+    position: relative
+    border-radius: 50%
+    margin: 0 16px 0 12px
+    &:after 
+        content: ''
+        color: #000
+        position: absolute
+        right: 10px
+        z-index: 0
+    &:before 
+        content: ''
+        color: green
+        position: absolute
+        left: 10px
+        z-index: 0
+    label 
+        display: block
+        width: 48px
+        height: 20px
+        cursor: pointer
+        position: relative
+        top: 5px
+        z-index: 1
+        background: #e4e7ee
+        border-radius: 50px
+        transition: all 0.4s ease
+    input[type=checkbox] 
+        visibility: hidden
+        &:checked + label 
+        left: 43px
+      
+    
+      
+

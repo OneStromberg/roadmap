@@ -1,0 +1,117 @@
+@import "text"
+
+.checkbox
+    .control-label
+        @include lbl-13
+        cursor: pointer
+        padding: 0
+        display: inline-block
+        &:before
+            content: " "
+            background-color: $color-white
+            border: 1px solid #d1cfca
+            border-radius: 4px
+            margin: 0 8px 0 0
+            width: 20px
+            height: 20px
+            display: inline-block
+            vertical-align: bottom
+            transition: border .2s ease-in,background-color .2s ease-in
+        &:after
+            display: block
+            height: 11px
+            width: 6px
+            content: ' '
+            position: absolute
+            z-index: 10
+            -ms-transform: scale(-1,1) rotate(135deg)
+            transform: scale(-1,1) rotate(135deg)
+            -ms-transform-origin: left top
+            transform-origin: left top
+            border-right: 2px solid $palett-color-17
+            border-top: 2px solid $palett-color-17
+            opacity: 0
+            top: 10px
+            left: 4px
+    input[type='checkbox']
+        display: none
+    input[type='checkbox']:checked + label
+        &:before
+            content: " "
+            border: 1px solid $palett-color-17
+            background: $palett-color-17
+        &:after
+            animation: check-11px-6px .5s ease-in
+            border-color: $color-white
+            opacity: 1
+    input[type='checkbox']:checked + label
+        opacity: 1
+
+.checkbox-wrap
+    label 
+        padding: 25px 30px
+    .checkbox
+        vertical-align: top
+        margin: 0 3px 0 0
+        width: 17px
+        height: 17px
+        & + label 
+            color: $palett-color-40
+            font-family: "Proxima Nova"
+            font-size: $font-size-4
+            font-weight: $font-weight-2
+            letter-spacing: 1px
+            cursor: pointer
+        &:not(checked) 
+            position: absolute
+            opacity: 0
+            & + label 
+                position: relative
+                &:before
+                    content: " "
+                    width: 16px
+                    height: 16px
+                    border-radius: 100px
+                    border: 1px solid #d0d3d8
+                    background-color: #fff
+                    position: absolute
+                    top: 50%
+                    left: 4px
+                    transform: translateY(-50%)
+                &:after
+                    display: block
+                    height: 9px
+                    width: 5px
+                    content: " "
+                    position: absolute
+                    z-index: 10
+                    -ms-transform: scaleX(-1) rotate(135deg)
+                    transform: scaleX(-1) rotate(135deg)
+                    -ms-transform-origin: left top
+                    transform-origin: left top
+                    border-right: 2px solid #ffffff
+                    border-top: 2px solid #ffffff
+                    opacity: 0
+                    top: 50%
+                    left: 7px
+                    z-index: 10
+        &:checked 
+            & + label
+                &:before 
+                    background-color: $palett-color-19
+                &:after
+                    opacity: 1
+.filter-list
+    .checkbox-wrap
+        text-overflow: ellipsis
+        white-space: nowrap
+        padding-left: 20px
+        box-sizing: border-box 
+        &:nth-child(odd)
+            background-color: $palett-color-34
+            border: 1px solid #e6e9ee
+        &:hover
+            background-color: $palett-color-45
+        label
+            text-overflow: ellipsis
+            overflow: hidden

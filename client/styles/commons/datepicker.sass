@@ -1,0 +1,131 @@
+@import "../mixins/typography"
+
+@import '~react-dates/css/variables.scss'
+@import '~react-dates/css/styles.scss'
+
+.datepicker
+    background-color: $palett-color-34
+    border-radius: 4px
+    box-shadow: 0 1px 3px rgba($palett-color-2, 0.2)
+    display: inline-block
+    width: 250px
+    overflow: hidden
+    padding: 25px 20px 
+    position: absolute
+    top: 50px
+    left: 0
+    margin-left: 163px
+    z-index: 100
+    .transition-container
+        background-color: $palett-color-34
+    .btn-2
+        margin-top: -5px
+        padding: 6px 0
+        >label
+            @include lbl-21
+    .DayPicker
+        overflow: hidden
+        width: 100% !important
+    .DateRangePicker
+        width: 100%
+    .DateRangePicker__picker
+        position: static
+        visibility: visible !important
+        width: 100% !important
+    .DateRangePickerInput__arrow
+        position: relative
+        &:before
+            content: "-"
+            position: absolute
+            @include lbl-19
+            top: -9px
+            left: -2px
+            z-index: 20
+        svg
+            display: none
+    .DateInput
+        line-height: 1
+        margin-top: 5px
+        background: $color-white
+        width: 50%
+        .DateInput__display-text--focused
+            background: $transparent
+            border-color: $transparent
+        .DateInput__display-text--has-input
+            @include lbl-7
+        label,
+        div
+            @include lbl-19
+    .CalendarMonth__caption
+        margin-bottom: 10px
+        strong
+            @include lbl-8
+            text-transform: uppercase
+    .DayPicker__week-header
+        &:first-of-type
+            padding: 0
+        li
+            width: 29px
+        small
+            @include lbl-20
+            text-transform: uppercase
+    .CalendarMonth__day
+        border: none
+        width: 29px
+        height: 29px
+    .DayPickerNavigation__prev
+        img
+            transform: rotate(180deg)
+    .DateInput
+        padding: 0
+    .DateInput--with-caret
+        &:before
+            display: none
+    .CalendarMonth__day--selected, 
+    .CalendarMonth__day--selected-end, 
+    .CalendarMonth__day--selected-start
+        background: $palett-color-44
+        color: $color-white !important
+    .CalendarMonth__day
+        color: $palett-color-2
+    .CalendarMonth__day--selected-span
+        background: rgba($palett-color-44,.3)
+        color: $palett-color-2        
+    .CalendarMonth__caption 
+        padding-top: 10px
+    .DateRangePickerInput
+        box-sizing: border-box
+        padding-left: 40px
+        height: 32px
+        background-color: $color-white
+        width: 100%
+        border: 1px solid $palett-color-42
+        border-radius: 4px
+        position: relative
+        &:before
+            content: " "
+            background: url("~/assets/img/calendar.svg") no-repeat
+            position: absolute
+            top: 6px
+            left: 14px
+            width: 16px
+            height: 15px
+    .DayPicker--horizontal
+        box-shadow: none
+    .CalendarMonth
+        padding: 0
+    .CalendarMonthGrid
+            background: $palett-color-34
+    .DayPickerNavigation--horizontal 
+        .DayPickerNavigation__prev
+            left: 0 
+            opacity: .4
+            transition: all .2s ease-in-out
+            &:hover
+                opacity: 1
+        .DayPickerNavigation__next
+            right: 0
+            opacity: .4
+            transition: all .2s ease-in-out
+            &:hover
+                opacity: 1

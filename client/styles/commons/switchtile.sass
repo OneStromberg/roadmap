@@ -1,0 +1,51 @@
+.switch-tile
+    padding: 10px
+    border-radius: 2px
+    position: relative
+    transition: all .3s ease-in
+    *
+        cursor: pointer
+    .form-wrap
+        width: auto
+    &.selected
+        &.good
+            background-color: #00b5a9
+        &.normal
+            background-color: #f09c5b
+        &.bad
+            background-color: #ee6668
+    &.good
+        background-color: $palett-color-25
+        &:hover
+            box-shadow: 0 2px 4px rgba(58, 119, 117, 0.4)
+            background-color: #00bfb3
+    &.normal
+        cursor: pointer
+        background-color: $palett-color-7
+        &:hover
+            box-shadow: 0 2px 4px rgba(119, 98, 58, 0.4)
+            border-radius: 2px
+            background-color: #ffa661
+    &.bad
+        cursor: pointer
+        background-color: $palett-color-6 
+        &:hover
+            box-shadow: 0 2px 4px rgba(121, 59, 59, 0.4)
+            border-radius: 2px
+            background-color: #ff6e70
+    .lbl-18
+        position: absolute
+        right: 10px
+        bottom: 10px
+    label.lbl-14
+        margin: 15px 0
+        font-family: $main-font
+    label.lbl-15
+        height: 34px
+        max-height: 34px
+        overflow: hidden
+    label.lbl-6,
+    label.lbl-15
+        color: $color-white
+        display: inline-block
+        width: 100%

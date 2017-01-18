@@ -1,0 +1,40 @@
+.filter-list-scroller-wrapper 
+    position: absolute
+    top: 0
+    left: 0
+    height: calc(100vh - 60px)
+    z-index: 10
+    width: 100vw
+    >div
+        max-height: calc(100vh - 60px) !important
+        overflow-x: hidden !important
+    .filter-list-scroller
+        max-height: calc(100vh - 60px) !important
+        overflow-x: hidden !important
+.filter-list
+    width: 154px
+    background-color: $color-white
+    border-radius: 4px
+    box-shadow: 0 0 3px rgba($palett-color-2, 0.2)
+    position: absolute
+    z-index: 100
+    top: 5px
+    left: 5px
+    .filter-button-list
+        list-style: none
+        padding: 0
+        margin: 0
+        .filter-button-item
+            box-sizing: border-box
+            transition: all .2s ease-in-out
+            &:nth-child(odd)
+                background-color: $palett-color-34
+                border: 1px solid #e6e9ee
+            &:hover
+                background-color: $palett-color-45
+            button
+                padding: 25px 20px
+                text-align: left
+                background: $transparent
+                >label
+                    @include lbl-22

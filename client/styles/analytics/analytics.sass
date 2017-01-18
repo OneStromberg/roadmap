@@ -1,0 +1,61 @@
+// Components
+@import "./../variables"
+
+$map-wrapper-width: calc(100% - #{$left-sidebar-width} - #{$right-sidebar-width})
+$map-wrapper-height: calc(100% - #{$navbar-height})
+
+
+.chart
+    height: 122px
+.map-wrapper
+    height: calc(100vh - #{$navbar-height} - #{$subbar-height})
+    .map-component
+        height: 100%
+        .tooltip
+            border:thin 1px #eee
+            background-color: #FFFFFF
+            width: 250px
+            
+.tiles-wrapper
+    background-color: $palett-color-45
+    width: calc(100% - #{$right-sidebar-width})
+    min-height: calc(100vh - #{$navbar-height} - #{$subbar-height})
+    
+.right-side
+    >div
+        max-height: calc(100vh - 100px) !important
+    .view
+        max-height: calc(100vh - 100px) !important
+
+.search-title
+    color: #7d899e
+    font-family: $main-font
+    font-size: 11px
+    font-weight: 500
+    letter-spacing: 1px
+    margin-bottom: 5px
+    text-transform: uppercase
+.search-name
+    color: $palett-color-40
+    font-family: $main-font
+    font-size: $font-size-4
+    font-weight: $font-weight-2
+    letter-spacing: 1px
+
+.search-result
+    width: 207px
+    margin: -3px auto 0
+    border: none
+    background: $color-white
+    box-shadow: 0 1px 3px rgba($palett-color-2, 0.2)
+    border-radius: 0 0 4px 4px
+    padding-bottom: 4px
+    text-align: left
+    ul
+        padding-left: 0
+    li
+        background: #fff
+        list-style: none
+        padding: 15px 10px
+        &:nth-child(odd)
+            background-color: #f3f5f8

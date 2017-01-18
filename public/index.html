@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Curaytor</title>
+    <link href="./assets/css/font.css" rel="stylesheet"/>
+    <link href="./build/style/common.css" rel="stylesheet"/>
+    <link href="./build/style/authApp.css" rel="stylesheet"/>
+    <link href="./build/style/analyticsApp.css" rel="stylesheet"/>
+    <link href="./build/style/guideApp.css" rel="stylesheet"/>
+</head>
+<body>
+    <div id="preload"></div>
+    <div id='root'></div>
+    <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyAbF0-L9DBjGlrYtYF1cKMTprDsTTtqvO4",
+            authDomain: "curaytor-29ea4.firebaseapp.com",
+            databaseURL: "https://curaytor-29ea4.firebaseio.com",
+            storageBucket: "curaytor-29ea4.appspot.com",
+            messagingSenderId: "458801159851"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script type="text/javascript" src="build/common.bundle.js"></script>
+    <script>
+
+        var script = document.createElement('script');
+        script.src = "build/authApp.bundle.js";
+        script.onload = function () {
+            console.log('script loaded');
+        };
+
+        document.head.appendChild(script);
+        var elem = document.querySelector("#preload");
+        elem.remove();
+    </script>
+</body>
+</html>

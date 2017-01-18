@@ -1,0 +1,38 @@
+.wrapper-main
+    background-color: #f8f8fa
+    background-repeat: no-repeat
+    background-size: cover
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    z-index: 200
+    display: table
+    text-align: center
+    height: 100%
+    width: 100%
+    .wrapper-block
+        display: table-cell
+        vertical-align: middle
+    >.form-wrap
+        width: calc(100% - #{$left-sidebar-width})
+        position: relative
+        >.form-wrap
+            width: 100%
+
+.form-wrap
+    width: $form-wrap-width
+    position: relative
+    display: inline-block
+    text-align: left
+    .form-group
+        &.center
+            display: block
+            text-align: center
+        span
+            margin: 0 5px
+
+@media (min-width: 1200px)
+    .container
+        width: 1170px
