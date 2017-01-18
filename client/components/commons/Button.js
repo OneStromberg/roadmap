@@ -1,5 +1,4 @@
 import React from 'react';
-import Label from './Label.js';
 
 class Button extends React.Component {
     _onClick(){
@@ -13,7 +12,7 @@ class Button extends React.Component {
     render() {
         return (
             <button className={this._getButtonClassName()} onClick={this._onClick.bind(this)}>
-                <Label>{this.props.children}</Label>
+                {this.props.children}
             </button>
         );
     }

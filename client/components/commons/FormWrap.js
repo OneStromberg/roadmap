@@ -17,15 +17,4 @@ class FormWrap extends React.Component {
     }
 };
 
-class Form_1 extends React.Component {
-    render() {
-        return(
-            <FormWrap className="frm-1">
-                {this.props.children}
-            </FormWrap>
-        );
-    }
-}
-
-export { Form_1 };
 export default FormWrap;

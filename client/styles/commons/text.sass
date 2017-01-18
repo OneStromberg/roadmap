@@ -10,123 +10,20 @@
 
 @mixin mixed-lbl($args...)
     @include label($args...)
-    >a
-        @include label($args...)
-        text-decoration: none
-        display: inline-block
 
 @mixin lbl-1
-    @include mixed-lbl($palett-color-28, $main-font, $font-size-13, $font-weight-1, $letter-spacing-6)
-@mixin lbl-2
-    @include mixed-lbl($palett-color-6, $main-font, $font-size-3, $font-weight-2, $letter-spacing-8)
-@mixin lbl-3
-    @include mixed-lbl($palett-color-16, $main-font, $font-size-3, $font-weight-3, $letter-spacing-3)
-    line-height: 16px
-@mixin lbl-4
-    @include mixed-lbl($palett-color-2, $main-font, $font-size-3, $font-weight-2, $letter-spacing-3)
-@mixin lbl-5
-    @include mixed-lbl($color-white, $main-font, $font-size-2, $font-weight-1, $letter-spacing-1)
-@mixin lbl-6
-    @include mixed-lbl($palett-color-28, $main-font, $font-size-1, $font-weight-4, $letter-spacing-5)
-@mixin lbl-7
-    @include mixed-lbl($palett-color-29, $main-font, $font-size-4, $font-weight-2, $letter-spacing-4)
-@mixin lbl-8
-    @include mixed-lbl($palett-color-2, $main-font, $font-size-4, $font-weight-2, $letter-spacing-4)
-@mixin lbl-9
-    @include mixed-lbl($palett-color-16, $main-font, $font-size-3, $font-weight-2, $letter-spacing-3)
-@mixin lbl-10
-    @include mixed-lbl($palett-color-16, $main-font, $font-size-4, $font-weight-2, $letter-spacing-4)
-    >a 
-        color: $color-white
-@mixin lbl-11
-    @include mixed-lbl($palett-color-30, $main-font, $font-size-3, $font-weight-2, $letter-spacing-3)
-@mixin lbl-12
-    @include mixed-lbl($palett-color-31, $main-font, $font-size-6, $font-weight-2, $letter-spacing-5)
-@mixin lbl-13
-    @include mixed-lbl($palett-color-28, $main-font, $font-size-3, $font-weight-2)
-@mixin lbl-14
-    @include mixed-lbl($color-white, $sub-font, $font-size-7, $font-weight-2, $letter-spacing-9)
-@mixin lbl-15
-    @include mixed-lbl($palett-color-16, $main-font, $font-size-8, $font-weight-2, $letter-spacing-6)
-@mixin lbl-16
-    @include mixed-lbl($palett-color-2, $main-font, $font-size-10, $font-weight-2, $letter-spacing-6)
-@mixin lbl-17
-    @include mixed-lbl($palett-color-1, $main-font, $font-size-10, $font-weight-2, $letter-spacing-5)
-@mixin lbl-18
-    @include mixed-lbl($color-white, $main-font, $font-size-4, $font-weight-2, $letter-spacing-5)
-@mixin lbl-19
-    @include mixed-lbl($palett-color-43, $main-font, $font-size-4, $font-weight-2, $letter-spacing-4)
-@mixin lbl-20
-    @include mixed-lbl($palett-color-38, $main-font, $font-size-1, $font-weight-2, $letter-spacing-4)
-@mixin lbl-21
-    @include mixed-lbl($color-white, $main-font, $font-size-4, $font-weight-4, $letter-spacing-6)
-@mixin lbl-22
-    @include mixed-lbl($palett-color-40, $main-font, $font-size-4, $font-weight-2, $letter-spacing-4)
-@mixin lbl-23
-    @include mixed-lbl($palett-color-2, $main-font, $font-size-12, $font-weight-3, $letter-spacing-7)
-@mixin lbl-24
-    @include mixed-lbl($palett-color-2, $main-font, $font-size-1, $font-weight-2, $letter-spacing-1)
-@mixin lbl-button
-    @include mixed-lbl($palett-color-28, $main-font, $font-size-3, $font-weight-1)
-
+    @include mixed-lbl($palett-color-1, $main-font, $font-size-1, $font-weight-1, $letter-spacing-1)
 
 .uppercase
     text-transform: uppercase
 
 label
     margin-bottom: 0
-    &.db
-        display: block
     &.center-text
         text-align: center
     &.uppercase-text
         text-transform: uppercase
     &.control-label
-        @include lbl-4;
+        @include lbl-1;
         &.lbl-1
             @include lbl-1
-        &.lbl-2
-            @include lbl-2
-        &.lbl-3
-            @include lbl-3
-        &.lbl-4
-            @include lbl-4
-        &.lbl-5
-            @include lbl-5
-        &.lbl-6
-            @include lbl-6
-        &.lbl-7
-            @include lbl-7
-        &.lbl-8
-            @include lbl-8
-        &.lbl-9
-            @include lbl-9
-        &.lbl-10
-            @include lbl-10
-        &.lbl-11
-            @include lbl-11
-        &.lbl-12
-            @include lbl-12
-        &.lbl-13
-            @include lbl-13
-        &.lbl-14
-            @include lbl-14
-        &.lbl-15
-            @include lbl-15
-        &.lbl-16
-            @include lbl-16
-        &.lbl-17
-            @include lbl-17
-        &.lbl-18
-            @include lbl-18
-        &.lbl-23
-            @include lbl-23
-        &.lbl-24
-            @include lbl-24
-        &.lbl-button
-            @include lbl-button
-            border: 1px solid rgba(76,154,216,.6)
-            border-radius: 100px
-            padding: 15px 60px
-            width: 160px
-            height: 45px

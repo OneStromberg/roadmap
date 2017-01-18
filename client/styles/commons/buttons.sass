@@ -1,10 +1,21 @@
 @import "text"
 
-$box-shadow-1: 0 2px 4px rgba($palett-color-15, 0.16)
-$box-shadow-2: 0 2px 4px rgba($color-black, 0.1)
-$box-shadow-3: 0 0 0 $color-black
+$box-shadow-1: 0 2px 4px rgba($palett-color-1, 0.16)
+$box-shadow-2: 0 2px 4px rgba($palett-color-1, 0.1)
+$box-shadow-3: 0 0 0 $palett-color-1
 
-$btn-color-1: rgba($palett-color-2, .25)
+$btn-color-default:           rgba($palett-color-1, .25)
+$btn-color-default-focus:     $btn-color-default
+$btn-color-default-disabled:  rgba($palett-color-1, 0.35)
+
+$btn-padding-default: 0
+$btn-transition-default: all 0.1s ease-in
+
+$btn-border-default: none
+$btn-border-radius-default: 0
+
+$btn-color-1: $btn-color-default
+$btn-color-1-disabled: $btn-color-default
 
 @mixin solid-border($color, $alpha)
     border: 1px solid rgba($color, $alpha)
@@ -14,116 +25,18 @@ button
     position: relative
     outline: none
     &.btn-default
-        width: 100%
-        border: none
-        padding: 10px 0
-        border-radius: 5px
-        transition: all 0.2s ease-in
-        background-color: $btn-color-1
-        color: $color-white
+        border: $btn-border-default
+        padding: $btn-padding-default
+        border-radius: $btn-border-radius-default
+        transition: $btn-transition-default
+        background-color: $btn-color-default
+        color: $palett-color-1
         &:active,
         &:focus
-            background-color: $palett-color-3
-            color: $color-white
-        >label
-            cursor: pointer
-            margin-bottom: 0
-        label
-            @include lbl-5
-            position: relative
-            z-index: 20
+            background-color: $btn-color-default-focus
         &.btn-1
-            background-color: $palett-color-3 !important
-            border-radius: 100px
+            background-color: $btn-color-1
             &.btn-disabled
-               background-color: rgba($palett-color-3, 0.35)
+               background-color: $btn-color-1-disabled
                pointer-events: none
-        &.btn-2
-            background-color: $palett-color-25
-            box-shadow: $box-shadow-2
-            &:hover
-                background-color: $palett-color-26
-            &.btn-disabled
-                background-color: rgba($palett-color-21, 0.35)
-                label 
-                    color: $palett-color-39
-        &.btn-3
-            background-color: $palett-color-25
-            box-shadow: $box-shadow-2
-            padding: 3px 0
-            &:hover
-                background-color: $palett-color-26
-            &.btn-disabled
-                background-color: $btn-color-1
-        &.btn-4
-            background-color: $palett-color-25
-            box-shadow: $box-shadow-2
-            padding: 0px 0
-            &:hover
-                background-color: $palett-color-27
-            &.btn-disabled
-                background-color: $btn-color-1
-            >label 
-                font-size: $font-size-1
-                font-weight: $font-weight-4
-                letter-spacing: $letter-spacing-7
-        &.btn-5
-            background-color: white
-            padding: 2px 0
-            @include solid-border($palett-color-2, 0.4)
-            border-radius: 2px
-            &:active
-                background-color: transparent
-            &:focus
-                background-color: transparent
-            &:hover
-                @include solid-border($palett-color-2, 0.4)
-            &.btn-disabled
-                opacity: 0.4
-        &.btn-6
-            background-color: transparent
-            padding: 2px 0
-            @include solid-border($color-white, 0.3)
-            border-radius: 2px
-            &:active
-                background-color: transparent
-            &:focus
-                background-color: transparent
-            &:hover
-                @include solid-border($color-white, 0.4)
-            &.btn-disabled
-                opacity: 0.4
-        &.btn-7
-            border-radius: 0
-            padding: 0
-            text-transform: capitalize
-            >label
-                @include lbl-21
-            &:active
-                background-color: transparent
-            &:focus
-                background-color: transparent
-            &:hover
-                background-color: transparent
-            &.btn-disabled
-                opacity: 0.4
-        &.btn-8
-            border-radius: 2px
-            border: 1px solid rgba(145, 151, 173, .2)
-            background: $transparent
-            &:active
-                background-color: transparent
-            &:focus
-                background-color: transparent
-            &:hover
-                background-color: transparent
-            &.btn-disabled
-                opacity: 0.4
-        &.btn-9
-            width: 30px
-            height: 30px
-            background-color: $palett-color-3
-            border-radius: 100px
-            display: table-cell
-            text-align: center
-            vertical-align: middle
+                border-radius: $btn-border-radius-default
