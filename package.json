@@ -3,7 +3,7 @@
   "version": "0.0.3",
   "description": "Zajno Dashboard Client Application",
   "scripts": {
-    "deploy" : "yarn gen-client && firebase deploy",
+    "deploy": "yarn gen-client && firebase deploy",
     "parse": "node parseKML.js",
     "start": "cross-env NODE_ENV=production cross-env BUILD_APP_TARGET=SERVER babel-node server",
     "gen-client": "cross-env NODE_ENV=production cross-env BUILD_APP_TARGET=CLIENT webpack -p --output-pathinfo",
@@ -89,6 +89,8 @@
     "eslint-plugin-sinon": "^0.2.0",
     "fetch": "^1.1.0",
     "jsdom": "^9.8.3",
+    "less": "^2.7.2",
+    "less-loader": "^2.2.3",
     "react-addons-test-utils": "^15.4.1",
     "react-hot-loader": "^1.3.0",
     "redux-thunk": "^2.1.0",

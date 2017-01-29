@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import StyleGuide from './components/guide';
+import StyleGuide from './StyleGuide';
 
-require('./styles/common.sass');
-require('./styles/guide.sass');
+require('./../common/styles/style.less');
+require('styles/common.sass');
+require('./styles/styleGuide.sass');
 
 ReactDOM.render(<StyleGuide />, document.getElementById('root'));

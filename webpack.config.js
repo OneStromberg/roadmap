@@ -12,6 +12,14 @@ module.exports = {
         publicPath: 'build/',
         filename: "[name].bundle.js"
     },
+    resolve: {
+       root: path.resolve(__dirname),
+       extensions: ['', '.js'],
+       alias: {
+           components: 'common/components',
+           styles: 'common/styles'
+       }
+   },
     plugins: [
         new webpack.DefinePlugin({
             process:{
@@ -50,6 +58,10 @@ module.exports = {
                 loader: ExtractTextPlugin.extract(
                     "style",
                     "css!sass", "includePaths[]=" + (path.resolve(__dirname)))
+            },
+            {
+                test: /\.less$/,
+                loader: "style!css!less"
             },
             {
                 test: /\.gif$/,
