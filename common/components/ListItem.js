@@ -1,9 +1,10 @@
 import React from 'react';
+import Component from './Component';
 
-class ListItem extends React.Component {
+class ListItem extends Component {
     render(){
         return(
-            <li {...this.props} />
+            <li {...this.props} className={"list-item " + this.getClassName(this.props)} />
         )
     }
 }

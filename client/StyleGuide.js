@@ -1,6 +1,7 @@
 import React from 'react';
 import View from 'components/View';
 import Button from 'components/Button';
+import Footer from 'components/Footer';
 import Image from 'components/Image';
 import Input from 'components/Input';
 import Label from 'components/Label';
@@ -33,7 +34,7 @@ class ComponentsApp extends React.Component{
                     <Button className=" uk-button-link"> Button </Button>
                 </View>
                 <View>
-                    <Input />   
+                    <Input />  
                 </View>
                 <View>
                     <Label> Label </Label>
@@ -42,7 +43,9 @@ class ComponentsApp extends React.Component{
                     <Label className="uk-label-danger"> Danger</Label>
                 </View>
                 <View>
-                    <Link href="https://facebook.github.io/react-native/docs/getting-started.html">Link</Link> 
+                    <Link href="https://facebook.github.io/react-native/docs/getting-started.html">Link</Link>
+                    <Link className="uk-link-muted" href="https://facebook.github.io/react-native/docs/getting-started.html">Link</Link>
+                    <Link className="uk-link-reset" href="https://facebook.github.io/react-native/docs/getting-started.html">Link</Link> 
                 </View>
                 <View>
                     <Label>List</Label>
@@ -53,11 +56,18 @@ class ComponentsApp extends React.Component{
                     </List>    
                 </View>
                 <View>
-                    <Text>Text</Text>
+                    <Text className="uk-text-lead">Text</Text>
+                    <Text className="uk-text-meta">Text</Text>
+                    <Text className="uk-text-primary">Text</Text>
+                    <Text className="uk-text-success">Text</Text>
+                    <Text className="uk-text-warning">Text</Text>
+                    <Text className="uk-text-danger">Text</Text>
                 </View>
                 <View>
                     <Image />
-                    <Text> Image </Text>
+                </View>
+                <View>
+                    <Footer> Footer </Footer>
                 </View>
             </View>)
     };

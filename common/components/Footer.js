@@ -1,10 +1,12 @@
 import React from 'react';
+import Component from './Component';
 import View from './View';
 
-class Footer extends React.Component {
+class Footer extends Component {
     render(){
         return (
-            <View className={"footer " + this.getClassName(this.props)}>By clicking the button above, you agreed to the Terms of Service Xiew our Privacy Policy</View>
+            <View className={"footer " + this.getClassName(this.props)}>
+            </View>
         )
     }
 }

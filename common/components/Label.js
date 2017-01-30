@@ -1,10 +1,11 @@
 import React from 'react';
 import Component from './Component';
+import Text from './Text';
 
 class Label extends Component {
     render(){
         return(
-            <span {...this.props} className={"uk-label " + this.getClassName(this.props)}/>
+            <Text {...this.props} className={"uk-label " + this.getClassName(this.props)}/>
         )
     }
 }

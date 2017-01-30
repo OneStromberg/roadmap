@@ -4,7 +4,7 @@ import Component from './Component';
 class Text extends Component {
     render(){
         return(
-            <span className={this.getClassName(this.props)}>{this.props.children}</span>
+            <span className={"uk-text " + this.getClassName(this.props)}>{this.props.children}</span>
         )
     }
 }

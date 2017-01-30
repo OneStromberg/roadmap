@@ -1,9 +1,10 @@
 import React from 'react';
+import Component from './Component';
 
-class Input extends React.Component {
+class Input extends Component {
     render(){
         return (
-            <input {...this.props} className="uk-input" placeholder="Input" />
+            <input {...this.props} className={"uk-input " + this.getClassName(this.props)} placeholder={this.props.placeholder} />
         )
     }
 }
