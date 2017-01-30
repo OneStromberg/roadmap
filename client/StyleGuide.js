@@ -22,41 +22,42 @@ class ComponentsApp extends React.Component{
 
     render(){
         return(
-            <View>
-        
+            <View>    
                 <View>
                     <Button> Button </Button>
-                    <Text> Button </Text>
-                </View>
-                <View>
-                    <Image />
-                    <Text> Image </Text>
+                    <Button className=" uk-button-primary"> Button </Button>
+                    <Button className=" uk-button-default"> Button </Button>
+                    <Button className=" uk-button-secondary"> Button </Button>
+                    <Button className=" uk-button-danger"> Button </Button>
+                    <Button className=" uk-button-text"> Button </Button>
+                    <Button className=" uk-button-link"> Button </Button>
                 </View>
                 <View>
                     <Input />   
-                    <Text> Input </Text>
                 </View>
                 <View>
-                    <Label> Test label </Label>
-                    <Text> Label </Text>
+                    <Label> Label </Label>
+                    <Label className="uk-label-success"> Success </Label>
+                    <Label className="uk-label-warning"> Warning </Label>
+                    <Label className="uk-label-danger"> Danger</Label>
                 </View>
                 <View>
-                    <Link /> 
-                    <Text> Link </Text>
+                    <Link href="https://facebook.github.io/react-native/docs/getting-started.html">Link</Link> 
                 </View>
                 <View>
+                    <Label>List</Label>
                     <List>
                         <ListItem>List Item 1</ListItem>
                         <ListItem>List Item 2</ListItem>
                         <ListItem>List Item 3</ListItem>
-                        <ListItem>List Item 4</ListItem>
-                        <ListItem>List Item 5</ListItem>
-                        <ListItem>List Item 6</ListItem>
                     </List>    
                 </View>
                 <View>
-                    <Text />
-                    <Text> Text </Text>
+                    <Text>Text</Text>
+                </View>
+                <View>
+                    <Image />
+                    <Text> Image </Text>
                 </View>
             </View>)
     };

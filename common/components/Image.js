@@ -1,4 +1,5 @@
 import React from 'react';
+import View from './View';
 
 class Image extends React.Component {
     getClassName(props){
@@ -6,7 +7,13 @@ class Image extends React.Component {
     }
     render(){
         return(
-            <img src={'./../../public/assets/img/logo'} className={this.getClassName(this.props)} alt={this.props.alt || ""} />
+            <View>
+                <img 
+                    src="./../../assets/img/logo.png" 
+                    className={this.getClassName(this.props)} 
+                    alt={this.props.alt || ""} 
+                    />
+            </View>
         )
     }
 }
