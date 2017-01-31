@@ -1,13 +1,18 @@
 import React from 'react';
 import Component from './Component';
+import Section from './Section';
 import View from './View';
 
 class Card extends Component {
     render(){
         return(
-            <View className="card">
-                {this.props.children} 
-            </View>
+            <Section>
+                <View className="uk-card uk-card-default">
+                    <View  className="uk-card-body">
+                        {this.props.children}
+                    </View>
+                </View>
+            </Section>
         )
     }
 }

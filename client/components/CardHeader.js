@@ -6,7 +6,6 @@ class CardHeader extends Component {
         return(
             <Card>
                 <Header>Header</Header>
-                <Header />
             </Card>
         )
     }

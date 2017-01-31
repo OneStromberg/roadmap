@@ -1,14 +1,14 @@
 import React from 'react';
 import Component from './Component';
 
-class View extends Component {
+class Container extends Component {
     render(){
         return (
-            <div className={this.getClassName(this.props)}>
+            <div className={"uk-container " + this.getClassName(this.props)}>
                 {this.props.children}
             </div>
         )
     }
 }
 
-export default View;
+export default Container;

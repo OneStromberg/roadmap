@@ -7,12 +7,12 @@ class CardButton extends Component {
             <Card>
                 <Header>Button</Header>
                 <Button> Button </Button>
-                <Button className=" uk-button-primary"> Button </Button>
-                <Button className=" uk-button-default"> Button </Button>
-                <Button className=" uk-button-secondary"> Button </Button>
-                <Button className=" uk-button-danger"> Button </Button>
-                <Button className=" uk-button-text"> Button </Button>
-                <Button className=" uk-button-link"> Button </Button>
+                <Button primary> Button </Button>
+                <Button default> Button </Button>
+                <Button secondary> Button </Button>
+                <Button danger> Button </Button>
+                <Button text> Button </Button>
+                <Button link> Button </Button>
             </Card>
         )
     }

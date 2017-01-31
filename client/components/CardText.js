@@ -6,12 +6,12 @@ class CardText extends Component {
         return(
             <Card>
                 <Header>Text</Header>
-                <Text className="uk-text-lead">Text</Text>
-                <Text className="uk-text-meta">Text</Text>
-                <Text className="uk-text-primary">Text</Text>
-                <Text className="uk-text-success">Text</Text>
-                <Text className="uk-text-warning">Text</Text>
-                <Text className="uk-text-danger">Text</Text>
+                <Text lead>Text</Text>
+                <Text meta>Text</Text>
+                <Text primary>Text</Text>
+                <Text success>Text</Text>
+                <Text warning>Text</Text>
+                <Text danger>Text</Text>
             </Card>
         )
     }
