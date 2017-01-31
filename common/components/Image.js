@@ -10,7 +10,7 @@ class Image extends Component {
         return(
             <View>
                 <img 
-                    /*src="./../../assets/img/logo.png" */
+                    src="./../../assets/img/logo.png"
                     className={"image " + this.getClassName(this.props)} 
                     alt={this.props.alt || ""} 
                     />

@@ -1,6 +1,6 @@
 import React from 'react';
 import Component from './Component';
-import Label from 'Label';
+import Label from './Label';
 
 class Header extends Component {
     render(){

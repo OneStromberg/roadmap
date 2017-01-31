@@ -5,7 +5,7 @@ import View from './View';
 class Footer extends Component {
     render(){
         return (
-            <View className={"footer " + this.getClassName(this.props)}>
+            <View {...this.props} className={"footer " + this.getClassName(this.props)}>
             </View>
         )
     }
