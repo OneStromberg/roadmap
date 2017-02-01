@@ -7,7 +7,7 @@ class Modal extends Component {
         return(
             <View className="uk-modal-body">
                 <View className="uk-modal-dialog">
-                    {this.props.children}
+                    children
                 </View>
             </View>
         )
