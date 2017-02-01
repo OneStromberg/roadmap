@@ -9,8 +9,10 @@ import CardList from './components/CardList';
 import CardText from './components/CardText';
 import CardFooter from './components/CardFooter';
 import CardDivider from './components/CardDivider';
+import CardForm from './components/CardForm';
+import CardModal from './components/CardModal';
 
-import {View, Button, Footer, Image, Input, Label, Link, List, ListItem, Text, Component, Header, Card, Divider} from 'components';
+import {View, Button, Footer, Image, Input, Label, Link, List, ListItem, Text, Component, Header, Card, Divider, Checkbox, Radio, Modal} from 'components';
 
 class ComponentsApp extends React.Component{
      constructor(props){
@@ -25,11 +27,13 @@ class ComponentsApp extends React.Component{
     render(){
         return(
             <View className="uk-container">
-                <CardDivider />
                 <CardHeader />
                 <CardImage />
+                <CardForm />
+                <CardDivider />
                 <CardButton />
                 <CardInput />
+                <CardModal />
                 <CardLabel />
                 <CardLink />
                 <CardList />

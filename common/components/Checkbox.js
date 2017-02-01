@@ -2,14 +2,14 @@ import React from 'react';
 import Component from './Component';
 import View from './View';
 
-class Divider extends Component {
+class Checkbox extends Component {
     render(){
         return(
             <View>
-                <hr className={"uk-divider-icon " + this.getClassName(this.props)}></hr>
+                <input className={"uk-checkbox " + this.getClassName(this.props)} type="checkbox" />
             </View>
         )
     }
 }
 
-export default Divider;
+export default Checkbox;

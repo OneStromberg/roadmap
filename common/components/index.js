@@ -12,5 +12,8 @@ import ListItem from './ListItem';
 import Text from './Text';
 import View from './View';
 import Divider from './Divider';
+import Checkbox from './Checkbox';
+import Radio from './Radio';
+import Modal from './Modal';
 
-export {Button, Card, Component, Footer, Header, Image, Input, Label, Link, List, ListItem, Text, View, Divider};
+export {Button, Card, Component, Footer, Header, Image, Input, Label, Link, List, ListItem, Text, View, Divider, Checkbox, Radio, Modal};

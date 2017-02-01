@@ -1,11 +1,12 @@
 import React from 'react';
+import Component from './Component';
 import View from './View';
 
 class Modal extends Component {
     render(){
         return(
-            <View className="uk-modal-dialog">
-                <View className="uk-modal-body">
+            <View className="uk-modal-body">
+                <View className="uk-modal-dialog">
                     {this.props.children}
                 </View>
             </View>
