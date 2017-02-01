@@ -11,5 +11,6 @@ import List from './List';
 import ListItem from './ListItem';
 import Text from './Text';
 import View from './View';
+import Divider from './Divider';
 
-export {Button, Card, Component, Footer, Header, Image, Input, Label, Link, List, ListItem, Text, View};
+export {Button, Card, Component, Footer, Header, Image, Input, Label, Link, List, ListItem, Text, View, Divider};

@@ -8,8 +8,9 @@ import CardLink from './components/CardLink';
 import CardList from './components/CardList';
 import CardText from './components/CardText';
 import CardFooter from './components/CardFooter';
+import CardDivider from './components/CardDivider';
 
-import {View, Button, Footer, Image, Input, Label, Link, List, ListItem, Text, Component, Header, Card} from 'components';
+import {View, Button, Footer, Image, Input, Label, Link, List, ListItem, Text, Component, Header, Card, Divider} from 'components';
 
 class ComponentsApp extends React.Component{
      constructor(props){
@@ -24,6 +25,7 @@ class ComponentsApp extends React.Component{
     render(){
         return(
             <View className="uk-container">
+                <CardDivider />
                 <CardHeader />
                 <CardImage />
                 <CardButton />
