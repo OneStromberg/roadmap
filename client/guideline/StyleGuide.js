@@ -12,6 +12,7 @@ import CardDivider from './components/CardDivider';
 import CardForm from './components/CardForm';
 import CardModal from './components/CardModal';
 import CardImageButton from './components/CardImageButton';
+import CardRadio from './components/CardRadio';
 
 import {View, Button, Footer, Image, Input, Label, Link, List, ListItem, Text, Component, Header, Card, Divider, Checkbox, Radio, Modal, ImageButton} from 'components';
 
@@ -35,6 +36,7 @@ class ComponentsApp extends React.Component{
                 <CardButton />
                 <CardInput />
                 <CardModal />
+                <CardRadio />
                 <CardImageButton />
                 <CardLabel />
                 <CardLink />

@@ -5,7 +5,7 @@ const path = require('path');
 module.exports = {
     entry:{
         common:['babel-polyfill','react','redux'],
-        guide:["./client/GuideApp.js"]
+        guide:["./client/guideline/GuideApp"]
     },
     output: {
         path: __dirname + '/public/build/',

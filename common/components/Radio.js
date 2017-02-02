@@ -5,7 +5,7 @@ import View from './View';
 class Radio extends Component {
     render(){
         return(
-            <input className={"uk-radio " + this.getClassName(this.props)} type="radio" />
+            <input className={"uk-radio " + this.getClassName(this.props)} type="radio" name={this.props.radioButtonGroup} />
         )
     }
 }
