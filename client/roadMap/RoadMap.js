@@ -19,13 +19,7 @@ import {View, Button, Footer, Image, Input, Label, Link, List, ListItem, Text, C
 class ComponentsApp extends React.Component{
      constructor(props){
         super(props);
-        this.state = {toggle: false};
     }
-
-    someClickHandler(){
-        this.setState({toggle: !this.state.toggle});
-    }
-
     render(){
         return(
             <View className="uk-container">

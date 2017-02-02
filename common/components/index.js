@@ -16,5 +16,6 @@ import Checkbox from './Checkbox';
 import Radio from './Radio';
 import Modal from './Modal';
 import ImageButton from './ImageButton';
+import Application from './Application';
 
-export {Button, Card, Component, Footer, Header, Image, Input, Label, Link, List, ListItem, Text, View, Divider, Checkbox, Radio, Modal, ImageButton};
+export {Application, Button, Card, Component, Footer, Header, Image, Input, Label, Link, List, ListItem, Text, View, Divider, Checkbox, Radio, Modal, ImageButton};

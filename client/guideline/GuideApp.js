@@ -1,8 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import StyleGuide from './StyleGuide';
+import styleRoute from './components';
+import { Application } from 'components';
+import reducers from './reducers';
 
 require('./../../common/styles/style.less');
 require('./../../common/styles/common.sass');
 
-ReactDOM.render(<StyleGuide />, document.getElementById('root'));
+const App = (props) => {
+    return (
+        <Application reducers={reducers}>
+            {styleRoute}
+        </Application>
+    )
+}
+
+ReactDOM.render(<App />, document.getElementById('root'));
