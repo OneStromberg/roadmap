@@ -1,18 +1,41 @@
 import React from 'react';
-import { Card, Component, Header, Button } from 'components';
+import { Card, Component, Header, Button, List, ListItem, Label, Text } from 'components';
 
 class CardButton extends Component {
     render(){
         return(
             <Card>
                 <Header>Button</Header>
-                <Button> Button </Button>
-                <Button primary> Button </Button>
-                <Button default> Button </Button>
-                <Button secondary> Button </Button>
-                <Button danger> Button </Button>
-                <Button text> Button </Button>
-                <Button link> Button </Button>
+                <List>
+                    <ListItem>
+                        <Header> Button </Header>
+                        <Button>Button</Button>                        
+                    </ListItem>
+                    <ListItem>
+                        <Header> Primary </Header>
+                        <Button primary>Button</Button>                        
+                    </ListItem>
+                    <ListItem>
+                        <Header>Default</Header>
+                        <Button default>Button</Button>                    
+                    </ListItem>
+                    <ListItem>
+                        <Header>Secondary</Header>
+                        <Button secondary>Button</Button>                        
+                    </ListItem>
+                    <ListItem>
+                        <Header>Danger</Header>
+                        <Button danger>Button</Button>                        
+                    </ListItem>
+                    <ListItem>
+                        <Header>Text</Header>
+                        <Button text>Button</Button>                        
+                    </ListItem>
+                    <ListItem>
+                        <Header>Link</Header>
+                        <Button link>Button</Button>                        
+                    </ListItem>
+                </List>
             </Card>
         )
     }

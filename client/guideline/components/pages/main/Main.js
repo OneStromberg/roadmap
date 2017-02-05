@@ -21,6 +21,9 @@ class ComponentsApp extends React.Component {
     render(){
         return(
             <View className="uk-container">
+                <Card>
+                    <Button>Update</Button>
+                </Card>
                 <CardHeader />
                 <CardImage />
                 <CardForm />

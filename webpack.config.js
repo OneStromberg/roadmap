@@ -57,11 +57,15 @@ module.exports = {
                 test: /\.sass$|\.scss$/,
                 loader: ExtractTextPlugin.extract(
                     "style",
-                    "css!sass", "includePaths[]=" + (path.resolve(__dirname)))
+                    "css!sass", "includePaths[]=" + (path.resolve(__dirname))
+                )
             },
             {
                 test: /\.less$/,
-                loader: "style!css!less"
+                loader: ExtractTextPlugin.extract(
+                    "style",
+                    "css!less", "includePaths[]=" + (path.resolve(__dirname))
+                )
             },
             {
                 test: /\.gif$/,

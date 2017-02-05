@@ -4,8 +4,9 @@ import styleRoute from './components';
 import { Application } from 'components';
 import reducers from './reducers';
 
-require('./../../common/styles/style.less');
-require('./../../common/styles/common.sass');
+require('./../../common/styles/styles.less');
+require('./../common/styles/styles.less');
+require('./styles/styles.less');
 
 const App = (props) => {
     return (
