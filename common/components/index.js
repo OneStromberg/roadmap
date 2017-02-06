@@ -5,6 +5,7 @@ import Footer from './Footer';
 import Header from './Header';
 import Image from './Image';
 import Input from './Input';
+import Password from './Password';
 import Label from './Label';
 import Link from './Link';
 import List from './List';
@@ -18,4 +19,4 @@ import Modal from './Modal';
 import ImageButton from './ImageButton';
 import Application from './Application';
 
-export {Application, Button, Card, Component, Footer, Header, Image, Input, Label, Link, List, ListItem, Text, View, Divider, Checkbox, Radio, Modal, ImageButton};
+export {Application, Password, Button, Card, Component, Footer, Header, Image, Input, Label, Link, List, ListItem, Text, View, Divider, Checkbox, Radio, Modal, ImageButton};

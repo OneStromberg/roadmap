@@ -14,6 +14,8 @@ import CardForm from './../../partials/CardForm';
 import CardModal from './../../partials/CardModal';
 import CardImageButton from './../../partials/CardImageButton';
 import CardRadio from './../../partials/CardRadio';
+import CardProfile from './../../partials/CardProfile';
+
 
 import {View, Button, Footer, Image, Input, Label, Link, List, ListItem, Text, Component, Header, Card, Divider, Checkbox, Radio, Modal, ImageButton} from 'components';
 
@@ -21,9 +23,7 @@ class ComponentsApp extends React.Component {
     render(){
         return(
             <View className="uk-container">
-                <Card>
-                    <Button>Update</Button>
-                </Card>
+                <CardProfile />
                 <CardHeader />
                 <CardImage />
                 <CardForm />
@@ -38,7 +38,8 @@ class ComponentsApp extends React.Component {
                 <CardList />
                 <CardText />
                 <CardFooter />
-            </View>)
+            </View>
+        )
     };
 };
 
