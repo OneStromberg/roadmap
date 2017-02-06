@@ -6,7 +6,7 @@ import Round from './../../../../common/components/Round';
 class CardProfile extends Component {
     render(){
         return(
-            <Card className="profile-wrapper">
+            <Card className="wrapper">
                 <View className="avatar-wrapper">
                     <View>
                         <Round round />
@@ -14,12 +14,12 @@ class CardProfile extends Component {
                     </View>
                     <View>
                         <Header>Name</Header>
-                        <Input />
+                        <Input className="input-profile" placeholder="Jason Clark" />
                         <Header>E-mail Address</Header>
-                        <Input />
+                        <Input className="input-profile" placeholder="jason@dashboard.io" />
                     </View>
                 </View>
-                <Input />
+                <Input placeholder="Location"/>
                 <View>
                     <Header>Current password</Header>
                     <Password />
@@ -27,8 +27,10 @@ class CardProfile extends Component {
                     <Password />
                     <Header>Confirm password</Header>
                     <Password />
-                    <Button>Update</Button>
                 </View>
+                <View>
+                    <Button>Update</Button>
+                </View>   
             </Card>
         )
     }
