@@ -1,38 +1,32 @@
 import React from 'react';
-import {Button, Card, Component, Header, Input, Password, View} from 'components';
+import {Button, Card, Component, Header, Input, Password, View, Image} from 'components';
 import RoundButton from './../../../common/components/RoundButton';
+import Round from './../../../../common/components/Round';
 
 class CardProfile extends Component {
     render(){
         return(
-            <Card>
-                <View>
-                    <RoundButton />
+            <Card className="profile-wrapper">
+                <View className="avatar-wrapper">
+                    <View>
+                        <Round round />
+                        <RoundButton />
+                    </View>
+                    <View>
+                        <Header>Name</Header>
+                        <Input />
+                        <Header>E-mail Address</Header>
+                        <Input />
+                    </View>
                 </View>
-                <View>
-                    <Header>Name</Header>
-                    <Input />
-                </View>
-                <View>
-                    <Header>E-mail Address</Header>
-                    <Input />
-                </View>
-                <View>
-                    <Input />
-                </View>
+                <Input />
                 <View>
                     <Header>Current password</Header>
                     <Password />
-                </View>
-                <View>
                     <Header>Set new password</Header>
                     <Password />
-                </View>
-                <View>
                     <Header>Confirm password</Header>
                     <Password />
-                </View>
-                <View>
                     <Button>Update</Button>
                 </View>
             </Card>
