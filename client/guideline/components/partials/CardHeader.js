@@ -5,7 +5,7 @@ class CardHeader extends Component {
     render(){
         return(
             <Card>
-                <Header>Header</Header>
+                <Header>{this.props.children}</Header>
             </Card>
         )
     }
