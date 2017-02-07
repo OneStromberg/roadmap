@@ -5,7 +5,9 @@ import Button from './../../../common/components/Button';
 class RoundButton extends Component {
     render(){
         return(
-            <Button secondary />
+            <Button secondary>
+                {this.props.children}
+            </Button>
         )
     }
 }
