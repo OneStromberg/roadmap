@@ -1,17 +1,17 @@
 import React from 'react';
-import {Button, Card, Component, Header, Input, Password, View, Image, Text, CardHeader} from 'components';
+import {Button, Card, Component, Header, Input, Password, View, Image, Text, CardHeader, Round, TabBar} from 'components';
 import RoundButton from './../../../common/components/RoundButton';
-import Round from './../../../../common/components/Round';
-import TabBar from './../../../../common/components/TabBar';
 
 class CardProfile extends Component {
     render(){
         return(
             <Card className="card-profile">
+                <CardHeader>
                     <TabBar center activeItem={1}>
                         {"Tab 1"}
                         {"Tab 2"}
                     </TabBar>
+                </CardHeader>    
                 <View className="profile-wrapper">
                     <View className="avatar-wrapper">
                         <View>

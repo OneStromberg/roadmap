@@ -1,7 +1,5 @@
 import React from 'react';
-
 import CardImage from './../../partials/CardImage';
-import CardHeader from './../../partials/CardHeader';
 import CardButton from './../../partials/CardButton';
 import CardInput from './../../partials/CardInput';
 import CardLabel from './../../partials/CardLabel';
@@ -17,7 +15,7 @@ import CardRadio from './../../partials/CardRadio';
 import CardProfile from './../../partials/CardProfile';
 import CardTab from './../../partials/CardTab';
 
-import {View, Button, Footer, Image, Input, Label, Link, List, ListItem, Text, Component, Header, Card, Divider, Checkbox, Radio, Modal, ImageButton} from 'components';
+import {View, Button, Footer, Image, Input, Label, Link, List, ListItem, Text, Component, Header, Card, Divider, Checkbox, Radio, Modal, ImageButton, CardHeader} from 'components';
 
 class ComponentsApp extends React.Component {
     render(){
