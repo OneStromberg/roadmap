@@ -15,7 +15,7 @@ import CardModal from './../../partials/CardModal';
 import CardImageButton from './../../partials/CardImageButton';
 import CardRadio from './../../partials/CardRadio';
 import CardProfile from './../../partials/CardProfile';
-
+import CardTab from './../../partials/CardTab';
 
 import {View, Button, Footer, Image, Input, Label, Link, List, ListItem, Text, Component, Header, Card, Divider, Checkbox, Radio, Modal, ImageButton} from 'components';
 
@@ -24,6 +24,7 @@ class ComponentsApp extends React.Component {
         return(
             <View className="uk-container">
                 <CardProfile />
+                <CardTab />
                 <CardHeader />
                 <CardImage />
                 <CardForm />

@@ -19,5 +19,7 @@ import Modal from './Modal';
 import ImageButton from './ImageButton';
 import Application from './Application';
 import Round from './Round';
+import TabBar from './TabBar';
+import TabButton from './TabButton';
 
-export {Application, Password, Button, Card, Component, Footer, Header, Image, Input, Label, Link, List, ListItem, Text, View, Divider, Checkbox, Radio, Modal, ImageButton, Round};
+export {Application, Password, Button, Card, Component, Footer, Header, Image, Input, Label, Link, List, ListItem, Text, View, Divider, Checkbox, Radio, Modal, ImageButton, Round, TabBar, TabButton};
