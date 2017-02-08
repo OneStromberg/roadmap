@@ -1,7 +1,7 @@
 import React from 'react';
 import {Route, IndexRoute} from 'react-router';
 import GuideLineWrapper from './templates/GuideLineWrapper';
-import Main from './pages/main/';
+import Main from './pages/main';
 
 import { Routes } from './../constants';
 
