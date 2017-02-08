@@ -1,5 +1,5 @@
 import React from 'react';
-import {AppHeader, View, Text, Label, Image, Component, Container} from 'components';
+import {AppHeader, View, Text, Label, Image, Component, AppHeaderLogo, Container} from 'components';
 
 class MultibitAppHeader extends Component {
 	render()
@@ -15,9 +15,7 @@ class MultibitAppHeader extends Component {
 							text
 						</Label>
 					</View>
-					<View>
-						<Image />
-					</View>
+					<AppHeaderLogo src='' alt='Zajno Logo' />
 				</Container>
 			</AppHeader>
 		)

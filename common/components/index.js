@@ -19,6 +19,7 @@ import Modal from './Modal';
 import ImageButton from './ImageButton';
 import Application from './Application';
 import AppHeader from './AppHeader';
+import AppHeaderLogo from './AppHeaderLogo';
 import Round from './Round';
 import TabBar from './TabBar';
 import TabButton from './TabButton';
@@ -26,4 +27,4 @@ import CardHeader from './CardHeader';
 import ButtonSecondary from './ButtonSecondary';
 import Container from './Container';
 
-export {Application, AppHeader, Container, Password, Button, Card, Component, Footer, Header, Image, Input, Label, Link, List, ListItem, Text, View, Divider, Checkbox, Radio, Modal, ImageButton, Round, TabBar, TabButton, CardHeader, ButtonSecondary};
+export {Application, AppHeader, AppHeaderLogo, Container, Password, Button, Card, Component, Footer, Header, Image, Input, Label, Link, List, ListItem, Text, View, Divider, Checkbox, Radio, Modal, ImageButton, Round, TabBar, TabButton, CardHeader, ButtonSecondary};
