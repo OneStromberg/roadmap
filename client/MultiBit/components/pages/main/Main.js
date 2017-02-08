@@ -1,31 +1,31 @@
 import React from 'react';
-
+import AppHeader from './../../partials/AppHeader'
 import {CardImage, CardButton, CardInput, CardLabel, CardLink, CardList, CardText, CardFooter, CardDivider, CardForm, CardModal, CardImageButton, CardRadio, CardTab} from './../../../../common/components';
 
-import {View, Button, Footer, Image, Input, Label, Link, List, ListItem, Text, Component, Header, Card, Divider, Checkbox, Radio, Modal, ImageButton, CardHeader} from 'components';
+import {View, Container, Footer, Image, Input, Label, Link, List, ListItem, Text, Component, Header, Card, Divider, Checkbox, Radio, Modal, ImageButton, CardHeader} from 'components';
 
-import CardProfile from './../../partials/CardProfile';
-
-class ComponentsApp extends React.Component {
+class ComponentsApp extends Component {
     render(){
         return(
-            <View className="uk-container">
-                <CardProfile />
-                <CardTab />
-                <CardHeader />
-                <CardImage />
-                <CardForm />
-                <CardDivider />
-                <CardButton />
-                <CardInput />
-                <CardModal />
-                <CardRadio />
-                <CardImageButton />
-                <CardLabel />
-                <CardLink />
-                <CardList />
-                <CardText />
-                <CardFooter />
+            <View>
+                <AppHeader />
+                <Container>
+                    <CardHeader />
+                    <CardTab />
+                    <CardImage />
+                    <CardForm />
+                    <CardDivider />
+                    <CardButton />
+                    <CardInput />
+                    <CardModal />
+                    <CardRadio />
+                    <CardImageButton />
+                    <CardLabel />
+                    <CardLink />
+                    <CardList />
+                    <CardText />
+                    <CardFooter />
+                </Container>
             </View>
         )
     };
