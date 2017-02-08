@@ -1,9 +1,9 @@
 import React from 'react';
-import Component from './../../../../common/components/Component';
-import Button from './../../../../common/components/Button';
-import Card from './../../../../common/components/Card';
-import TabBar from './../../../../common/components/TabBar';
-import Text from './../../../../common/components/Text';
+import Component from './../../../common/components/Component';
+import Button from './../../../common/components/Button';
+import Card from './../../../common/components/Card';
+import TabBar from './../../../common/components/TabBar';
+import Text from './../../../common/components/Text';
 
 class CardTab extends Component {
     render(){

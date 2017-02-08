@@ -22,5 +22,6 @@ import Round from './Round';
 import TabBar from './TabBar';
 import TabButton from './TabButton';
 import CardHeader from './CardHeader';
+import ButtonSecondary from './ButtonSecondary';
 
-export {Application, Password, Button, Card, Component, Footer, Header, Image, Input, Label, Link, List, ListItem, Text, View, Divider, Checkbox, Radio, Modal, ImageButton, Round, TabBar, TabButton, CardHeader};
+export {Application, Password, Button, Card, Component, Footer, Header, Image, Input, Label, Link, List, ListItem, Text, View, Divider, Checkbox, Radio, Modal, ImageButton, Round, TabBar, TabButton, CardHeader, ButtonSecondary};
