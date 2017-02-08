@@ -9,23 +9,9 @@ import CardProfile from './../../partials/CardProfile';
 class ComponentsApp extends React.Component {
     render(){
         return(
-            <View className="uk-container">
+            <View >
                 <CardProfile />
-                <CardTab />
-                <CardHeader />
-                <CardImage />
-                <CardForm />
-                <CardDivider />
-                <CardButton />
-                <CardInput />
-                <CardModal />
-                <CardRadio />
-                <CardImageButton />
-                <CardLabel />
-                <CardLink />
-                <CardList />
-                <CardText />
-                <CardFooter />
+
             </View>
         )
     };
