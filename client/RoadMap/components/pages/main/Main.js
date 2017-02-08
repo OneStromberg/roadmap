@@ -7,22 +7,9 @@ import {View, Button, Footer, Image, Input, Label, Link, List, ListItem, Text, C
 class ComponentsApp extends React.Component {
     render(){
         return(
-            <View className="uk-container">
-                <CardTab />
-                <CardHeader />
-                <CardImage />
-                <CardForm />
-                <CardDivider />
-                <CardButton />
-                <CardInput />
-                <CardModal />
-                <CardRadio />
-                <CardImageButton />
-                <CardLabel />
-                <CardLink />
-                <CardList />
-                <CardText />
-                <CardFooter />
+<<<<<<< HEAD
+            <View >
+                <CardProfile />
             </View>
         )
     };
