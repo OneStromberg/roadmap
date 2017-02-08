@@ -8,6 +8,7 @@ class Card extends Component {
         return(
             <Section>
                 <View className={"uk-card uk-card-default " + this.getClassName(this.props)}>
+                    {this.props.header}
                     <View className={"uk-card-body " + this.getClassName(this.props)}>
                         {this.props.children}
                     </View>
@@ -15,6 +16,10 @@ class Card extends Component {
             </Section>
         )
     }
+}
+
+Card.propTypes = {
+    header: React.PropTypes.element
 }
 
 export default Card;

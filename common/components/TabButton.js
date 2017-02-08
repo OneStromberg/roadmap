@@ -12,7 +12,7 @@ class TabButton extends Component {
     render(){
         return(
             <li className={this.getClassName(this.props)}>
-                <Link {...this.props} onClick={this.onItemClick.bind(this)}/>
+                <Link onClick={this.onItemClick.bind(this)}>{this.props.children}</Link>
             </li>
         )
     }

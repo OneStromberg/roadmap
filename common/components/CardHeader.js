@@ -1,12 +1,11 @@
 import React from 'react';
-import { Card, Component, Header } from 'components';
+import Header from './Header';
+import Component from './Component';
 
 class CardHeader extends Component {
     render(){
         return(
-            <Card>
-                <Header>{this.props.children}</Header>
-            </Card>
+            <Header className="uk-card-header">{this.props.children}</Header>
         )
     }
 }

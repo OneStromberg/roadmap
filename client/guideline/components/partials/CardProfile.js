@@ -5,13 +5,14 @@ import RoundButton from './../../../common/components/RoundButton';
 class CardProfile extends Component {
     render(){
         return(
-            <Card className="card-profile">
+            <Card className="card-profile" header={
                 <CardHeader>
                     <TabBar center activeItem={1}>
                         {"Tab 1"}
                         {"Tab 2"}
                     </TabBar>
                 </CardHeader>    
+            }>
                 <View className="profile-wrapper">
                     <View className="avatar-wrapper">
                         <View>

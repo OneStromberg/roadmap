@@ -10,7 +10,7 @@ class Text extends Component {
         newProps += (props.hasOwnProperty('success') && props.success !== false) ? "uk-text-success" : "";
         newProps += (props.hasOwnProperty('warning') && props.warning !== false) ? "uk-text-warning" : "";
         newProps += (props.hasOwnProperty('danger') && props.danger !== false) ? "uk-text-danger" : "";
-        return newProps + super.getClassName(props)
+        return newProps + super.getClassName(props);
     }
     render(){
         return(

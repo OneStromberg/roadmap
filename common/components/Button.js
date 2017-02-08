@@ -12,7 +12,7 @@ class Button extends Component {
         newProps += (props.hasOwnProperty('danger') && props.danger !== false) ? ButtonClassPrefix + "danger" : "";
         newProps += (props.hasOwnProperty('text') && props.text !== false) ? ButtonClassPrefix + "text" : "";
         newProps += (props.hasOwnProperty('link') && props.link !== false) ? ButtonClassPrefix + "link" : "";
-        return newProps + super.getClassName(props)
+        return newProps + super.getClassName(props);
     }
     render(){
         return(
