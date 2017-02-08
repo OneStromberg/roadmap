@@ -4,14 +4,12 @@ import {CardImage, CardButton, CardInput, CardLabel, CardLink, CardList, CardTex
 
 import {View, Button, Footer, Image, Input, Label, Link, List, ListItem, Text, Component, Header, Card, Divider, Checkbox, Radio, Modal, ImageButton, CardHeader} from 'components';
 
-import CardProfile from './../../partials/CardProfile';
-
 class ComponentsApp extends React.Component {
     render(){
         return(
+<<<<<<< HEAD
             <View >
                 <CardProfile />
-
             </View>
         )
     };
