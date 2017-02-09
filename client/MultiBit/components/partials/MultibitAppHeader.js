@@ -15,7 +15,7 @@ class MultibitAppHeader extends Component {
 							text
 						</Label>
 					</View>
-					<AppHeaderLogo src='' alt='Zajno Logo' />
+					<AppHeaderLogo src='./../../../MultiBit/assets/img/zajno-logo.png' alt='Zajno Logo' />
 				</Container>
 			</AppHeader>
 		)
