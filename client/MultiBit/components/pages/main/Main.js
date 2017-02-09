@@ -1,5 +1,5 @@
 import React from 'react';
-import AppHeader from './../../partials/AppHeader'
+import AppHeader from './../../partials/MultibitAppHeader'
 import {CardImage, CardButton, CardInput, CardLabel, CardLink, CardList, CardText, CardFooter, CardDivider, CardForm, CardModal, CardImageButton, CardRadio, CardTab} from './../../../../common/components';
 
 import {View, Container, Footer, Image, Input, Label, Link, List, ListItem, Text, Component, Header, Card, Divider, Checkbox, Radio, Modal, ImageButton, CardHeader} from 'components';
