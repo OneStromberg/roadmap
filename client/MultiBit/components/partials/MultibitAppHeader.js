@@ -5,17 +5,17 @@ class MultibitAppHeader extends Component {
 	render()
 	{
 		return (
-			<AppHeader>
+			<AppHeader className='styleguide-header'>
 				<Container>
-					<View>
-						<Text>
-							text
+					<View className='styleguide-header-heading'>
+						<Text className='styleguide-header-title'>
+							Multibit
 						</Text>
-						<Label>
-							text
+						<Label className='styleguide-header-subtitle'>
+							UI Styleguide
 						</Label>
 					</View>
-					<AppHeaderLogo src='./../../../MultiBit/assets/img/zajno-logo.png' alt='Zajno Logo' />
+					<AppHeaderLogo src='./assets/multibit/img/zajno-logo.png' alt='Zajno Logo' />
 				</Container>
 			</AppHeader>
 		)
