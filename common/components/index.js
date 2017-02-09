@@ -25,5 +25,34 @@ import TabButton from './TabButton';
 import CardHeader from './CardHeader';
 import ButtonSecondary from './ButtonSecondary';
 import Container from './Container';
+import ViewColor from './ViewColor';
 
-export {Application, AppHeader, Container, Password, Button, Card, Component, Footer, Header, Image, Input, Label, Link, List, ListItem, Text, View, Divider, Checkbox, Radio, Modal, ImageButton, Round, TabBar, TabButton, CardHeader, ButtonSecondary};
+export {
+    Application, 
+    AppHeader,
+    Container,
+    Password,
+    Button,
+    Card,
+    Component,
+    Footer, 
+    Header, 
+    Image, 
+    Input, 
+    Label, 
+    Link, 
+    List, 
+    ListItem, 
+    Text, 
+    View, 
+    Divider, 
+    Checkbox, 
+    Radio, 
+    Modal, 
+    ImageButton, 
+    Round, 
+    TabBar, 
+    TabButton, 
+    CardHeader, 
+    ButtonSecondary, 
+    ViewColor};

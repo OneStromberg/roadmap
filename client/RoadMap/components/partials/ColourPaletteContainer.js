@@ -17,28 +17,29 @@ const paletteColour12 = "#eff3f6";
 const paletteColour13 = "#f4f8f9";
 const paletteColour14 = "#ffffff";
 
+
 let paletteColours = [
-    paletteColour1, 
-    paletteColour2, 
-    paletteColour3, 
-    paletteColour4,
-    paletteColour5,
-    paletteColour6,
-    paletteColour7,
-    paletteColour8,
-    paletteColour9,
-    paletteColour10,
-    paletteColour11,
-    paletteColour12,
-    paletteColour13,
-    paletteColour14
+    [paletteColour1], 
+    [paletteColour2], 
+    [paletteColour3], 
+    [paletteColour4],
+    [paletteColour5],
+    [paletteColour6],
+    [paletteColour7],
+    [paletteColour8],
+    [paletteColour9],
+    [paletteColour10],
+    [paletteColour11],
+    [paletteColour12],
+    [paletteColour13],
+    [paletteColour14]
 ];
 
 class ColourPaletteContainer extends Component {
     render(){
         return(
-            <View>
-                {paletteColours.map((colour, i) => <ColourPaletteCard key={i} colour={colour} />)}  
+            <View className={this.getClassName(this.props) + "color-palette-container"}>
+                {paletteColours.map((colour, i) => <ColourPaletteCard key={i} colors={colour} /> )} 
             </View>
         )
     }
