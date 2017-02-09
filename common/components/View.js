@@ -4,7 +4,7 @@ import Component from './Component';
 class View extends Component {
     render(){
         return (
-            <div className={this.getClassName(this.props)}>
+            <div style={{backgroundColor:this.props.colour}} className={this.getClassName(this.props)}>
                 {this.props.children}
             </div>
         )
