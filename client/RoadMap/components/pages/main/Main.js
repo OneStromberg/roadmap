@@ -10,9 +10,8 @@ class ComponentsApp extends React.Component {
                 <AppBar />
                 <Page>
                     <Container>
-                        <Header>
-                            <Text> 01. Color Palette </Text>
-                            <View></View>
+                        <Header  className="uk-heading-line">
+                            <Text> 01.Color Palette </Text>
                         </Header>
                         <ColorPaletteContainer />
                     </Container>
