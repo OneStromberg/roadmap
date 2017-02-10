@@ -1,5 +1,7 @@
 .gradient-palette-card {
     width:@gradient-card-width;
+    position: relative;
+    z-index: 1;
     .view-color {
         height: @view-color-height;
     }
@@ -8,6 +10,26 @@
         padding: 9px 0;
         background-color: @palette-colour-14;
         color: @font-color-light-grey;
-        text-align: center;        
+        text-align: center;
+        &.gradient-palette-label {
+            display: inline-block;
+            width: 50%;  
+            text-align: left;
+            &:last-child {
+                text-align: right;
+            } 
+        }     
+    }
+    &:after {
+        position: absolute;
+        content: '';
+        bottom: 1px;
+        z-index: -1;
+        left: 50%;
+        width: 307px;
+        height: 63px;
+        transform: translate(-50%,0);
+        box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1), 0 5px 10px rgba(131, 157, 254, 0.1);
+        background-color: rgba(0, 0, 0, 0.3);
     }
 }
