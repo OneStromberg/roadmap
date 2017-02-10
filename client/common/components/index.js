@@ -12,5 +12,7 @@ import CardModal from './CardModal';
 import CardImageButton from './CardImageButton';
 import CardRadio from './CardRadio';
 import CardTab from './CardTab';
+import AppBarLogo from './AppBarLogo';
+import Page from './Page';
 
-export {CardImage, CardButton, CardInput, CardLabel, CardLink, CardList, CardText, CardFooter, CardDivider, CardForm, CardModal, CardImageButton, CardRadio, CardTab}; 
+export {CardImage, CardButton, CardInput, CardLabel, CardLink, CardList, CardText, CardFooter, CardDivider, CardForm, CardModal, CardImageButton, CardRadio, CardTab, AppBarLogo, Page}; 

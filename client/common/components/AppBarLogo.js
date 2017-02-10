@@ -1,9 +1,7 @@
 import React from 'react';
-import Component from './Component';
-import View from './View';
-import Image from './Image';
+import {Component, View, Image} from 'components';
 
-class AppHeaderLogo extends Component {
+class AppBarLogo extends Component {
 	render()
 	{
 		return (
@@ -14,4 +12,4 @@ class AppHeaderLogo extends Component {
 	}
 }
 
-export default AppHeaderLogo;
+export default AppBarLogo;

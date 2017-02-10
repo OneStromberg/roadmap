@@ -2,7 +2,7 @@ import React from 'react';
 import Component from './Component';
 import Header from './Header';
 
-class AppHeader extends Component {
+class AppBar extends Component {
     render(){
         return(
             <Header className={this.getClassName(this.props)}>
@@ -12,4 +12,4 @@ class AppHeader extends Component {
     }
 }
 
-export default AppHeader;
+export default AppBar;

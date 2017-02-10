@@ -18,8 +18,7 @@ import Radio from './Radio';
 import Modal from './Modal';
 import ImageButton from './ImageButton';
 import Application from './Application';
-import AppHeader from './AppHeader';
-import AppHeaderLogo from './AppHeaderLogo';
+import AppBar from './AppBar';
 import Round from './Round';
 import TabBar from './TabBar';
 import TabButton from './TabButton';
@@ -28,10 +27,9 @@ import ButtonSecondary from './ButtonSecondary';
 import Container from './Container';
 import ViewColor from './ViewColor';
 
-<<<<<<< HEAD
 export {
     Application, 
-    AppHeader,
+    AppBar,
     Container,
     Password,
     Button,
@@ -57,7 +55,6 @@ export {
     TabButton, 
     CardHeader, 
     ButtonSecondary, 
-    ViewColor};
-=======
-export {Application, AppHeader, AppHeaderLogo, Container, Password, Button, Card, Component, Footer, Header, Image, Input, Label, Link, List, ListItem, Text, View, Divider, Checkbox, Radio, Modal, ImageButton, Round, TabBar, TabButton, CardHeader, ButtonSecondary};
->>>>>>> 230d05c9dece6020dea4783e6ee53aab90c494cb
+    ViewColor
+};
+

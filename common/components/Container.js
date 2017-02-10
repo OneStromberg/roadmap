@@ -4,7 +4,7 @@ import Component from './Component';
 class Container extends Component {
     render(){
         return (
-            <div className={"uk-container " + this.getClassName(this.props)}>
+            <div className={"container " + this.getClassName(this.props)}>
                 {this.props.children}
             </div>
         )
