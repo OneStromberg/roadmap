@@ -1,19 +1,23 @@
 import React from 'react';
-import {AppBar, Container, View} from './components';
+import {AppBar, Component, Container, Title, Subtitle, View} from 'components';
+import AppBarLogo from './../../../common/components/AppBarLogo';
 
-class RoadmapAppBar {
+class RoadmapAppBar extends Component {
     render(){
         return(
-            <AppBar>
-                <Container>
-                    <View>
-                        <Title></Title>
-                        <Subtitle></Subtitle>
+            <AppBar className="styleguide-header">
+                <Container className="appbar-container">
+                    <View className="appbar-view">
+                        <Title className="appbar-title">
+                            RoadMap
+                        </Title>
+                        <Subtitle className="appbar-subtitle">
+                            UI Styleguide
+                        </Subtitle>
                     </View>
                 </Container>
                 <AppBarLogo />
-            </AppBar>
-            
+            </AppBar>          
         )
     }
 }
