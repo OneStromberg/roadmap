@@ -1,20 +1,20 @@
 import React from 'react';
-import {AppBar, View, Text, Label, Image, Component, Container} from 'components';
+import {AppBar, View, Text, Label, Image, Component, Container, Title, Subtitle} from 'components';
 import AppBarLogo from './../../../common/components/AppBarLogo';
 
 class MultibitAppBar extends Component {
 	render()
 	{
 		return (
-			<AppBar>
+			<AppBar className="styleguide-header">
 				<Container className="appbar-container">
 					<View className="appbar-view">
-						<Text className="appbar-title">
+						<Title className="appbar-title">
 							Multibit
-						</Text>
-						<Label className="appbar-subtitle">
+						</Title>
+						<Subtitle className="appbar-subtitle">
 							UI Styleguide
-						</Label>
+						</Subtitle>
 					</View>
 					<AppBarLogo src="./assets/multibit/img/zajno-logo.png" alt="Zajno Logo" />
 				</Container>

@@ -26,6 +26,8 @@ import Modal from './Modal';
 import Round from './Round';
 import TabBar from './TabBar';
 import TabButton from './TabButton';
+import Title from './Title';
+import Subtitle from './Subtitle';
 
 export {
     Application, 
@@ -55,6 +57,8 @@ export {
     TabButton, 
     CardHeader, 
     ButtonSecondary,
-    ViewColor
+    ViewColor,
+    Title,
+    Subtitle
 };
 

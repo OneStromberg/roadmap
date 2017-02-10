@@ -5,7 +5,7 @@ import Header from './Header';
 class AppBar extends Component {
     render(){
         return(
-            <Header className={"styleguide-header" + this.getClassName(this.props)}>
+            <Header className={this.getClassName(this.props)}>
                 {this.props.children}
             </Header>
         )
