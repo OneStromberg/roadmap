@@ -7,12 +7,12 @@ class MultibitAppBar extends Component {
 	{
 		return (
 			<AppBar>
-				<Container>
-					<View className="styleguide-header-heading">
-						<Text className="styleguide-header-title">
+				<Container className="appbar-container">
+					<View className="appbar-view">
+						<Text className="appbar-title">
 							Multibit
 						</Text>
-						<Label className="styleguide-header-subtitle">
+						<Label className="appbar-subtitle">
 							UI Styleguide
 						</Label>
 					</View>
