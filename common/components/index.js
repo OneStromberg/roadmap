@@ -28,7 +28,6 @@ import ButtonSecondary from './ButtonSecondary';
 import Container from './Container';
 import ViewColor from './ViewColor';
 
-<<<<<<< HEAD
 export {
     Application, 
     AppHeader,
@@ -58,6 +57,4 @@ export {
     CardHeader, 
     ButtonSecondary, 
     ViewColor};
-=======
-export {Application, AppHeader, AppHeaderLogo, Container, Password, Button, Card, Component, Footer, Header, Image, Input, Label, Link, List, ListItem, Text, View, Divider, Checkbox, Radio, Modal, ImageButton, Round, TabBar, TabButton, CardHeader, ButtonSecondary};
->>>>>>> 230d05c9dece6020dea4783e6ee53aab90c494cb
+
