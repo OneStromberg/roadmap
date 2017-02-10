@@ -4,7 +4,7 @@ import { Component } from 'components';
 class Page extends Component {
     render(){
         return (
-            <section className={this.getClassName(this.props) + "section"}>
+            <section className={"section" + this.getClassName(this.props)}>
                 {this.props.children}
             </section>
         )

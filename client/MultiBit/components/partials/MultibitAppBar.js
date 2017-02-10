@@ -6,7 +6,7 @@ class MultibitAppBar extends Component {
 	render()
 	{
 		return (
-			<AppBar className="styleguide-header">
+			<AppBar>
 				<Container>
 					<View className="styleguide-header-heading">
 						<Text className="styleguide-header-title">
