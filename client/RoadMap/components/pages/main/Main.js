@@ -11,8 +11,8 @@ class ComponentsApp extends React.Component {
                 <Page>
                     <Container>
                         <Header>
-                            <Text> 01 </Text>
-                            <Text> Color Palette </Text>
+                            <Text> 01. Color Palette </Text>
+                            <View></View>
                         </Header>
                         <ColorPaletteContainer />
                     </Container>
