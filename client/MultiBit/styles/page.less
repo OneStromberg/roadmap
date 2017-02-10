@@ -1,0 +1,25 @@
+.section {
+	padding: @page-padding;
+	background-image: @paletteGradient2;
+	.container {
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		header {
+			border-bottom: 1px solid #bbbed7;
+			height: inherit;
+			padding: 0 1px;
+			.uk-text {
+				color: #bbbed7;
+				font-family: "SF UI Display";
+				font-size: 20px;
+				font-weight: 400;
+				line-height: 20px;
+				padding-bottom: 6px;
+				&:first-child {
+					margin-right: 26px;
+				}
+			}
+		}
+	}
+}

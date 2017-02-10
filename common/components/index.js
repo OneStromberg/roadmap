@@ -18,8 +18,7 @@ import Radio from './Radio';
 import Modal from './Modal';
 import ImageButton from './ImageButton';
 import Application from './Application';
-import AppHeader from './AppHeader';
-import AppHeaderLogo from './AppHeaderLogo';
+import AppBar from './AppBar';
 import Round from './Round';
 import TabBar from './TabBar';
 import TabButton from './TabButton';
@@ -30,7 +29,7 @@ import ViewColor from './ViewColor';
 
 export {
     Application, 
-    AppHeader,
+    AppBar,
     Container,
     Password,
     Button,
@@ -55,6 +54,7 @@ export {
     TabBar, 
     TabButton, 
     CardHeader, 
-    ButtonSecondary, 
-    ViewColor};
+    ButtonSecondary,
+    ViewColor
+};
 
