@@ -15,8 +15,8 @@ class RoadmapAppBar extends Component {
                             UI Styleguide
                         </Subtitle>
                     </View>
+                    <AppBarLogo src="./../../../../public/assets/roadmap/zajno-logo.png" alt="Zajno logo" />
                 </Container>
-                <AppBarLogo />
             </AppBar>          
         )
     }
