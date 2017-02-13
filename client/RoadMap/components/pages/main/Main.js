@@ -13,7 +13,7 @@ class ComponentsApp extends React.Component {
                 <Page>
                     <Container>
                         <Header  className="uk-heading-line">
-                            <Label> 01.Color Palette </Label>
+                            <Label className="header-label"> 01.Color Palette </Label>
                         </Header>
                         <ColorPaletteContainer />
                     </Container>
@@ -21,7 +21,7 @@ class ComponentsApp extends React.Component {
                 <Page>
                     <Container>
                         <Header className="uk-heading-line">
-                            <Label> 02. Typography </Label>
+                            <Label className="header-label"> 02. Typography </Label>
                         </Header>
                         <TypographyContainer />
                     </Container>
@@ -29,7 +29,7 @@ class ComponentsApp extends React.Component {
                 <Page>
                     <Container>
                         <Header className="uk-heading-line">
-                            <Label> 03. Forms </Label>
+                            <Label className="header-label"> 03. Forms </Label>
                         </Header>
                     </Container>
                 </Page>

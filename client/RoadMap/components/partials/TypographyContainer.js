@@ -6,15 +6,15 @@ class TypographyContainer extends Component {
     render(){
         return(
             <View className="typography-container">
-                <TypographicCard title={<Title className="lbl-1">Open Sans Regular</Title>}/>
-                <TypographicCard title={<Title className="lbl-2"></Title>}/>
-                <TypographicCard title={<Title className="lbl-3"></Title>}/>
-                <TypographicCard title={<Title className="lbl-4"></Title>}/>
-                <TypographicCard title={<Title className="lbl-5"></Title>}/>
-                <TypographicCard title={<Title className="lbl-6"></Title>}/>
-                <TypographicCard title={<Title className="lbl-7"></Title>}/>
-                <TypographicCard title={<Title className="lbl-8"></Title>}/>
-                <TypographicCard title={<Title className="lbl-9"></Title>}/>
+                <TypographicCard title={<Title className="lbl-1"> Open Sans Semibold </Title>}/>
+                <TypographicCard title={<Title className="lbl-2"> Open Sans Regular </Title>}/>
+                <TypographicCard title={<Title className="lbl-3"> Open Sans Semibold</Title>}/>
+                <TypographicCard title={<Title className="lbl-4"> Open Sans Regular </Title>}/>
+                <TypographicCard title={<Title className="lbl-5"> Open Sans Regular </Title>}/>
+                <TypographicCard title={<Title className="lbl-6"> Open Sans Semibold </Title>}/>
+                <TypographicCard title={<Title className="lbl-7"> Open Sans Regular </Title>}/>
+                <TypographicCard title={<Title className="lbl-8"> Open Sans Light </Title>}/>
+                <TypographicCard title={<Title className="lbl-9"> Open Sans Regular </Title>}/>
             </View>
         )
     }
