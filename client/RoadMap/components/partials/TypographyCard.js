@@ -7,11 +7,11 @@ class TypographyCard extends Component {
             <Card className="typography-card">
                 <View className="">
                     <Label>Input Empty</Label>
-                    <Input />
+                    <Input type="text"/>
                     <Label>Input Selected</Label>
-                    <Input />
+                    <Input type="text"/>
                     <Label>Input Typing</Label>
-                    <Input />
+                    <Input type="text"/>
                     <Label>Input Error</Label>
                     <Input />
                 </View>
