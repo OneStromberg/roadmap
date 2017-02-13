@@ -1,5 +1,5 @@
 import React from 'react';
-import {Component, View} from 'components';
+import {Component, View, Container, Header, Text} from 'components';
 import TypographyCard from './TypographyCard';
 
 
@@ -12,7 +12,7 @@ class TypographyContainer extends Component {
                     <Text> Typography</Text>
                 </Header>
                 <View className={"typography-container " + this.getClassName(this.props)}>
-                    <TypographyCard />
+                    <TypographyCard className="text-primary" />
                 </View>
             </Container>
         )
