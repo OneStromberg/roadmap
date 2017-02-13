@@ -1,8 +1,9 @@
 import React from 'react';
-import {Container, Header, Text, View} from 'components';
+import {Container, Header, Label, Text, View} from 'components';
 import {ColorPaletteContainer} from './../../partials/';
 import Page from './../../../../common/components/Page';
 import RoadmapAppBar from './../../partials/RoadmapAppBar';
+import TypographyContainer from './../../partials/TypographyContainer';
 
 class ComponentsApp extends React.Component {
     render(){
@@ -12,7 +13,7 @@ class ComponentsApp extends React.Component {
                 <Page>
                     <Container>
                         <Header  className="uk-heading-line">
-                            <Text> 01.Color Palette </Text>
+                            <Label> 01.Color Palette </Label>
                         </Header>
                         <ColorPaletteContainer />
                     </Container>
@@ -20,9 +21,16 @@ class ComponentsApp extends React.Component {
                 <Page>
                     <Container>
                         <Header className="uk-heading-line">
-                            <Text> 02. Typography </Text>
+                            <Label> 02. Typography </Label>
                         </Header>
                         <TypographyContainer />
+                    </Container>
+                </Page>
+                <Page>
+                    <Container>
+                        <Header className="uk-heading-line">
+                            <Label> 03. Forms </Label>
+                        </Header>
                     </Container>
                 </Page>
             </View>

@@ -1,6 +1,5 @@
 import React from 'react';
 import Component from './Component';
-import Section from './Section';
 import View from './View';
 
 class Card extends Component {
