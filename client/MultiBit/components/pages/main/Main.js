@@ -72,13 +72,7 @@ class ComponentsApp extends Component {
                     <ColorPaletteContainer paletteColors={paletteColors} />
                 </Page>
                 <Page>
-                    <Container>
-                        <Header>
-                            <Text>01</Text>
-                            <Text> Typography</Text>
-                        </Header>
-                        <TypographyContainer />
-                    </Container>
+                    <TypographyContainer />
                 </Page>
                 <Page>
                     <CardText />

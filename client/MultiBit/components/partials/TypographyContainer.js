@@ -6,9 +6,15 @@ import TypographyCard from './TypographyCard';
 class TypographyContainer extends Component {
     render(){
         return(
-            <View className={"typography-container " + this.getClassName(this.props)}>
-                <TypographyCard />
-            </View>
+            <Container>
+                <Header>
+                    <Text>01</Text>
+                    <Text> Typography</Text>
+                </Header>
+                <View className={"typography-container " + this.getClassName(this.props)}>
+                    <TypographyCard />
+                </View>
+            </Container>
         )
     }
 }
