@@ -4,6 +4,7 @@ import {ColorPaletteContainer} from './../../partials/';
 import Page from './../../../../common/components/Page';
 import RoadmapAppBar from './../../partials/RoadmapAppBar';
 import TypographyContainer from './../../partials/TypographyContainer';
+import FormsContainer from './../../partials/FormsContainer';
 
 class ComponentsApp extends React.Component {
     render(){
@@ -31,6 +32,7 @@ class ComponentsApp extends React.Component {
                         <Header className="uk-heading-line">
                             <Label className="header-label"> 03. Forms </Label>
                         </Header>
+                            <FormsContainer />
                     </Container>
                 </Page>
             </View>
