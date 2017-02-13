@@ -3,6 +3,7 @@ import {Container, Header, Text, View} from 'components';
 import {ColorPaletteContainer} from './../../partials/';
 import Page from './../../../../common/components/Page';
 import RoadmapAppBar from './../../partials/RoadmapAppBar';
+import TypographyContainer from './../../partials/TypographyContainer';
 
 class ComponentsApp extends React.Component {
     render(){
