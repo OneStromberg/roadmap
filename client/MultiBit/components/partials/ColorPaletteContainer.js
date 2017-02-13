@@ -1,5 +1,5 @@
 import React from 'react';
-import {Component, View} from 'components';
+import {Component, View, Header, Text, Container} from 'components';
 import ColorPaletteCard from './ColorPaletteCard';
 import GradientPaletteCard from './GradientPaletteCard';
 
@@ -64,9 +64,15 @@ let paletteColors = [
 class ColorPaletteContainer extends Component {
     render(){
         return(
-            <View className={this.getClassName(this.props) + "color-palette-container"}>
-                {paletteColors.map((pallet, i) => pallet.length > 1 ? <GradientPaletteCard key={i} background={pallet}/> : <ColorPaletteCard key={i} background={pallet} /> )} 
-            </View>
+            <Container>
+                <Header>
+                    <Text>01</Text>
+                    <Text> Color Schemes</Text>
+                </Header>
+                <View className={this.getClassName(this.props) + "color-palette-container"}>
+                    {paletteColors.map((pallet, i) => pallet.length > 1 ? <GradientPaletteCard key={i} background={pallet}/> : <ColorPaletteCard key={i} background={pallet} /> )} 
+                </View>
+            </Container>
         )
     }
 }
