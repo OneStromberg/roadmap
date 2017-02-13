@@ -16,7 +16,7 @@ class MultibitAppBar extends Component {
 							UI Styleguide
 						</Subtitle>
 					</View>
-					<AppBarLogo src="./assets/multibit/img/zajno-logo.png" alt="Zajno Logo" />
+					<AppBarLogo src="./assets/multibit/img/zajno-logo.png" alt="Zajno Logo" /> 
 				</Container>
 			</AppBar>
 		)
