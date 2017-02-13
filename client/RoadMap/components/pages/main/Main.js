@@ -17,6 +17,14 @@ class ComponentsApp extends React.Component {
                         <ColorPaletteContainer />
                     </Container>
                 </Page>
+                <Page>
+                    <Container>
+                        <Header className="uk-heading-line">
+                            <Text> 02. Typography </Text>
+                        </Header>
+                        <TypographyContainer />
+                    </Container>
+                </Page>
             </View>
         )
     }
