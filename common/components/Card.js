@@ -7,7 +7,7 @@ class Card extends Component {
         return(
             <View className={"uk-card uk-card-default " + this.getClassName(this.props)}>
                 {this.props.header}
-                <View className={"uk-card-body " + this.getClassName(this.props)}>
+                <View className="uk-card-body">
                     {this.props.children}
                 </View>
             </View>
