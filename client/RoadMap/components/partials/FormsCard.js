@@ -8,11 +8,11 @@ class FormsCard extends Component {
         return(
             <Card className="forms-card">
                 <View className="forms-card-column-1">
-                    <Label className="forms-label"> Input Empty <Input /> </Label>
-                    <Label className="forms-label"> Input Selected <Input /> </Label>                    
-                    <Label className="forms-label"> Input Typing <Input /> </Label>
-                    <Label className="forms-label"> Input Error <Input /> </Label>
-                    <Label className="forms-label"> Input Success <Input /> </Label>
+                    <Label className="forms-label"> Input Empty <Input className="input-empty" placeholder="Type Word" /> </Label>
+                    <Label className="forms-label"> Input Selected <Input className="input-selected" placeholder="Name Surname" /> </Label>                    
+                    <Label className="forms-label"> Input Typing <Input className="input-typing" placeholder="Name Surname" /> </Label>
+                    <Label className="forms-label"> Input Error <Input className="input-error" placeholder="Name Surname" /> </Label>
+                    <Label className="forms-label"> Input Success <Input className="input-success" placeholder="Name Surname"/> </Label>
                     <Label className="forms-label"> Select Empty <FormsSelect /> </Label>
                     <Label className="forms-label"> Select Typing <FormsSelect /> </Label>
                 </View>
