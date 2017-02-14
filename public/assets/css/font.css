@@ -1,11 +1,20 @@
 @font-face {
-    font-family: 'SFUIDisplay';
+    font-family: 'SFUIDisplayRegular';
     src: url('./../fonts/SFUIDisplay-Regular.eot?#iefix') format('embedded-opentype'),  
     url('./../fonts/SFUIDisplay-Regular.otf')  format('opentype'),
     url('./../fonts/SFUIDisplay-Regular.woff') format('woff'), 
     url('./../fonts/SFUIDisplay-Regular.ttf')  format('truetype'), 
     url('./../fonts/SFUIDisplay-Regular.svg#SFUIDisplay-Regular') format('svg');
     font-weight: 400;
+}
+@font-face {
+    font-family: 'SFUIDisplayMedium';
+    src: url('./../fonts/SFUIDisplay-Medium.eot?#iefix') format('embedded-opentype'),  
+    url('./../fonts/SFUIDisplay-Medium.otf')  format('opentype'),
+    url('./../fonts/SFUIDisplay-Medium.woff') format('woff'), 
+    url('./../fonts/SFUIDisplay-Medium.ttf')  format('truetype'), 
+    url('./../fonts/SFUIDisplay-Medium.svg#SFUIDisplay-Medium') format('svg');
+    font-weight: 500;
 }
 @font-face {
     font-family: 'SFUIDisplay';
