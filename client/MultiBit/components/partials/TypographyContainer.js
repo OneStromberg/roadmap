@@ -19,7 +19,7 @@ class TypographyContainer extends Component {
                     <TypographyItem fontFamily="SF UI Display Regular" fontSize="11px" letterSpacing="0" color="#BBBED7" title={<Title className="text-title-primary">Text Title Primary</Title>}/>
                     <TypographyItem fontFamily="SF UI Display Regular" fontSize="10px" letterSpacing="0" color="#9DA0BA" title={<Title className="text-title-secondary">Text Title Secondary</Title>}/>
                     <TypographyItem fontFamily="SF UI Display Regular" fontSize="12px" letterSpacing="0" color="#F5667F" title={<Title className="text-input-error">Text Input Error</Title>}/>
-                    <TypographyItem fontFamily="SF UI Display Regular" fontSize="14px" letterSpacing="0" color="#9DA0BA" title={<Title className="text-input-secondary">Text Input Secondary</Title>}/>
+                    <TypographyItem fontFamily="SF UI Display Regular" fontSize="14px" letterSpacing="0" color="#9DA0BA" title={<Title className="text-input">Text Input Secondary</Title>}/>
                 </View>
             </Container>
         )
