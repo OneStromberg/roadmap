@@ -7,6 +7,7 @@ const TabClassPrefix = "uk-tab";
 class TabBar extends Component {
     getClassName(props){
         var newProps = "";
+        newProps += props.className + ' ' ;
         newProps += (props.hasOwnProperty('center') && props.center !== false) ? "uk-flex-center " : "";
         return newProps
     }
@@ -16,6 +17,9 @@ class TabBar extends Component {
     render(){
         return(
             <ul className={this.getClassName(this.props) + TabClassPrefix}>
+            {
+                console.log('this.props.children',this.props.children)
+            }
                 {
                     React.Children.map(this.props.children, (child, i) => {
                         return (<TabButton active={this.props.activeItem === i ? true : false} onItemClick={this.onItemClick.bind(this)}>

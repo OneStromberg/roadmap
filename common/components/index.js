@@ -30,6 +30,7 @@ import Title from './Title';
 import Subtitle from './Subtitle';
 import Dropdown from './Dropdown';
 import Select from './Select';
+import Textarea from './Textarea';
 
 export {
     Application, 
@@ -63,6 +64,7 @@ export {
     Title,
     Subtitle,
     Dropdown,
-    Select
+    Select,
+    Textarea
 };
 

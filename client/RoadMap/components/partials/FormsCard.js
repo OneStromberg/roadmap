@@ -1,6 +1,7 @@
 import React from 'react';
-import {Button, Card, Component, Input, Label, View, Text} from 'components';
+import {Button, Card, Component, Input, Label, View, Text, Textarea, Radio} from 'components';
 import FormsSelect from './FormsSelect';
+import CalendarBar from './CalendarBar';
 
 class FormsCard extends Component {
     render(){
@@ -17,9 +18,15 @@ class FormsCard extends Component {
                 </View>
                 <View className="forms-card-column-2">
                     <Label> Textarea </Label>
-                    <Text>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</Text>
+                    <Textarea className="forms-textarea">When an unknown printer took a galley of type and scrambled</Textarea>
                     <Label> Calendar Bar </Label>
-                    <Label> Other Elements </Label>
+                    <CalendarBar className="forms-calendar-bar"/>
+                    <Label> Other Elements 
+                        <Label> <Radio checked /> Freelancer </Label>
+                        <Label> <Radio /> Client </Label>
+                    </Label>
+                    <Label> Tags </Label>
+                    <Label> Notification </Label>
                 </View>
                 <View className="forms-card-column-3">
                     <Label> Calendar Lines </Label>

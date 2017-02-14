@@ -7,7 +7,8 @@ class Input extends Component {
             <input
             type={this.props.type ? this.props.type : ""} 
             className={"uk-input " + this.getClassName(this.props)} 
-            placeholder={this.props.placeholder ? this.props.placeholder : ""} />
+            placeholder={this.props.placeholder ? this.props.placeholder : ""} 
+            disabled={this.props.disabled ? this.props.disabled : null}/>
         )
     }
 }

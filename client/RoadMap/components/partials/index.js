@@ -7,5 +7,6 @@ import TypographyCard from './TypographyCard';
 import FormsCard from './FormsCard';
 import FormsContainer from './FormsContainer';
 import FormsSelect from './FormsSelect';
+import CalendarBar from './CalendarBar';
 
-export {ColorPaletteContainer, ColorPaletteCard, GradientPaletteCard, RoadmapAppBar, TypographyContainer, TypographyCard, FormsCard, FormsContainer, FormsSelect};
+export {ColorPaletteContainer, ColorPaletteCard, GradientPaletteCard, RoadmapAppBar, TypographyContainer, TypographyCard, FormsCard, FormsContainer, FormsSelect, CalendarBar};
