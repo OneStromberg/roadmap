@@ -7,20 +7,13 @@ class FormsCard extends Component {
         return(
             <Card className="forms-card">
                 <View className="forms-card-column-1">
-                    <Label> Input Empty </Label>
-                    <Input />
-                    <Label> Input Selected</Label>
-                    <Input />
-                    <Label> Input Typing </Label>
-                    <Input />
-                    <Label> Input Error </Label>
-                    <Input />
-                    <Label> Input Success </Label>
-                    <Input />
-                    <Label>Selected</Label>
-                    <FormsSelect />
-                    <Label></Label>
-                    <FormsSelect />
+                    <Label className="forms-label"> Input Empty <Input /> </Label>
+                    <Label className="forms-label"> Input Selected <Input /> </Label>                    
+                    <Label className="forms-label"> Input Typing <Input /> </Label>
+                    <Label className="forms-label"> Input Error <Input /> </Label>
+                    <Label className="forms-label"> Input Success <Input /> </Label>
+                    <Label className="forms-label"> Select Empty <FormsSelect /> </Label>
+                    <Label className="forms-label"> Select Typing <FormsSelect /> </Label>
                 </View>
                 <View className="forms-card-column-2">
                     <Label> Textarea </Label>
