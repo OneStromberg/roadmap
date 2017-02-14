@@ -28,6 +28,8 @@ import TabBar from './TabBar';
 import TabButton from './TabButton';
 import Title from './Title';
 import Subtitle from './Subtitle';
+import Dropdown from './Dropdown';
+import Select from './Select';
 
 export {
     Application, 
@@ -59,6 +61,8 @@ export {
     ButtonSecondary,
     ViewColor,
     Title,
-    Subtitle
+    Subtitle,
+    Dropdown,
+    Select
 };
 

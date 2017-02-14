@@ -61,6 +61,13 @@ module.exports = {
                 )
             },
             {
+                test: /\.css$/,
+                loader: ExtractTextPlugin.extract(
+                    "style",
+                    "css", "includePaths[]=" + (path.resolve(__dirname))
+                )
+            },
+            {
                 test: /\.less$/,
                 loader: ExtractTextPlugin.extract(
                     "style",
