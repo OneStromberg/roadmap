@@ -6,7 +6,7 @@ class Input extends Component {
         super(props);
         this.state = {
             status: null,
-            validateType: validateType
+            validType: null
         }
     }
     onValidate(e){
@@ -18,20 +18,20 @@ class Input extends Component {
         }      
         this.setState({
             status: valid,
-            validateType: validateType
+            validType: validType
         })     
     }
     render(){
         return (
             <div>
-            <input
-            type={this.props.type ? this.props.type : ""} 
-            className={"uk-input " + this.getClassName(this.props)} 
-            placeholder={this.props.placeholder ? this.props.placeholder : ""} 
-            disabled={this.props.disabled ? this.props.disabled : null}
-            onChange={(e) => this.onValidate(e)}
-            />
-            <div>{this.state.validType}</div>
+                <input
+                type={this.props.type ? this.props.type : ""} 
+                className={"uk-input " + this.getClassName(this.props)} 
+                placeholder={this.props.placeholder ? this.props.placeholder : ""} 
+                disabled={this.props.disabled ? this.props.disabled : null}
+                onChange={(e) => this.onValidate(e)}
+                />
+                <div>{this.state.validType}</div>
             </div>
         )
     }
