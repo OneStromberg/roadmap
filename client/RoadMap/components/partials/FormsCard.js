@@ -8,8 +8,6 @@ class FormsCard extends Component {
     onValidate(value){
         return (value !== null && value.length > 3);
     }
-
-
     render(){
         return(
             <Card className="forms-card">
