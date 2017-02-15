@@ -1,17 +1,41 @@
 import React from 'react';
-import {Card, Component, Input, Label, View, Text} from 'components';
+import {Button, Card, Component, Input, Label, View, Text, Textarea, Radio} from 'components';
+import FormsSelect from './FormsSelect';
+import CalendarBar from './CalendarBar';
 
 class FormsCard extends Component {
     render(){
         return(
             <Card className="forms-card">
-                <View className="">
+                <View className="forms-card-column-1">
+                    <Label className="forms-label"> Input Empty <Input /> </Label>
+                    <Label className="forms-label"> Input Selected <Input /> </Label>                    
+                    <Label className="forms-label"> Input Typing <Input /> </Label>
+                    <Label className="forms-label"> Input Error <Input /> </Label>
+                    <Label className="forms-label"> Input Success <Input /> </Label>
+                    <Label className="forms-label"> Select Empty <FormsSelect /> </Label>
+                    <Label className="forms-label"> Select Typing <FormsSelect /> </Label>
                 </View>
-                <View className="">
-                    <Label></Label>
-                    <Text></Text>
+                <View className="forms-card-column-2">
+                    <Label> Textarea </Label>
+                    <Textarea className="forms-textarea">When an unknown printer took a galley of type and scrambled</Textarea>
+                    <Label> Calendar Bar </Label>
+                    <CalendarBar className="forms-calendar-bar"/>
+                    <Label> Other Elements 
+                        <Label> <Radio checked /> Freelancer </Label>
+                        <Label> <Radio /> Client </Label>
+                    </Label>
+                    <Label> Tags </Label>
+                    <Label> Notification </Label>
                 </View>
-                <View className="">
+                <View className="forms-card-column-3">
+                    <Label> Calendar Lines </Label>
+                    <View></View>
+                    <View></View>
+                    <View></View>
+                    <View></View>
+                    <Label> Buttons </Label>
+                    <Button />
                 </View>
         </Card>
         )
