@@ -28,14 +28,14 @@ class FormsCard extends Component {
                         <Title> <Radio checked /> Freelancer </Title>
                         <Title> <Radio /> Client </Title>
                     </Label>
-                    <Label className="forms-label"> <Text> Tags </Text>
+                    <Label className="forms-label"> <Text className="forms-label-text"> Tags </Text>
                         <Label className="tags-label"> Deadlines </Label>
                         <Label className="tags-label"> Approves </Label>
                         <Label className="tags-label"> Changes </Label>
                     </Label>
-                    <Label className="forms-label"> <Text> Notification </Text>
-                        <Text> Some text </Text>
-                        <Text> Some text </Text>
+                    <Label className="forms-label"> <Text className="forms-label-text"> Notification </Text>
+                        <Text className="forms-label-text">After client approve, this project will be moved to «on hold»</Text>
+                        <Text className="forms-label-text">After freelancer approve, this project will be moved to «on hold»</Text>
                     </Label>
                 </View>
                 <View>
@@ -45,8 +45,8 @@ class FormsCard extends Component {
                         <CalendarLines background="linear-gradient(147deg, #839dfe 0%, #75c1f1 100%)" leftComponent={<Label></Label>} rightComponent={<Label></Label>} />
                         <CalendarLines background="linear-gradient(147deg, #839dfe 0%, #75c1f1 100%)" leftComponent={<Label></Label>} rightComponent={<Label></Label>} />
                     </Label>
-                    <Label className="forms-label"> <Text> Buttons </Text>
-                        <Button> Normal </Button>
+                    <Label className="forms-label"> <Text className="forms-label-text"> Buttons </Text>
+                        <Button className=""> Normal </Button>
                     </Label>
                 </View>
         </Card>
