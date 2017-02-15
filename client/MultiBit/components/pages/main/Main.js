@@ -4,6 +4,7 @@ import {Page, CardImage, CardButton, CardInput, CardLabel, CardLink, CardList, C
 import {View, Container, Footer, Image, Input, Label, Link, List, ListItem, Text, Component, Header, Card, Divider, Checkbox, Radio, Modal, ImageButton, CardHeader} from 'components';
 import ColorPaletteContainer from './../../partials/ColorPaletteContainer';
 import TypographyContainer from './../../partials/TypographyContainer';
+import ButtonsContainer from './../../partials/ButtonsContainer'
 
 const paletteColor1 = ["#42b670"];
 const paletteColor2 = ["#38a864"];
@@ -75,10 +76,7 @@ class ComponentsApp extends Component {
                     <TypographyContainer />
                 </Page>
                 <Page>
-                    <CardText />
-                </Page>
-                <Page>
-                    <CardLabel />
+                    <ButtonsContainer />
                 </Page>
             </View>
         )
