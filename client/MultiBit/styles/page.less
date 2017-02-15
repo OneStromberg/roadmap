@@ -4,16 +4,19 @@
 	.container {
 		flex-direction: row;
 		flex-wrap: nowrap;
-		justify-content: space-between;
+		justify-content: flex-start;
 		header {
 			border-bottom: @global-border-width solid @global-border;
 			height: inherit;
 			padding-bottom: @xsmall-padding;
+			margin-right:  @global-mlarge-margin;
+			white-space: nowrap;
 			.uk-text {
 				color: @global-color;
 				font-family: @global-font-family;
 				font-size: @styleguide-heading-font-size;
 				line-height: @global-line-height;
+				display: inline-block;
 				&:first-child {
 					margin-right: @global-margin;
 				}
