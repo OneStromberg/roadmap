@@ -3,16 +3,21 @@
         border: 1px solid #354052;
         background-color: @main-input-background;    
     }
-    &.input-error {
-        background-color: @main-input-background;
+
+}   
+.input-error {
+    input{
+        background-color: red;
         &:focus {
             border: 1px solid #354052;
         }
     }
-    &.input-success {
-        background-color: @main-input-background;
+}
+.input-success {
+    input{
+        background-color: green;
         &:focus {
             border: 1px solid #4fbead;
         }
     }
-}   
+}

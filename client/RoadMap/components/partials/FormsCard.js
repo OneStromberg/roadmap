@@ -1,10 +1,13 @@
 import React from 'react';
-import {Button, Card, Component, Input, Label, View, Text, Textarea, Title, Radio} from 'components';
+import {Button, Card, Checkbox, Component, Input, Label, View, Text, Textarea, Title, Radio} from 'components';
 import FormsSelect from './FormsSelect';
 import CalendarBar from './CalendarBar';
 import CalendarLines from './CalendarLines';
 
 class FormsCard extends Component {
+    onValidate(value){
+        return (value !== null && value.length > 3);
+    }
     render(){
         return(
             <Card className="forms-card">
@@ -12,7 +15,7 @@ class FormsCard extends Component {
                     <Label className="forms-label"> Input Empty <Input className="input-empty" placeholder="Type Word" /> </Label>
                     <Label className="forms-label"> Input Selected <Input className="input-selected" placeholder="Name Surname" /> </Label>                    
                     <Label className="forms-label"> Input Typing <Input className="input-typing" placeholder="Name Surname" /> </Label>
-                    <Label className="forms-label"> Input Error <Input className="input-error" placeholder="Name Surname" /> </Label>
+                    <Label className="forms-label"> Input Error <Input errorText={<ErrorImage />} validate={this.onValidate} className="input-error" placeholder="Name Surname" /> </Label>
                     <Label className="forms-label"> Input Success <Input className="input-success" placeholder="Name Surname"/> </Label>
                     <Label className="forms-label"> Select Empty <FormsSelect /> </Label>
                     <Label className="forms-label"> Select Typing <FormsSelect /> </Label>
@@ -25,8 +28,6 @@ class FormsCard extends Component {
                         <CalendarBar className="forms-calendar-bar"/>
                     </Label>
                     <Label className="forms-label"> <Text> Other Elements </Text>
-                        <Title> <Radio checked /> Freelancer </Title>
-                        <Title> <Radio /> Client </Title>
                     </Label>
                     <Label className="forms-label"> <Text className="forms-label-text"> Tags </Text>
                         <Label className="tags-label"> Deadlines </Label>
@@ -52,6 +53,12 @@ class FormsCard extends Component {
         </Card>
         )
     }
+}
+
+const ErrorImage = () => {
+    return (
+        <img src="assets/roadmap/2-layers.png" />
+    )
 }
 
 export default FormsCard;
