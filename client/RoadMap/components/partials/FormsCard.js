@@ -1,5 +1,5 @@
 import React from 'react';
-import {Button, Card, Component, Input, Label, View, Text, Textarea, Radio} from 'components';
+import {Button, Card, Component, Input, Label, View, Text, Textarea, Title, Radio} from 'components';
 import FormsSelect from './FormsSelect';
 import CalendarBar from './CalendarBar';
 
@@ -17,24 +17,33 @@ class FormsCard extends Component {
                     <Label className="forms-label"> Select Typing <FormsSelect /> </Label>
                 </View>
                 <View className="forms-card-column-2">
-                    <Label> Textarea </Label>
-                    <Textarea className="forms-textarea">When an unknown printer took a galley of type and scrambled</Textarea>
-                    <Label> Calendar Bar </Label>
-                    <CalendarBar className="forms-calendar-bar"/>
-                    <Label> Other Elements 
-                        <Label> <Radio checked /> Freelancer </Label>
-                        <Label> <Radio /> Client </Label>
+                    <Label className="forms-label"> Textarea 
+                        <Textarea className="forms-textarea">When an unknown printer took a galley of type and scrambled</Textarea>
                     </Label>
-                    <Label> Tags </Label>
-                    <Label> Notification </Label>
+                    <Label className="forms-label"> Calendar Bar 
+                        <CalendarBar className="forms-calendar-bar"/>
+                    </Label>
+                    <Label className="forms-label"> Other Elements 
+                        <Title> <Radio checked /> Freelancer </Title>
+                        <Title> <Radio /> Client </Title>
+                    </Label>
+                    <Label className="forms-label"> Tags 
+                        <Label className="tags-label"> Deadlines </Label>
+                        <Label className="tags-label"> Approves </Label>
+                        <Label className="tags-label"> Changes </Label>
+                    </Label>
+                    <Label className="forms-label"> Notification 
+                        <Text> </Text>
+                        <Text> </Text>
+                    </Label>
                 </View>
                 <View className="forms-card-column-3">
-                    <Label> Calendar Lines </Label>
+                    <Label className="forms-label"> Calendar Lines </Label>
                     <View></View>
                     <View></View>
                     <View></View>
                     <View></View>
-                    <Label> Buttons </Label>
+                    <Label className="forms-label"> Buttons </Label>
                     <Button />
                 </View>
         </Card>
