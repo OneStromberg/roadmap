@@ -1,8 +1,10 @@
 import React from 'react';
-import {Component, View, Container, Header, Text, Title, Card} from 'components';
-import Button from './Button';
+import {Component, View, Container, Header, Text, Title, Card, Label, Input, InputValidate} from 'components';
 
-class ButtonsContainer extends Component {
+class InputsContainer extends Component {
+    onValidate(value){
+        return (value !== null && value.length > 3);
+    }
     render(){
         return(
             <Container>
@@ -11,18 +13,18 @@ class ButtonsContainer extends Component {
                     <Text> Inputs forms</Text>
                 </Header>
                 <Card className="inputs-container">
-                    <Button primary>Login</Button>
-                    <Button secondary>Save</Button>
-                    <Button default>Send</Button>
-                    <Button help>?</Button>
-                    <Button pin></Button>
-                    <Button asset>Add new asset</Button>
-                    <Button back>Back</Button>
-                    <Button keepkey className=" keepkey-on">KeepKey On</Button>
-                    <Button keepkey className=" keepkey-off">KeepKey Off</Button>
-                    <Button notification></Button>
-                    <Button notification className=" has-notification"></Button>
-                    <Button retry>Retry again</Button>
+                    <Label className="forms-label"> 
+                        <Text className="label-text">Send To</Text>
+                        <Input className="input-empty" placeholder="16mQwTg668qZDzZdzJRRwRkLfJLjbC6a5f" /> 
+                    </Label>
+                    <Label className="forms-label"> 
+                        <Text className="label-text">Send To</Text>
+                        <Input className="input-empty" placeholder="16mQwTg668qZDzZdzJRRwRkLfJLjbC6a5f" /> 
+                    </Label>
+                    <Label className="forms-label"> 
+                        <Text className="label-text">Send To</Text>
+                        <InputValidate validate={this.onValidate} className="input-error" placeholder="16mQwTg668qZDzZdzJRRwRkLfJLjbC6a5f" />
+                    </Label>
                 </Card>
             </Container>
         )
@@ -30,4 +32,4 @@ class ButtonsContainer extends Component {
 }
 
 
-export default ButtonsContainer;
+export default InputsContainer;

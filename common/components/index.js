@@ -31,6 +31,7 @@ import Subtitle from './Subtitle';
 import Dropdown from './Dropdown';
 import Select from './Select';
 import Textarea from './Textarea';
+import ButtonLink from './ButtonLink';
 
 export {
     Application, 
@@ -65,6 +66,7 @@ export {
     Subtitle,
     Dropdown,
     Select,
-    Textarea
+    Textarea,
+    ButtonLink
 };
 
