@@ -7,10 +7,10 @@ class ButtonsContainer extends Component {
         return(
             <Container>
                 <Header>
-                    <Text>03</Text>
-                    <Text> Buttons</Text>
+                    <Text>04</Text>
+                    <Text> Inputs forms</Text>
                 </Header>
-                <Card className="buttons-container">
+                <Card className="inputs-container">
                     <Button primary>Login</Button>
                     <Button secondary>Save</Button>
                     <Button default>Send</Button>

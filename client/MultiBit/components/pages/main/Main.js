@@ -5,6 +5,7 @@ import {View, Container, Footer, Image, Input, Label, Link, List, ListItem, Text
 import ColorPaletteContainer from './../../partials/ColorPaletteContainer';
 import TypographyContainer from './../../partials/TypographyContainer';
 import ButtonsContainer from './../../partials/ButtonsContainer'
+import InputsContainer from './../../partials/InputsContainer'
 
 const paletteColor1 = ["#42b670"];
 const paletteColor2 = ["#38a864"];
@@ -77,6 +78,9 @@ class ComponentsApp extends Component {
                 </Page>
                 <Page>
                     <ButtonsContainer />
+                </Page>
+                <Page>
+                    <InputsContainer />
                 </Page>
             </View>
         )
