@@ -43,7 +43,6 @@ let paletteColors = [
 
 class ColorPaletteContainer extends Component {
     render(){
-        console.log(this.props);
         return(
             <View className={this.getClassName(this.props) + "color-palette-container"}>
                 {paletteColors.map((pallet, i) => pallet.length > 1 ? <GradientPaletteCard key={i} background={pallet}/> : <ColorPaletteCard key={i} background={pallet} /> )} 
