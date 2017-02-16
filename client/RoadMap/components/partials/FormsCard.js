@@ -1,13 +1,13 @@
 import React from 'react';
-import {Button, Card, Checkbox, Component, Input, Label, View, Text, Textarea, Title, Radio} from 'components';
+import {Button, Card, Checkbox, Component, Input, InputValidate, Label, View, Text, Textarea, Title, Radio} from 'components';
 import FormsSelect from './FormsSelect';
 import CalendarBar from './CalendarBar';
 import CalendarLines from './CalendarLines';
+import ErrorImage from './ErrorImage';
+import SuccessImage from './SuccessImage';
+import {onValidate} from './../../../../common/utils/validate';
 
 class FormsCard extends Component {
-    onValidate(value){
-        return (value !== null && value.length > 3);
-    }
     render(){
         return(
             <Card className="forms-card">
@@ -15,8 +15,7 @@ class FormsCard extends Component {
                     <Label className="forms-label"> Input Empty <Input className="input-empty" placeholder="Type Word" /> </Label>
                     <Label className="forms-label"> Input Selected <Input className="input-selected" placeholder="Name Surname" /> </Label>                    
                     <Label className="forms-label"> Input Typing <Input className="input-typing" placeholder="Name Surname" /> </Label>
-                    <Label className="forms-label"> Input Error <Input errorText={<ErrorImage />} validate={this.onValidate} className="input-error" placeholder="Name Surname" /> </Label>
-                    <Label className="forms-label"> Input Success <Input className="input-success" placeholder="Name Surname"/> </Label>
+                    <Label className="forms-label"> Input Error <InputValidate successMessage={<SuccessImage />} errorMessage={<ErrorImage />} validate={onValidate} className="input-error" placeholder="Name Surname" /> </Label>
                     <Label className="forms-label"> Select Empty <FormsSelect /> </Label>
                     <Label className="forms-label"> Select Typing <FormsSelect /> </Label>
                 </View>
@@ -53,12 +52,6 @@ class FormsCard extends Component {
         </Card>
         )
     }
-}
-
-const ErrorImage = () => {
-    return (
-        <img src="assets/roadmap/2-layers.png" />
-    )
 }
 
 export default FormsCard;
