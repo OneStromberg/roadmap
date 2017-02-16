@@ -31,7 +31,11 @@ import Subtitle from './Subtitle';
 import Dropdown from './Dropdown';
 import Select from './Select';
 import Textarea from './Textarea';
+<<<<<<< HEAD
 import ButtonLink from './ButtonLink';
+=======
+import InputValidate from './InputValidate';
+>>>>>>> eff90de144c711cfdf6945285aef4c2b35bc3d1d
 
 export {
     Application, 
@@ -67,6 +71,10 @@ export {
     Dropdown,
     Select,
     Textarea,
+<<<<<<< HEAD
     ButtonLink
+=======
+    InputValidate
+>>>>>>> eff90de144c711cfdf6945285aef4c2b35bc3d1d
 };
 

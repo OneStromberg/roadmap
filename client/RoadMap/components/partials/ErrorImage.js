@@ -1,10 +1,10 @@
 import React from 'react';
-import Component from 'components';
+import {Component, Image} from 'components';
 
 class ErrorImage extends Component {
     render(){
         return(
-            <img src="assets/roadmap/2-layers.png" />
+           <Image className="error-image" src="assets/roadmap/2-layers.png" />
         )
     }
 }

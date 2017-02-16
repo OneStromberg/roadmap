@@ -6,25 +6,22 @@ class InputValidate extends Component {
     constructor(props){
         super(props);
         this.state = {
-            status: null,
-            validType: null
+            validType: props.state
         }
     }
     onValidate(e){
-        let errorText = null;
+        let validType = null;
         let valid = null;
         if(typeof this.props.validate === 'function'){
-            valid = this.props.validate(e.target.value);
-            validType = valid ? this.props.errorSuccess : this.props.errorText;
+            validType = this.props.validate(e.target.value, this.props.state);
         }      
         this.setState({
-            status: valid,
             validType: validType
         })     
     }
     render(){
         return (
-            <div>
+            <div className="input-validator">
                 <input
                 type={this.props.type ? this.props.type : ""} 
                 className={"uk-input " + this.getClassName(this.props)} 

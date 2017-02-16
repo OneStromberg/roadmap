@@ -1,13 +1,13 @@
 import React from 'react';
-import {Button, Card, Checkbox, Component, Input, Label, View, Text, Textarea, Title, Radio} from 'components';
+import {Button, Card, Checkbox, Component, Input, InputValidate, Label, View, Text, Textarea, Title, Radio} from 'components';
 import FormsSelect from './FormsSelect';
 import CalendarBar from './CalendarBar';
 import CalendarLines from './CalendarLines';
+import ErrorImage from './ErrorImage';
+import SuccessImage from './SuccessImage';
+import {onValidate} from './../../../../common/utils/validate';
 
 class FormsCard extends Component {
-    onValidate(value){
-        return (value !== null && value.length > 3);
-    }
     render(){
         return(
             <Card className="forms-card">
@@ -15,8 +15,8 @@ class FormsCard extends Component {
                     <Label className="forms-label"> Input Empty <Input className="input-empty" placeholder="Type Word" /> </Label>
                     <Label className="forms-label"> Input Selected <Input className="input-selected" placeholder="Name Surname" /> </Label>                    
                     <Label className="forms-label"> Input Typing <Input className="input-typing" placeholder="Name Surname" /> </Label>
-                    <Label className="forms-label"> Input Error <Input errorText={<ErrorImage />} validate={this.onValidate} className="input-error" placeholder="Name Surname" /> </Label>
-                    <Label className="forms-label"> Input Success <Input className="input-success" placeholder="Name Surname"/> </Label>
+                    <Label className="forms-label"> Input Error <InputValidate state={[<ErrorImage  key="error_message" />]} states={[<SuccessImage key="success"/>, <ErrorImage key="error"/>]} validate={onValidate} className="input-error" placeholder="Name Surname" /> </Label>
+                    <Label className="forms-label"> Input Success <InputValidate state={[<SuccessImage  key="success_message" />]} states={[<SuccessImage key="success"/>, <ErrorImage key="error"/>]} validate={onValidate} className="input-success" placeholder="Name Surname" /> </Label>
                     <Label className="forms-label"> Select Empty <FormsSelect /> </Label>
                     <Label className="forms-label"> Select Typing <FormsSelect /> </Label>
                 </View>
@@ -28,11 +28,6 @@ class FormsCard extends Component {
                         <CalendarBar className="forms-calendar-bar"/>
                     </Label>
                     <Label className="forms-label"> <Text> Other Elements </Text>
-                    </Label>
-                    <Label className="forms-label"> <Text className="forms-label-text"> Tags </Text>
-                        <Label className="tags-label"> Deadlines </Label>
-                        <Label className="tags-label"> Approves </Label>
-                        <Label className="tags-label"> Changes </Label>
                     </Label>
                     <Label className="forms-label"> <Text className="forms-label-text"> Notification </Text>
                         <Text className="forms-label-text">After client approve, this project will be moved to «on hold»</Text>
@@ -47,18 +42,14 @@ class FormsCard extends Component {
                         <CalendarLines background="linear-gradient(147deg, #839dfe 0%, #75c1f1 100%)" leftComponent={<Label></Label>} rightComponent={<Label></Label>} />
                     </Label>
                     <Label className="forms-label"> <Text className="forms-label-text"> Buttons </Text>
-                        <Button className=""> Normal </Button>
+                        <Button className="main-button"> Normal </Button>
+                        <Button className="secondary-button-blue"> Normal </Button>
+                        <Button className="secondary-button-white"> Normal </Button>
                     </Label>
                 </View>
         </Card>
         )
     }
-}
-
-const ErrorImage = () => {
-    return (
-        <img src="assets/roadmap/2-layers.png" />
-    )
 }
 
 export default FormsCard;
