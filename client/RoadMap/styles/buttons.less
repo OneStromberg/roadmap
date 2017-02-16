@@ -1,0 +1,35 @@
+.uk-button {
+    display: block;
+    text-align: center;
+    width: auto;
+    height: auto;
+    margin-bottom: 30px;
+    border-radius: @secondary-border-radius;
+    &:hover {
+        background-color: @palette-colour-2;
+    }
+    &:active {
+        background-color: @palette-colour-3;
+    }
+    &.main-button {
+        padding: 8px 75px 9px 75px;
+        font-size: 14px;
+    } 
+    &.secondary-button-blue {
+        padding: 4px 8px 4px 9px;
+        font-size: 12px;
+    }
+    &.secondary-button-white {
+        padding: 4px 8px 4px 9px;
+        font-size: 12px;
+        background-color: @palette-colour-14;
+        color: @palette-colour-1;
+        border: 1px solid #e7ecff;
+        &:hover {
+            background-color: #e7ecff;
+        }
+        &:active {
+            background-color: @palette-colour-3;
+    }
+    }
+}
