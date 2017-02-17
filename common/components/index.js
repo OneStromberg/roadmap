@@ -31,6 +31,7 @@ import Subtitle from './Subtitle';
 import Dropdown from './Dropdown';
 import Select from './Select';
 import Textarea from './Textarea';
+import ButtonLink from './ButtonLink';
 import InputValidate from './InputValidate';
 import Switch from './Switch';
 
@@ -69,6 +70,8 @@ export {
     Select,
     Textarea,
     InputValidate,
-    Switch
+    Switch,
+    ButtonLink,
+    InputValidate
 };
 
