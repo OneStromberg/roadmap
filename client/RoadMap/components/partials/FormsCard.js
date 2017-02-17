@@ -1,5 +1,5 @@
 import React from 'react';
-import {Button, Card, Checkbox, Component, Input, InputValidate, Label, View, Text, Textarea, Title, Radio} from 'components';
+import {Button, Card, Checkbox, Component, Input, InputValidate, Label, View, Text, Textarea, Title, Radio, Switch} from 'components';
 import FormsSelect from './FormsSelect';
 import CalendarBar from './CalendarBar';
 import CalendarLines from './CalendarLines';
@@ -26,6 +26,9 @@ class FormsCard extends Component {
                     </Label>
                     <Label className="forms-label"> <Text> Calendar Bar </Text> 
                         <CalendarBar className="forms-calendar-bar"/>
+                    </Label>
+                    <Label>
+                        <Switch />
                     </Label>
                 </View>
                 <View>
