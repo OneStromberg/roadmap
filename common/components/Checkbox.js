@@ -6,7 +6,7 @@ class Checkbox extends Component {
     render(){
         return(
             <View>
-                <input className={"uk-checkbox " + this.getClassName(this.props)} type="checkbox" />
+                <input className={"uk-checkbox " + this.getClassName(this.props)} type={this.props.type} />
             </View>
         )
     }

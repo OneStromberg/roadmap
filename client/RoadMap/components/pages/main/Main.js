@@ -35,6 +35,13 @@ class ComponentsApp extends React.Component {
                             <FormsContainer />
                     </Container>
                 </Page>
+                <Page>
+                    <Container>
+                        <Header className="uk-heading-line">
+                            <Label className="header-label"> 04. Elements </Label>
+                        </Header>
+                    </Container>
+                </Page>
             </View>
         )
     }

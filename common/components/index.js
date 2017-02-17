@@ -33,6 +33,7 @@ import Select from './Select';
 import Textarea from './Textarea';
 import ButtonLink from './ButtonLink';
 import InputValidate from './InputValidate';
+import Switch from './Switch';
 
 export {
     Application, 
@@ -68,6 +69,8 @@ export {
     Dropdown,
     Select,
     Textarea,
+    InputValidate,
+    Switch,
     ButtonLink,
     InputValidate
 };

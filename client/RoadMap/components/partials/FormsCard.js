@@ -1,5 +1,5 @@
 import React from 'react';
-import {Button, Card, Checkbox, Component, Input, InputValidate, Label, View, Text, Textarea, Title, Radio} from 'components';
+import {Button, Card, Checkbox, Component, Input, InputValidate, Label, View, Text, Textarea, Title, Radio, Switch} from 'components';
 import FormsSelect from './FormsSelect';
 import CalendarBar from './CalendarBar';
 import CalendarLines from './CalendarLines';
@@ -27,19 +27,16 @@ class FormsCard extends Component {
                     <Label className="forms-label"> <Text> Calendar Bar </Text> 
                         <CalendarBar className="forms-calendar-bar"/>
                     </Label>
-                    <Label className="forms-label"> <Text> Other Elements </Text>
-                    </Label>
-                    <Label className="forms-label"> <Text className="forms-label-text"> Notification </Text>
-                        <Text className="forms-label-text">After client approve, this project will be moved to «on hold»</Text>
-                        <Text className="forms-label-text">After freelancer approve, this project will be moved to «on hold»</Text>
+                    <Label>
+                        <Switch />
                     </Label>
                 </View>
                 <View>
                     <Label className="forms-label"> <Text> Calendar Lines </Text>
-                        <CalendarLines background="linear-gradient(147deg, #fd6363 0%, #ffb0cb 100%)" leftComponent={<Label></Label>} rightComponent={<Label></Label>} />
-                        <CalendarLines background="linear-gradient(147deg, #4fbead 0%, #54d3dc 100%)" leftComponent={<Label></Label>} rightComponent={<Label></Label>} />
-                        <CalendarLines background="linear-gradient(147deg, #839dfe 0%, #75c1f1 100%)" leftComponent={<Label></Label>} rightComponent={<Label></Label>} />
-                        <CalendarLines background="linear-gradient(147deg, #839dfe 0%, #75c1f1 100%)" leftComponent={<Label></Label>} rightComponent={<Label></Label>} />
+                        <CalendarLines className="calendar-lines-view" background="linear-gradient(147deg, #fd6363 0%, #ffb0cb 100%)" leftComponent={<Label className="calendar-lines-label">Step 2</Label>} rightComponent={<Label className="calendar-lines-label">failed</Label>} />
+                        <CalendarLines className="calendar-lines-view" background="linear-gradient(147deg, #4fbead 0%, #54d3dc 100%)" leftComponent={<Label className="calendar-lines-label">Step 2</Label>} rightComponent={<Label className="calendar-lines-label">done</Label>} />
+                        <CalendarLines className="calendar-lines-view" background="linear-gradient(147deg, #839dfe 0%, #75c1f1 100%)" leftComponent={<Label className="calendar-lines-label">Step 2</Label>} rightComponent={<Label className="calendar-lines-label"></Label>} />
+                        <CalendarLines className="calendar-lines-view" background="linear-gradient(147deg, #839dfe 0%, #75c1f1 100%)" leftComponent={<Label className="calendar-lines-label">Step 1</Label>} rightComponent={<Label className="calendar-lines-label">waiting for approval</Label>} />
                     </Label>
                     <Label className="forms-label"> <Text className="forms-label-text"> Buttons </Text>
                         <Button className="main-button"> Normal </Button>
