@@ -5,9 +5,8 @@ import View from './View';
 class Checkbox extends Component {
     render(){
         return(
-            <View>
-                <input className={"uk-checkbox " + this.getClassName(this.props)} type={this.props.type} />
-            </View>
+            <input className={"uk-checkbox " + this.getClassName(this.props)} type="checkbox" checked={this.props.checked}
+            onChange={this.props.onChange}/>
         )
     }
 }

@@ -72,6 +72,5 @@ export {
     InputValidate,
     Switch,
     ButtonLink,
-    InputValidate
 };
 
