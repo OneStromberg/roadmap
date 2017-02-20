@@ -9,6 +9,13 @@ class InputValidate extends Component {
             validType: props.state
         }
     }
+    getClassName(props){
+        var newProps = "";
+        //newProps += !props.className ? props.className + ' ' : '' ;
+        newProps += (props.hasOwnProperty('success') && props.success !== false) ? "uk-form-success " : "";
+        newProps += (props.hasOwnProperty('error') && props.error !== false) ? "uk-form-danger " : "";
+        return newProps
+    }
     onValidate(e){
         let validType = null;
         let valid = null;
