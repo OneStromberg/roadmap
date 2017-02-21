@@ -6,6 +6,8 @@ class Input extends Component {
         var newProps = "";
         newProps += props.className + ' ' ;
         newProps += (props.hasOwnProperty('empty') && props.empty !== false) ? "input-empty " : "";
+        newProps += (props.hasOwnProperty('selected') && props.empty !== false) ? "input-selected " : "";
+        newProps += (props.hasOwnProperty('typing') && props.empty !== false) ? "input-typing " : "";
         return newProps
     }
     render(){

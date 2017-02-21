@@ -11,7 +11,7 @@ class CalendarBar extends Component {
     }
     render(){
         return(
-            <TabBar className={this._getClassName()} activeItem={3} >
+            <TabBar className={this._getClassName()} activeItem={0} >
                {items}
             </TabBar>
         )
