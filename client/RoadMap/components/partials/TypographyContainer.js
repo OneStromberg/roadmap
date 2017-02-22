@@ -30,35 +30,35 @@ class TypographyContainer extends Component {
                 </TypographyCard>
                 <TypographyCard>
                     <View className="typography-card-item">
-                        <Label>Header label</Label>
+                        <Label className="header-label">Header label</Label>
                         <Label className="typography-card-item-label">Open Sans Semibold, Size 24, Color #839DFE</Label>
                     </View>
                     <View className="typography-card-item">
-                        <Label>Header label secondary</Label>
+                        <Label className="header-label-secondary">Header label secondary</Label>
                         <Label className="typography-card-item-label">Open Sans Regular, Size 24, Color #354052</Label>
                     </View>
                     <View className="typography-card-item">
-                        <Label>Form header label</Label>
+                        <Label className="form-header-label">Form header label</Label>
                         <Label className="typography-card-item-label">Open Sans Regular, Size 18, Color #354052</Label>
                     </View>
                     <View className="typography-card-item">
-                        <Label>Label</Label>
+                        <Label className="label">Label</Label>
                         <Label className="typography-card-item-label">Open Sans Regular, Size 14, Color #354052</Label>
                     </View>
                     <View className="typography-card-item">
-                        <Label>Button label</Label>
+                        <Label className="button-label">Button label</Label>
                         <Label className="typography-card-item-label">Open Sans Regular, Size 14, Color #FFFFFF</Label>
                     </View>
                     <View className="typography-card-item">
-                        <Label>Notification label</Label>
+                        <Label className="notification-label">Notification label</Label>
                         <Label className="typography-card-item-label">Open Sans Regular, Size 12, Color #354052</Label>
                     </View>
                     <View className="typography-card-item">
-                        <Label>Date label</Label>
+                        <Label className="date-label">Date label</Label>
                         <Label className="typography-card-item-label">Open Sans Light, Size 12, Color #354052</Label>
                     </View>
                     <View className="typography-card-item">
-                        <Label>Calendar label</Label>
+                        <Label className="calendar-label">Calendar label</Label>
                         <Label className="typography-card-item-label">Open Sans Regular, Size 10, Color #354052</Label>
                     </View>
                 </TypographyCard>
