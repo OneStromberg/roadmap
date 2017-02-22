@@ -5,7 +5,7 @@ class TypographyCard extends Component {
     render(){
         return(
             <Card className="typography-card">
-                <Title></Title>
+                {this.props.children}
             </Card>
         )
     }

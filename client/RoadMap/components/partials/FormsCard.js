@@ -67,12 +67,12 @@ class FormsCard extends Component {
                     <View className="forms-card-label">
                         <Label> Notification </Label>
                         <View>
-                            <Image />
-                            <Text></Text>
+                            <Image src="assets/roadmap/i-icon.png" />
+                            <Text>After client approve, this project will be moved to «on hold»</Text>
                         </View>
                         <View>
-                            <Image />
-                            <Text></Text>
+                            <Image src="assets/roadmap/i-icon.png" />
+                            <Text>After client approve, this project will be moved to «on hold»</Text>
                         </View>    
                     </View>
                 </View>
