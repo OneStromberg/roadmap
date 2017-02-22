@@ -1,5 +1,5 @@
 import React from 'react';
-import {Button, Card, Checkbox, Component, Input, Image, InputValidate, Label, View, Text, Textarea, Title, Radio, Switch} from 'components';
+import {Button, Card, Checkbox, Component, Input, Image, InputValidate, Label, Notification, View, Text, Textarea, Title, Radio, Switch} from 'components';
 import FormsSelect from './FormsSelect';
 import CalendarBar from './CalendarBar';
 import CalendarLines from './CalendarLines';
@@ -52,12 +52,12 @@ class FormsCard extends Component {
                     </View>
                     <View className="forms-card-label">
                         <Label> Other Elements</Label>
-                        <View>
-                            <Radio />
+                        <View className="radio-button-wrapper">
+                            <Radio className="radio-button"/>
                             <Label>Freelancer</Label>
                         </View>
-                        <View>
-                            <Checkbox />
+                        <View className="checkbox-wrapper">
+                            <Checkbox className="checkbox"/>
                             <Label>Keep me logged in</Label>
                         </View>
                         <View>
@@ -66,14 +66,8 @@ class FormsCard extends Component {
                     </View>
                     <View className="forms-card-label">
                         <Label> Notification </Label>
-                        <View>
-                            <Image src="assets/roadmap/i-icon.png" />
-                            <Text>After client approve, this project will be moved to «on hold»</Text>
-                        </View>
-                        <View>
-                            <Image src="assets/roadmap/i-icon.png" />
-                            <Text>After client approve, this project will be moved to «on hold»</Text>
-                        </View>    
+                        <Notification className="notification" src="assets/roadmap/i-icon.png" text="After freelancer approve, this project will be moved to «on hold»" />
+                        <Notification className="notification" src="assets/roadmap/i-icon.png" text="After client approve, this project will be moved to «on hold»" /> 
                     </View>
                 </View>
                 <View>
