@@ -1,12 +1,14 @@
 import React from 'react';
 import Component from './Component';
+import Checkbox from './Checkbox';
+import View from './View';
 
 class Switch extends Component {
     render(){
         return(
             <label className="switch">
-                <input type="checkbox"></input>
-                <div className="slider circle"></div>
+                <Checkbox checked={true}/>
+                <View className="slider circle"></View>
             </label>
         )
     }

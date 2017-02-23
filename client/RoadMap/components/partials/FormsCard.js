@@ -1,5 +1,5 @@
 import React from 'react';
-import {Button, Card, Checkbox, Component, Input, InputValidate, Label, View, Text, Textarea, Title, Radio, Switch} from 'components';
+import {Button, Card, Checkbox, Component, Input, Image, InputValidate, Label, Notification, View, Text, Textarea, Title, Radio, Switch} from 'components';
 import FormsSelect from './FormsSelect';
 import CalendarBar from './CalendarBar';
 import CalendarLines from './CalendarLines';
@@ -12,37 +12,78 @@ class FormsCard extends Component {
         return(
             <Card className="forms-card">
                 <View>
-                    <Label className="forms-label"> Input Empty <Input className="input-empty" placeholder="Type Word" /> </Label>
-                    <Label className="forms-label"> Input Selected <Input className="input-selected" placeholder="Name Surname" /> </Label>                    
-                    <Label className="forms-label"> Input Typing <Input className="input-typing" placeholder="Name Surname" /> </Label>
-                    <Label className="forms-label"> Input Error <InputValidate state={[<ErrorImage  key="error_message" />]} states={[<SuccessImage key="success"/>, <ErrorImage key="error"/>]} validate={onValidate} className="input-error" placeholder="Name Surname" /> </Label>
-                    <Label className="forms-label"> Input Success <InputValidate state={[<SuccessImage  key="success_message" />]} states={[<SuccessImage key="success"/>, <ErrorImage key="error"/>]} validate={onValidate} className="input-success" placeholder="Name Surname" /> </Label>
-                    <Label className="forms-label"> Select Empty <FormsSelect /> </Label>
-                    <Label className="forms-label"> Select Typing <FormsSelect /> </Label>
+                    <View className="forms-card-label">
+                        <Label>Input Empty</Label>
+                        <View><Input empty placeholder="Type Word" /></View>
+                    </View>
+                    <View className="forms-card-label">
+                        <Label>Input Selected</Label>
+                        <View><Input selected placeholder="Name Surname" /></View>
+                    </View>                   
+                    <View className="forms-card-label">
+                        <Label>Input Typing</Label>
+                        <View><Input typing placeholder="Name Surname"/></View>
+                    </View>
+                    <View className="forms-card-label">
+                        <Label>Input Error</Label>
+                        <InputValidate error state={[<ErrorImage  key="error_message" />]} states={[<SuccessImage key="success"/>, <ErrorImage key="error"/>]} validate={onValidate} placeholder="Name Surname" />
+                    </View>
+                    <View className="forms-card-label">
+                        <Label>Input Success</Label>
+                        <InputValidate success state={[<SuccessImage  key="success_message" />]} states={[<SuccessImage key="success"/>, <ErrorImage key="error"/>]} validate={onValidate} placeholder="Name Surname" />
+                    </View>
+                    <View className="forms-card-label">
+                        <Label>Select Empty</Label>
+                        <FormsSelect />
+                    </View>
+                    <View className="forms-card-label">
+                        <Label>Select Typing</Label>
+                        <FormsSelect />
+                    </View>
                 </View>
                 <View>
-                    <Label className="forms-label"> <Text> Textarea </Text>
-                        <Textarea className="forms-textarea">When an unknown printer took a galley of type and scrambled</Textarea>
-                    </Label>
-                    <Label className="forms-label"> <Text> Calendar Bar </Text> 
+                    <View className="forms-card-label">
+                         <Label> Textarea </Label>
+                         <Textarea className="forms-textarea">When an unknown printer took a galley of type and scrambled</Textarea>
+                    </View>
+                    <View className="forms-card-label"> 
+                        <Label> Calendar Bar </Label> 
                         <CalendarBar className="forms-calendar-bar"/>
-                    </Label>
-                    <Label>
-                        <Switch />
-                    </Label>
+                    </View>
+                    <View className="forms-card-label">
+                        <Label> Other Elements</Label>
+                        <View className="radio-button-wrapper">
+                            <Radio className="radio-button"/>
+                            <Label>Freelancer</Label>
+                        </View>
+                        <View className="checkbox-wrapper">
+                            <Checkbox className="checkbox"/>
+                            <Label>Keep me logged in</Label>
+                        </View>
+                        <View>
+                            <Switch />
+                        </View>
+                    </View>
+                    <View className="forms-card-label">
+                        <Label> Notification </Label>
+                        <Notification className="notification" src="assets/roadmap/i-icon.png" text="After freelancer approve, this project will be moved to «on hold»" />
+                        <Notification className="notification" src="assets/roadmap/i-icon.png" text="After client approve, this project will be moved to «on hold»" /> 
+                    </View>
                 </View>
                 <View>
-                    <Label className="forms-label"> <Text> Calendar Lines </Text>
-                        <CalendarLines className="calendar-lines-view" background="linear-gradient(147deg, #fd6363 0%, #ffb0cb 100%)" leftComponent={<Label className="calendar-lines-label">Step 2</Label>} rightComponent={<Label className="calendar-lines-label">failed</Label>} />
-                        <CalendarLines className="calendar-lines-view" background="linear-gradient(147deg, #4fbead 0%, #54d3dc 100%)" leftComponent={<Label className="calendar-lines-label">Step 2</Label>} rightComponent={<Label className="calendar-lines-label">done</Label>} />
-                        <CalendarLines className="calendar-lines-view" background="linear-gradient(147deg, #839dfe 0%, #75c1f1 100%)" leftComponent={<Label className="calendar-lines-label">Step 2</Label>} rightComponent={<Label className="calendar-lines-label"></Label>} />
-                        <CalendarLines className="calendar-lines-view" background="linear-gradient(147deg, #839dfe 0%, #75c1f1 100%)" leftComponent={<Label className="calendar-lines-label">Step 1</Label>} rightComponent={<Label className="calendar-lines-label">waiting for approval</Label>} />
-                    </Label>
-                    <Label className="forms-label"> <Text className="forms-label-text"> Buttons </Text>
+                    <View className="forms-card-label">
+                        <Label> Calendar Lines </Label>
+                        <CalendarLines lines background="linear-gradient(147deg, #fd6363 0%, #ffb0cb 100%)" leftComponent={<Label className="calendar-lines-label">Step 2</Label>} rightComponent={<Label className="calendar-lines-label">failed</Label>} />
+                        <CalendarLines lines background="linear-gradient(147deg, #4fbead 0%, #54d3dc 100%)" leftComponent={<Label className="calendar-lines-label">Step 2</Label>} rightComponent={<Label className="calendar-lines-label">done</Label>} />
+                        <CalendarLines lines background="linear-gradient(147deg, #839dfe 0%, #75c1f1 100%)" leftComponent={<Label className="calendar-lines-label">Step 2</Label>} rightComponent={<Label className="calendar-lines-label"></Label>} />
+                        <CalendarLines lines background="linear-gradient(147deg, #839dfe 0%, #75c1f1 100%)" leftComponent={<Label className="calendar-lines-label">Step 1</Label>} rightComponent={<Label className="calendar-lines-label">waiting for approval</Label>} />
+                    </View>
+                    <View className="forms-card-label"> 
+                        <Label> Buttons </Label>
                         <Button className="main-button"> Normal </Button>
                         <Button className="secondary-button-blue"> Normal </Button>
                         <Button className="secondary-button-white"> Normal </Button>
-                    </Label>
+                    </View>
                 </View>
         </Card>
         )

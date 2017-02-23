@@ -34,6 +34,7 @@ import Textarea from './Textarea';
 import ButtonLink from './ButtonLink';
 import InputValidate from './InputValidate';
 import Switch from './Switch';
+import Notification from './Notification';
 
 export {
     Application, 
@@ -71,6 +72,7 @@ export {
     Textarea,
     InputValidate,
     Switch,
-    ButtonLink
+    ButtonLink,
+    Notification
 };
 
