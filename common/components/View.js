@@ -4,7 +4,7 @@ import Component from './Component';
 class View extends Component {
     render(){
         return (
-            <div className={this.getClassName(this.props)}>
+            <div onClick={this.props.onClick} className={this.getClassName(this.props)}>
                 {this.props.children}
             </div>
         )

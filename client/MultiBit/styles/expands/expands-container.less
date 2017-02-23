@@ -1,0 +1,25 @@
+
+.expands-container {
+	.uk-card-body {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		padding: @card-padding;
+		max-width: 680px;
+		min-width: 680px;
+		.expands {
+			display: block;
+			width: 100%;
+			padding: 0;
+			list-style-type: none;
+			.expand-item {
+				margin: 0;
+			}
+		}
+	}
+}

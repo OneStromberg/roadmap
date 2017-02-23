@@ -16,7 +16,7 @@ class Button extends Component {
     }
     render(){
         return(
-            <button className={"uk-button " + this.getClassName(this.props)}>
+            <button onClick={this.props.onClick} className={"uk-button " + this.getClassName(this.props)}>
                 {this.props.children}
             </button>    
         )

@@ -1,5 +1,7 @@
 import React from 'react';
-import {Component, Container, View, Header, Text, Title, Card, Label, Input, InputValidate, ButtonLink, Image} from 'components';
+import {Component, Container, View, Header, Text, Title, Card, Label, Input, ButtonLink, Image, Checkbox} from 'components';
+import InputValidate from './InputValidate';
+import {onValidate} from './../../../../common/utils/validate';
 
 class InputsContainer extends Component {
     render(){
@@ -21,7 +23,7 @@ class InputsContainer extends Component {
                         </Label>
                         <Label className="forms-label"> 
                             <Text className="label-text">Send To</Text>
-                            <InputValidate type="text" className="input-error" placeholder="16mQwTg668qZDzZdzJRRwRkLfJLjbC6a5f" />
+                            <InputValidate type="text" className="input-empty " state={['']} validate={onValidate} placeholder="16mQwTg668qZDzZdzJRRwRkLfJLjbC6a5f" />
                         </Label>
 
                         <Label className="forms-label"> 
@@ -59,6 +61,10 @@ class InputsContainer extends Component {
                             <Input type="text" className="input-empty bt-address" placeholder="16mQwTg668qZDzZdzJRRwRkLfJLjbC6a5f" />
                             <Image className="currency-logo" src="./../../assets/multibit/img/bitcoin-icon.png" alt="Bitcoin" />
                         </Label>
+
+                        <Checkbox>
+                            Checkbox text
+                        </Checkbox>
                     </View>
                 </Card>
             </Container>
