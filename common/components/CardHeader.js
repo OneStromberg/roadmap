@@ -5,7 +5,7 @@ import Component from './Component';
 class CardHeader extends Component {
     render(){
         return(
-            <Header className="uk-card-header">{this.props.children}</Header>
+            <Header className={"uk-card-header " + this.getClassName(this.props)}>{this.props.children}</Header>
         )
     }
 }
