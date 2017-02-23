@@ -71,7 +71,6 @@ export {
     Textarea,
     InputValidate,
     Switch,
-    ButtonLink,
-    InputValidate
+    ButtonLink
 };
 
