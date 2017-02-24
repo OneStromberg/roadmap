@@ -1,5 +1,5 @@
 import React from 'react';
-import {Card, Component, Label, Input, Title, View} from 'components';
+import {Card, Component} from 'components';
 
 class TypographyCard extends Component {
     render(){
