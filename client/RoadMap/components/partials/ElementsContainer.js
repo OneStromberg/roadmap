@@ -1,5 +1,5 @@
 import React from 'react';
-import {Card, CardHeader, Component, Label, Link, Image, Title, Text, View} from 'components';
+import {ButtonLink, Card, CardHeader, Component, Label, Image, Title, Text, View} from 'components';
 
 class ElementsContainer extends Component {
     render(){
@@ -49,7 +49,7 @@ class ElementsContainer extends Component {
                             </CardHeader>}>
                             <View>
                                 <Label>No active</Label>
-                                <Image />
+                                <Image src="assets/roadmap/arrow-icon.png"/>
                             </View>
                         </Card>
                     </View>
@@ -61,8 +61,7 @@ class ElementsContainer extends Component {
                                 <Label>Coca-Cola</Label>
                             </CardHeader>}>
                             <View>
-                                <Label>Pending</Label>
-                                <Label>...</Label>
+                                <Label>Pending...</Label>
                             </View>
                         </Card>
                     </View>
@@ -76,15 +75,15 @@ class ElementsContainer extends Component {
                     </View>
                     <View className="elements-card-medium">
                         <Card>
-                            <Link>Update Profile</Link>
-                            <Link>Help</Link>
-                            <Link>Log Out</Link>
+                            <ButtonLink>Update Profile</ButtonLink>
+                            <ButtonLink>Help</ButtonLink>
+                            <ButtonLink>Log Out</ButtonLink>
                         </Card>
                     </View>
                     <View className="elements-card-small">
                         <Card>
-                            <Link>On hold</Link>
-                            <Link>Archived</Link>   
+                            <ButtonLink>On hold</ButtonLink>
+                            <ButtonLink>Archived</ButtonLink>   
                         </Card>
                     </View>
                 </View>
