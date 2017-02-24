@@ -1,12 +1,16 @@
 .elements-card {
-    width: 245px; 
+    max-width: 245px; 
+    min-width: 245px;
     &.uk-card {
         margin-bottom: 0;
+        .uk-card-header {
+            padding: 11px 38px 16px;
+        }
     }
     span {
         &.uk-text {
             &.uk-label {
-                color: #354052;
+                color: #839dfe;
             }
         }
     }
@@ -16,6 +20,26 @@
             justify-content: space-between;
             padding: 15px 0;
         }
+    }
+    &.no-active {
+        div {
+            &.uk-card-body {
+                padding: 25px;
+                :first-child {
+                    font-size: 20px;
+                }
+            }                 
+        }
+    }
+    &.pending {
+        div {
+            &.uk-card-body {
+                padding: 25px;
+                :first-child {
+                    font-size: 20px;
+                }
+            }               
+        }    
     }
 }
 
@@ -45,12 +69,36 @@
     a {
         font-size: 12px;
         color: #7f8fa4; 
-        &.uk-link {
-            text-decoration: none;
-            display: block;
-    }
+        &.uk-button {
+            &.uk-button-link {
+                background: none;
+                text-decoration: none;
+                display: block;
+            }
+        }
         :hover {
             text-decoration: none; 
+        }
+    }
+    .uk-card-body {
+        padding: 0;
+        :first-child {
+            margin: 19px 15px 12px 18px;
+            &:hover {
+                color: #7f8fa4;
+            }
+        }
+        :nth-child(2){
+            margin:12px 70px 11px 18px;
+            &:hover {
+                color: #7f8fa4;
+            }
+        }
+        :last-child {
+            margin: 0 49px 18px 18px;
+            &:hover {
+                color: #7f8fa4;
+            }
         }
     }  
 }
@@ -60,14 +108,32 @@
     a {
         font-size: 12px;
         color: #7f8fa4; 
-        &.uk-link {
-            text-decoration: none;
-            display: block;
+        &.uk-button {
+            &.uk-button-link {
+                background: none;
+                text-decoration: none;
+                display: block;
+        }
     }
         :hover {
             text-decoration: none; 
         }
     } 
+    .uk-card-body{
+        padding: 0;
+        :first-child{
+            margin: 20px 25px 12px 20px;
+            &:hover {
+                color: #7f8fa4;
+            }
+        }
+        :last-child{
+            margin:0 21px 16px 20px;
+            &:hover {
+                color: #7f8fa4;
+            }
+        }
+    }
 }
 
 .elements-card-footer {
@@ -90,6 +156,13 @@
         display: block;
         font-size: 24px;
     }
+    span {
+        &.uk-text {
+            &.uk-label {
+                color: #7c99a9;
+            }
+        }
+    }
 }
 
 .uk-card-header {
@@ -97,7 +170,6 @@
         border-bottom: 1px solid rgba(8, 32, 51, 0.1);
         :first-child {
             display: block;
-            color: #839dfe;
             font-size: 24px;
             font-weight: 600;
         }
@@ -115,4 +187,15 @@
             }
         }
     }    
+}
+
+span {
+    &.uk-text {
+        &.uk-label {
+            &.elements-card-secondary-label {
+                color: #7c99a9;
+                padding: 0 0 0 5px;
+            }
+        }
+    }
 }

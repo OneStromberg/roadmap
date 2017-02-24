@@ -11,24 +11,7 @@ class ElementsContainer extends Component {
                             <CardHeader className="card-header">
                                 <Label>Ecoplay</Label> 
                                 <Image src="assets/roadmap/shape.png"/> 
-                                <Label>Gamebox</Label>
-                            </CardHeader>}>
-                            <View className="elements-card-footer">
-                                <Label>5</Label>
-                                <Label>step</Label>
-                            </View>
-                            <View className="elements-card-footer">
-                                <Label >2</Label>
-                                <Label>done</Label>
-                            </View>
-                        </Card>
-                    </View>
-                    <View className="elements-card">
-                        <Card header={
-                            <CardHeader className="card-header gradient">
-                                <Label>Drive</Label> 
-                                <Image src="assets/roadmap/shape.png"/> 
-                                <Label>Google</Label>
+                                <Label className="elements-card-secondary-label">Gamebox</Label>
                             </CardHeader>}>
                             <View className="elements-card-footer">
                                 <Label>5</Label>
@@ -42,26 +25,43 @@ class ElementsContainer extends Component {
                     </View>
                     <View className="elements-card">
                         <Card header={
-                            <CardHeader className="card-header">
-                                <Label>Test</Label> 
+                            <CardHeader className="card-header gradient">
+                                <Label>Drive</Label> 
                                 <Image src="assets/roadmap/shape.png"/> 
-                                <Label>Coca-Cola</Label>
+                                <Label className="elements-card-secondary-label">Google</Label>
                             </CardHeader>}>
-                            <View>
-                                <Label>No active</Label>
-                                <Image src="assets/roadmap/arrow-icon.png"/>
+                            <View className="elements-card-footer">
+                                <Label>5</Label>
+                                <Label>step</Label>
+                            </View>
+                            <View className="elements-card-footer">
+                                <Label>2</Label>
+                                <Label>done</Label>
                             </View>
                         </Card>
                     </View>
-                    <View className="elements-card">
+                    <View className="elements-card no-active">
                         <Card header={
                             <CardHeader className="card-header">
                                 <Label>Test</Label> 
                                 <Image src="assets/roadmap/shape.png"/> 
-                                <Label>Coca-Cola</Label>
+                                <Label className="elements-card-secondary-label">Coca-Cola</Label>
                             </CardHeader>}>
                             <View>
-                                <Label>Pending...</Label>
+                                <Label className="elements-card-secondary-label">No active</Label>
+                                <Image src="assets/roadmap/arrow-icon.png"/>
+                            </View>
+                        </Card>
+                    </View>
+                    <View className="elements-card pending">
+                        <Card header={
+                            <CardHeader className="card-header">
+                                <Label>Test</Label> 
+                                <Image src="assets/roadmap/shape.png"/> 
+                                <Label className="elements-card-secondary-label">Coca-Cola</Label>
+                            </CardHeader>}>
+                            <View>
+                                <Label className="elements-card-secondary-label">Pending...</Label>
                             </View>
                         </Card>
                     </View>

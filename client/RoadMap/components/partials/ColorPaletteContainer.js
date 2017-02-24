@@ -20,6 +20,7 @@ const paletteColor14 = ["#ffffff"];
 const paletteGradient1 = ["#839dfe", "#75c1f1"];
 const paletteGradient2 = ["#4fbead", "#54d3dc"];
 const paletteGradient3 = ["#fd6363", "#ffb0cb"];
+const paletteGradient4 = ["#ffaf4a", "#ffe0a6"]; 
 
 let paletteColors = [
     paletteColor1, 
@@ -38,7 +39,8 @@ let paletteColors = [
     paletteColor14,
     paletteGradient1,
     paletteGradient2,
-    paletteGradient3
+    paletteGradient3,
+    paletteGradient4
 ];
 
 class ColorPaletteContainer extends Component {
