@@ -12,13 +12,16 @@ class Input extends Component {
     }
     render(){
         return (
-                <label><input
-                type={this.props.type ? this.props.type : ""} 
-                className={"uk-input " + this.getClassName(this.props)} 
-                placeholder={this.props.placeholder ? this.props.placeholder : ""} 
-                defaultValue={this.props.value ? this.props.value : ""}
-                disabled={this.props.disabled ? this.props.disabled : null}
-                /></label>
+            <label>
+                <input
+                    type={this.props.type ? this.props.type : ""} 
+                    className={"uk-input " + this.getClassName(this.props)} 
+                    placeholder={this.props.placeholder ? this.props.placeholder : ""} 
+                    defaultValue={this.props.value ? this.props.value : ""}
+                    disabled={this.props.disabled ? this.props.disabled : null}
+                    onChange={(e) => this.props.onChange(e)}/>
+                    {this.props.children}
+            </label>
         )
     }
 }
