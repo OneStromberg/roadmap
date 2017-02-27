@@ -1,5 +1,5 @@
 import React from 'react';
-import {Card, Component, Label, ViewColor, View} from 'components';
+import {Card, Component, Label, ViewColor} from 'components';
 
 class GradientPaletteCard extends Component {
     render(){

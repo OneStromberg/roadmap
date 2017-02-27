@@ -1,5 +1,5 @@
 import React from 'react';
-import {Button, Card, Component, Header, Input, Password, View, Image, Text, CardHeader, Round, TabBar, ButtonSecondary} from 'components';
+import {Button, Card, Component, Header, Input, Password, View, Image, Text, CardHeader, Round, TabBar} from 'components';
 
 class CardProfile extends Component {
     render(){
@@ -16,7 +16,7 @@ class CardProfile extends Component {
                     <View className="avatar-wrapper">
                         <View>
                             <Round round />
-                            <ButtonSecondary>Avatar Update</ButtonSecondary>
+                            <Button>Avatar Update</Button>
                         </View>
                         <View>
                             <Header>Name</Header>

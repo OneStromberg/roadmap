@@ -1,11 +1,7 @@
 import React from 'react';
-import {Container, Header, Label, Text, View} from 'components';
-import {ColorPaletteContainer} from './../../partials/';
+import {Container, Header, Label, View} from 'components';
+import {ColorPaletteContainer, RoadmapAppBar, TypographyContainer, FormsContainer, ElementsContainer} from './../../partials/';
 import Page from './../../../../common/components/Page';
-import RoadmapAppBar from './../../partials/RoadmapAppBar';
-import TypographyContainer from './../../partials/TypographyContainer';
-import FormsContainer from './../../partials/FormsContainer';
-import ElementsContainer from './../../partials/ElementsContainer';
 
 class ComponentsApp extends React.Component {
     render(){

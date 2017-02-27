@@ -1,7 +1,201 @@
 .elements-card {
-    width: 245px;
-    height: 156px; 
+    max-width: 245px; 
+    min-width: 245px;
     &.uk-card {
         margin-bottom: 0;
+        .uk-card-header {
+            padding: 11px 38px 16px;
+        }
+    }
+    span {
+        &.uk-text {
+            &.uk-label {
+                color: #839dfe;
+            }
+        }
+    }
+    div {
+        &.uk-card-body {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 0;
+        }
+    }
+    &.no-active {
+        div {
+            &.uk-card-body {
+                padding: 25px;
+                :first-child {
+                    font-size: 20px;
+                }
+            }                 
+        }
+    }
+    &.pending {
+        div {
+            &.uk-card-body {
+                padding: 25px;
+                :first-child {
+                    font-size: 20px;
+                }
+            }               
+        }    
+    }
+}
+
+.elements-card-large {
+    width: 300px;
+    margin-right: 85px;
+    span {
+        &.uk-text {
+            display: block;
+            font-size:12px;
+            text-shadow: 0 2px 14px rgba(26, 32, 56, 0.08);
+            line-height: 21px;
+            font-weight: 400;   
+            padding-top: 7px;       
+            &.uk-label {
+                color: #354052;
+                display: block;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+.elements-card-medium {
+    width: 126px;
+    margin-right: 85px;
+    a {
+        font-size: 12px;
+        color: #7f8fa4; 
+        &.uk-button {
+            &.uk-button-link {
+                background: none;
+                text-decoration: none;
+                display: block;
+            }
+        }
+        :hover {
+            text-decoration: none; 
+        }
+    }
+    .uk-card-body {
+        padding: 0;
+        :first-child {
+            margin: 19px 15px 12px 18px;
+            &:hover {
+                color: #7f8fa4;
+            }
+        }
+        :nth-child(2){
+            margin:12px 70px 11px 18px;
+            &:hover {
+                color: #7f8fa4;
+            }
+        }
+        :last-child {
+            margin: 0 49px 18px 18px;
+            &:hover {
+                color: #7f8fa4;
+            }
+        }
+    }  
+}
+
+.elements-card-small {
+    width: 90px;
+    a {
+        font-size: 12px;
+        color: #7f8fa4; 
+        &.uk-button {
+            &.uk-button-link {
+                background: none;
+                text-decoration: none;
+                display: block;
+        }
+    }
+        :hover {
+            text-decoration: none; 
+        }
+    } 
+    .uk-card-body{
+        padding: 0;
+        :first-child{
+            margin: 20px 25px 12px 20px;
+            &:hover {
+                color: #7f8fa4;
+            }
+        }
+        :last-child{
+            margin:0 21px 16px 20px;
+            &:hover {
+                color: #7f8fa4;
+            }
+        }
+    }
+}
+
+.elements-card-footer {
+    display: inline-block;
+    position: relative;
+    width: 50%;
+    text-align: center;
+    &:last-child {
+        &:before{
+            position: absolute;
+            content: "";
+            width: 2px;
+            height: 50px;
+            background-color: rgba(8,32,51,.1);
+            top: 0;
+            left: 0;
+        }
+    }    
+    :first-child{
+        display: block;
+        font-size: 24px;
+    }
+    span {
+        &.uk-text {
+            &.uk-label {
+                color: #7c99a9;
+            }
+        }
+    }
+}
+
+.uk-card-header {
+    &.card-header {
+        border-bottom: 1px solid rgba(8, 32, 51, 0.1);
+        :first-child {
+            display: block;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        :nth-child(2){
+            margin-right: 5px;
+        }
+        &.gradient {
+            background-image: linear-gradient(147deg, #839dfe 0%, #75c1f1 100%);
+            span {
+                &.uk-text {
+                    &.uk-label {
+                        color:#fff;
+                    }
+                }
+            }
+        }
+    }    
+}
+
+span {
+    &.uk-text {
+        &.uk-label {
+            &.elements-card-secondary-label {
+                color: #7c99a9;
+                padding: 0 0 0 5px;
+            }
+        }
     }
 }

@@ -1,7 +1,6 @@
 import Application from './Application';
 import AppBar from './AppBar';
 import Button from './Button';
-import ButtonSecondary from './ButtonSecondary';
 import Card from './Card';
 import CardHeader from './CardHeader';
 import Checkbox from './Checkbox';
@@ -63,7 +62,6 @@ export {
     TabBar, 
     TabButton, 
     CardHeader, 
-    ButtonSecondary,
     ViewColor,
     Title,
     Subtitle,
