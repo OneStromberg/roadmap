@@ -7,7 +7,10 @@ import TypographyContainer from './../../partials/TypographyContainer';
 import ButtonsContainer from './../../partials/ButtonsContainer';
 import InputsContainer from './../../partials/InputsContainer';
 import DropdownsContainer from './../../partials/DropdownsContainer';
-import ExpandsContainer from './../../partials/ExpandsContainer';
+import ExpandsContainer from './../../partials/expand/ExpandsContainer';
+import PopupContainer from './../../partials/PopupContainer';
+import PopupContainerWarning from './../../partials/PopupContainerWarning';
+import SidebarContainer from './../../partials/SidebarContainer'
 
 const paletteColor1 = ["#42b670"];
 const paletteColor2 = ["#38a864"];
@@ -89,6 +92,15 @@ class ComponentsApp extends Component {
                 </Page>
                 <Page>
                     <ExpandsContainer />
+                </Page>
+                <Page>
+                    <SidebarContainer />
+                </Page>
+                <Page>
+                    <PopupContainer title="Delete Contact" text1="Delete" text2="Cancel" />
+                </Page>
+                <Page>
+                    <PopupContainerWarning title="Take a look at the Device" text1="On your KeepKey, confirm you want to wipe your device. This will remove all of its private keys and settings" />
                 </Page>
             </View>
         )

@@ -8,7 +8,7 @@ class TypographyContainer extends Component {
         return(
             <Container>
                 <Header>
-                    <Text>01</Text>
+                    <Text>02</Text>
                     <Text> Typography</Text>
                 </Header>
                 <View className="typography-container">
