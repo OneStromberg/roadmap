@@ -9,5 +9,6 @@ import FormsContainer from './FormsContainer';
 import FormsSelect from './FormsSelect';
 import CalendarBar from './CalendarBar';
 import ElementsContainer from './ElementsContainer';
+import LoginForm from './LoginForm';
 
-export {ColorPaletteContainer, ColorPaletteCard, GradientPaletteCard, RoadmapAppBar, TypographyContainer, TypographyCard, FormsCard, FormsContainer, FormsSelect, CalendarBar, ElementsContainer};
+export {ColorPaletteContainer, ColorPaletteCard, GradientPaletteCard, RoadmapAppBar, TypographyContainer, TypographyCard, FormsCard, FormsContainer, FormsSelect, CalendarBar, ElementsContainer, LoginForm};
