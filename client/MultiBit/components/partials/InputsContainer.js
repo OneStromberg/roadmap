@@ -23,7 +23,7 @@ class InputsContainer extends Component {
                         </Label>
                         <Label className="forms-label"> 
                             <Text className="label-text">Send To</Text>
-                            <InputValidate type="text" className="input-empty " state={['']} validate={onValidate} placeholder="16mQwTg668qZDzZdzJRRwRkLfJLjbC6a5f" />
+                            <InputValidate type="text" className="input-empty " state={['', 'input-error']} validate={onValidate} placeholder="16mQwTg668qZDzZdzJRRwRkLfJLjbC6a5f" />
                         </Label>
 
                         <Label className="forms-label"> 

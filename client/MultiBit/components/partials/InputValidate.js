@@ -13,7 +13,7 @@ class InputValidate extends Component {
         let valid = null;
         if(typeof this.props.validate === 'function'){
             validType = this.props.validate(e.target.value, this.props.state);
-        } 
+        }
         console.log(validType);
         this.setState({
             validType: validType
@@ -21,16 +21,15 @@ class InputValidate extends Component {
     }
     render(){
         return (
-            <div className={this.state.validType ? "input-validator input-error" : "input-validator"}>
+            <div className="input-validator">
                 <input
                 type={this.props.type ? this.props.type : ""} 
-                className={"uk-input " + this.getClassName(this.props)} 
+                className={this.state.validType ? "uk-input input-error " : "uk-input " + this.getClassName(this.props)} 
                 placeholder={this.props.placeholder ? this.props.placeholder : ""} 
                 disabled={this.props.disabled ? this.props.disabled : null}
                 onChange={(e) => this.onValidate(e)}
 
                 />
-                <div>{this.state.validType}</div>
             </div>
         )
     }
