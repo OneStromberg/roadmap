@@ -6,7 +6,7 @@ import LoginForm from './../../partials/LoginForm';
 class Login extends React.Component {
     render(){
         return(
-            <Page>
+            <Page className="flex">
                 <View className="login-background"></View>
                 <View className="login-container">
                     <LoginForm />

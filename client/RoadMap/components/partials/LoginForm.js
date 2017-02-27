@@ -6,47 +6,45 @@ class LoginForm extends Component {
         return(
             <View className="login-form">
                 <View>
-                    <Label>RoadMap</Label>
+                    <Label className="login-main-title">RoadMap</Label>
                 </View>
                 <View>
-                    <Label>Create Your Free Account</Label>
+                    <Label className="login-secondary-title">Create Your Free Account</Label>
                 </View>
-                <View>
-                    <Radio />
+                <View className="login-radio">
+                    <Radio className=""/>
                     <Label>Freelancer</Label>
-                </View>
-                <View>
-                    <Radio />
+                    <Radio className=""/>
                     <Label>Client</Label>
                 </View>
-                <View>
-                    <Label>Name</Label>
+                <View className="login-input-container">
+                    <Label className="login-input">Name</Label>
                     <Input />
                 </View>
-                <View>
-                    <Label>Company</Label>
+                <View className="login-input-container">
+                    <Label className="login-input">Company</Label>
                     <Input />
                 </View>
-                <View>
-                    <Label>E-mail</Label>
+                <View className="login-input-container">
+                    <Label className="login-input">E-mail</Label>
                     <Input />
                 </View>
-                <View>
-                    <Label>Password</Label>
+                <View className="login-input-container">
+                    <Label className="login-input">Password</Label>
+                    <Password />
+                </View>
+                <View className="login-input-container">
+                    <Label className="login-input">Confirm Password</Label>
                     <Password />
                 </View>
                 <View>
-                    <Label>Confirm Password</Label>
-                    <Password />
+                    <Button className="login-button">Create Account</Button>
                 </View>
-                <View>
-                    <Button>Create Account</Button>
-                </View>
-                <View>
+                <View className="login-link-container">
                     <Label>Already have an account ?</Label>
                     <Link>Login</Link>
                 </View>
-                <View>
+                <View className="login-link-container">
                     <Label>By clicking "Create account" I agree to</Label>
                     <Link>Terms of Service</Link>
                 </View>    
