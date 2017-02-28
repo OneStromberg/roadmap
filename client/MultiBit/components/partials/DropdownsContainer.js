@@ -1,19 +1,38 @@
 import React from 'react';
-import {Card, Component, Input, Label, View, Text, Title} from 'components';
-import FormsSelect from './FormsSelect';
-import Slct from 'react-select';
-import 'react-select/dist/react-select.css';
+import {Component, Container, View, Header, Text, Card} from 'components';
+import Select from './Select'
+import Dropdown from './Dropdown'
+
+var profile = [{
+    name: "Roberta profile"
+}, {
+    name: "Bitcoin Address"
+}, {
+    name: "Litecoin Address"
+}];
+
+var asset = [{
+    name: "Dogcoin Address"
+}, {
+    name: "Bitcoin Address"
+}, {
+    name: "Litecoin Address"
+}];
 
 class DropdownsContainer extends Component {
     render(){
         return(
-            <Card className="forms-card">
-                <View>
-                    <Label className="forms-label"> Select Empty <FormsSelect /> </Label>
-                    <Label className="forms-label"> Select Typing <FormsSelect /> </Label>
-					<Slct />
-                </View>
-       	 	</Card>
+            <Container>
+                <Header>
+                    <Text>05</Text>
+                    <Text> Dropdowns</Text>
+                </Header>
+                <Card className="dropdowns-container">
+					<Select className="dropdown-primary" list={profile} selected={0} />
+                    <Dropdown title="Add field" className="dropdown-simple" list={asset} selected={0} />
+                    <Dropdown title="Set Assets" className="dropdown-secondary" list={asset} selected={0} />
+                </Card>
+            </Container>
         )
     }
 }

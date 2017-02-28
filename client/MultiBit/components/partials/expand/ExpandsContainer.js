@@ -1,6 +1,6 @@
 import React from 'react';
 import {Component, Container, View, Header, Text, Title, Card, Label, Image, List, ListItem, Button, Link} from 'components';
-import Expand from './expand/Expand';
+import Expand from './Expand';
 
 class ExpandsContainer extends Component {
     render(){
