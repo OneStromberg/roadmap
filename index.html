@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multibit</title>
+    <link href="./public/assets/css/font.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="./public/build/style/guide.css">
+</head>
+<body>
+    <div id="preload"></div>
+    <div id='root'>
+    </div>
+    <script type="text/javascript" src="public/build/common.bundle.js"></script>
+    <script>
+
+        var script = document.createElement('script');
+        script.src = "public/build/guide.bundle.js";
+        script.onload = function () {
+            console.log('script loaded');
+        };
+
+        document.head.appendChild(script);
+        var elem = document.querySelector("#preload");
+        elem.remove();
+    </script>
+</body>
+</html>
