@@ -9,18 +9,19 @@ const prepareStore = (reducers) => {
     return createStore(reducers,  window.__PRELOADED_STATE__, applyMiddleware(thunk));
 }
 
-const Application = (props) => {
+class Application extends React.Component {
+    render(){
+        const store = prepareStore(this.props.reducers);
+        const history = syncHistoryWithStore(browserHistory, store);
 
-   const store = prepareStore(props.reducers);
-   const history = syncHistoryWithStore(browserHistory, store);
-
-   return(
-       <Provider store={store}>
-           <Router history={history}>
-               {props.children}
-           </Router>
-       </Provider>
-   );
+        return(
+            <Provider store={store}>
+                <Router history={history}>
+                    {this.props.children}
+                </Router>
+            </Provider>
+        );
+    }
 };
 
 export default Application;

@@ -5,10 +5,10 @@ const path = require('path');
 module.exports = {
     entry:{
         common:['babel-polyfill','react','redux'],
-        guide:["./client/MultiBit/MultiBitApp"]
+        main:["./client/MultiBit/" + process.env.APP_NAME + ".js"]
     },
     output: {
-        path: __dirname + '/public/build/',
+        path: __dirname + 'public/build/',
         publicPath: 'build/',
         filename: "[name].bundle.js"
     },
@@ -20,6 +20,11 @@ module.exports = {
            styles: 'common/styles'
        }
    },
+   devServer: {
+        historyApiFallback: {
+            index: process.env.APP_NAME + ".html"
+        }
+  },
     plugins: [
         new webpack.DefinePlugin({
             process:{
