@@ -1,8 +1,21 @@
 @import "./variables";
 
 .multibit {
-    background-image: @paletteGradient2;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #6c75da;
+    &:after {
+        content: " ";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0; 
+        background-image: url("/assets/img/mb-bg.png");
+        opacity: .25;
+    }
 }
+

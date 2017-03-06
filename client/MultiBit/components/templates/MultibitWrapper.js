@@ -1,7 +1,7 @@
 import React from 'react';
 import { Component, View } from 'components';
 
-class GuideLineWrapper extends Component {
+class MultibitWrapper extends Component {
     render(){
         return(
             <View className="multibit" {...this.props}/>
@@ -9,4 +9,4 @@ class GuideLineWrapper extends Component {
     }
 }
 
-export default GuideLineWrapper;
+export default MultibitWrapper;
