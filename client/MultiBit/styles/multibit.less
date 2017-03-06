@@ -1,13 +1,13 @@
-@import "./variables";
+@import "./styles.less";
 
 .multibit {
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     width: 100vw;
     height: 100vh;
     background-color: #6c75da;
-    &:after {
+    &:before {
         content: " ";
         position: absolute;
         top: 0;
@@ -15,7 +15,18 @@
         bottom: 0;
         right: 0; 
         background-image: url("/assets/img/mb-bg.png");
-        opacity: .25;
+    }
+    .page {
+        display: flex;
+        padding: 0;
+        flex-direction: column;
+        justify-content: space-between;
+        &.login {
+            width: 270px;
+            >div {
+                margin: 0 20px;
+            }
+        }
     }
 }
 

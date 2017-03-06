@@ -1,7 +1,11 @@
 import React from 'react';
-import {Component, Container, View, Header, Text, Title, Card, Label, Input, ButtonLink, Image, Checkbox} from 'components';
+import {Component, Container, View, Header, Text, Title, Card, Label, ButtonLink, Image, Checkbox} from 'components';
 import InputValidate from './InputValidate';
 import {onValidate} from './../../../../common/utils/validate';
+
+import ConvertInput from './ConvertInput';
+import Input from './Input';
+import InputPassword from './InputPassword';
 
 class InputsContainer extends Component {
     render(){
@@ -15,47 +19,24 @@ class InputsContainer extends Component {
                     <View>
                         <Label className="forms-label"> 
                             <Text className="label-text">Send To</Text>
-                            <Input type="text" className="input-empty" placeholder="16mQwTg668qZDzZdzJRRwRkLfJLjbC6a5f" /> 
+                            <Input type="text" placeholder="16mQwTg668qZDzZdzJRRwRkLfJLjbC6a5f" /> 
                         </Label>
                         <Label className="forms-label"> 
                             <Text className="label-text">Send To</Text>
-                            <Input type="text" className="input-empty focused" checked placeholder="16mQwTg668qZDzZdzJRRwRkLfJLjbC6a5f" /> 
+                            <Input type="text" focused checked placeholder="16mQwTg668qZDzZdzJRRwRkLfJLjbC6a5f" /> 
                         </Label>
                         <Label className="forms-label"> 
                             <Text className="label-text">Send To</Text>
                             <InputValidate type="text" className="input-empty " state={['', 'input-error']} validate={onValidate} placeholder="16mQwTg668qZDzZdzJRRwRkLfJLjbC6a5f" />
                         </Label>
 
-                        <Label className="forms-label"> 
-                            <Input type="password" className="input-empty" placeholder="password" /> 
-                            <ButtonLink className="restore-button">Restore?</ButtonLink>
-                        </Label>
-                        <Label className="forms-label">
-                            <Input type="password" className="input-empty focused" placeholder="password" />
-                            <ButtonLink className="restore-button">Restore?</ButtonLink>
-                        </Label>
-                        <Label className="forms-label">
-                            <InputValidate type="password" className="input-error" placeholder="password" />
-                            <ButtonLink className="restore-button">Restore?</ButtonLink>
-                        </Label>
+                        <InputPassword />
+                        <InputPassword focused/>
+                        <InputPassword error/>
                     </View>
                     <View>
-                        <Label className="forms-label"> 
-                            <Text className="in-currency">BTC</Text>
-                            <Input type="text" className="input-empty input-exchange" value="0.00" />
-                            <View>
-                                <Text className="input-exchange-out">0.00</Text>
-                                <Text className="out-currency">USD</Text>
-                            </View>
-                        </Label>
-                        <Label className="forms-label"> 
-                            <Text className="in-currency">BTC</Text>
-                            <Input type="text" className="input-empty input-exchange input-error" value="0.00" />
-                            <View>
-                                <Text className="input-exchange-out">0.00</Text>
-                                <Text className="out-currency">USD</Text>
-                            </View>
-                        </Label>
+                        <ConvertInput value="0.00"/>
+                        <ConvertInput error value="0.00"/>
                         <Label className="forms-label bt-address-label">
                             <Text className="label-text">Bitcoin Address</Text>
                             <Input type="text" className="input-empty bt-address" placeholder="16mQwTg668qZDzZdzJRRwRkLfJLjbC6a5f" />

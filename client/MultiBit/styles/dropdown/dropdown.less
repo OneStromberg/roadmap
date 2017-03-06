@@ -31,10 +31,10 @@
 
 .dropdown-container {
 	display:inline-block;
-	width:220px;
 	background-color: transparent;
 	&.show {
 		> .dropdown-list {
+			z-index: @drop-down-z-index;
 			.transform(scale(1, 1));
 		}
 		>.dropdown-display {
