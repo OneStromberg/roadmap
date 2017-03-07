@@ -7,9 +7,14 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		flex-wrap: nowrap;
+		flex-wrap: wrap;
 		padding: @card-padding;
 		max-width: 740px;
-		min-width: 740px;
+		> div {
+			margin-bottom: 30px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
 	}
 }

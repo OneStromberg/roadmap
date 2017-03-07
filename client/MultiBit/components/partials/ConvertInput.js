@@ -3,7 +3,7 @@ import { Component, Input, Label, Text, View } from 'components';
 
 class ConvertInput extends Component {
     getClassName(props){
-        var newProps = "input-empty input-exchange";
+        var newProps = "input-empty input-exchange ";
         newProps += (props.hasOwnProperty('error') && props.error !== false) ? "input-error " : "";
         newProps += props.className + ' ';
 		return newProps;

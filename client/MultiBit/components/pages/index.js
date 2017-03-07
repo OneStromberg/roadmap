@@ -1,3 +1,4 @@
 import Login from './login';
+import Pincode from './pincode';
 import Main from './main';
-export {Login, Main};
+export {Login, Pincode, Main};

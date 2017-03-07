@@ -3,7 +3,7 @@ import { Input } from 'components';
 
 class Inpt extends Component {
     getClassName(props){
-        var newProps = "input-empty" ;
+        var newProps = "input-empty " ;
         newProps += (props.hasOwnProperty('focused') && props.empty !== false) ? "focused " : "";
         return newProps;
     }
