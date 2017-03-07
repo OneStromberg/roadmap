@@ -19,15 +19,15 @@ class LoginForm extends Component {
                 </View>
                 <View className="login-input-container">
                     <Label className="login-input">Name</Label>
-                    <Input />
+                    <Input placeholder="Name Surname" />
                 </View>
                 <View className="login-input-container">
                     <Label className="login-input">Company</Label>
-                    <Input />
+                    <Input placeholder="Google" />
                 </View>
                 <View className="login-input-container">
                     <Label className="login-input">E-mail</Label>
-                    <Input />
+                    <Input placeholder="clark@dashboard.com"/>
                 </View>
                 <View className="login-input-container">
                     <Label className="login-input">Password</Label>

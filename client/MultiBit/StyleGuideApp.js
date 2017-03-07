@@ -1,17 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import mutlibitRoute from './routes/mutlibit';
+import styleGuideRoute from './routes/styleGuide';
 import { Application } from 'components';
 import reducers from './reducers';
 
 import './../../common/styles/styles.less';
 import './../common/styles/styles.less';
-import './styles/multibit.less';
+import './styles/styles.less';
 
 const App = (props) => {
     return (
         <Application reducers={reducers}>
-            {mutlibitRoute}
+            {styleGuideRoute}
         </Application>
     )
 }

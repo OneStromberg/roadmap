@@ -1,13 +1,13 @@
 
 .vertical-centre (@height) { 
-	height:@height; 
-	line-height:@height !important; 
-	display:inline-block; 
-	vertical-align:middle; 
+	height: @height; 
+	line-height: @height !important; 
+	display: inline-block; 
+	vertical-align: middle; 
 }
 .border-box { 
-	box-sizing:border-box; 
-	-moz-box-sizing:border-box; 
+	box-sizing: border-box; 
+	-moz-box-sizing: border-box; 
 }
 .transition (@value1,@value2:X,...) { 
 	@value: ~`"@{arguments}".replace(/[\[\]]|\,\sX/g, '')`; 
@@ -31,10 +31,11 @@
 
 .dropdown-container {
 	display:inline-block;
-	width:220px;
 	background-color: transparent;
+	width: 100%;
 	&.show {
 		> .dropdown-list {
+			z-index: @drop-down-z-index;
 			.transform(scale(1, 1));
 		}
 		>.dropdown-display {

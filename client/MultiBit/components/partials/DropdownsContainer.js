@@ -28,9 +28,9 @@ class DropdownsContainer extends Component {
                     <Text> Dropdowns</Text>
                 </Header>
                 <Card className="dropdowns-container">
-					<Select className="dropdown-primary" list={profile} selected={0} />
                     <Dropdown title="Add field" className="dropdown-simple" list={asset} selected={0} />
                     <Dropdown title="Set Assets" className="dropdown-secondary" list={asset} selected={0} />
+					<Select list={profile} selected={0} />
                 </Card>
             </Container>
         )

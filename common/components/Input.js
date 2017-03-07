@@ -12,7 +12,7 @@ class Input extends Component {
     }
     render(){
         return (
-            <label>
+            <label className={this.props.className}>
                 <input
                     type={this.props.type ? this.props.type : ""} 
                     className={"uk-input " + this.getClassName(this.props)} 

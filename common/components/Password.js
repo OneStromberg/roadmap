@@ -20,6 +20,7 @@ class Password extends Component {
     render(){
         return(
             <Input
+                className="password"
                 type="password" 
                 onChange={this.onChange.bind(this)}>
                 {this.state.visible ? <img className="show-password-icon" src="assets/roadmap/show-password-icon.png"/> : null}

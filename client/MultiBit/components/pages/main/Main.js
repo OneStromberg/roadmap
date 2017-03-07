@@ -10,7 +10,8 @@ import DropdownsContainer from './../../partials/DropdownsContainer';
 import ExpandsContainer from './../../partials/expand/ExpandsContainer';
 import PopupContainer from './../../partials/PopupContainer';
 import PopupContainerWarning from './../../partials/PopupContainerWarning';
-import SidebarContainer from './../../partials/SidebarContainer'
+import SidebarContainer from './../../partials/SidebarContainer';
+import Topbar from './../../partials/Topbar';
 
 const paletteColor1 = ["#42b670"];
 const paletteColor2 = ["#38a864"];
@@ -101,6 +102,9 @@ class ComponentsApp extends Component {
                 </Page>
                 <Page>
                     <PopupContainerWarning title="Take a look at the Device" text1="On your KeepKey, confirm you want to wipe your device. This will remove all of its private keys and settings" />
+                </Page>
+                <Page>
+                    <Topbar />
                 </Page>
             </View>
         )

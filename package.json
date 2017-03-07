@@ -5,9 +5,10 @@
   "scripts": {
     "deploy": "yarn gen-client && firebase deploy",
     "parse": "node parseKML.js",
-    "start": "cross-env NODE_ENV=production cross-env BUILD_APP_TARGET=SERVER babel-node server",
-    "gen-client": "cross-env NODE_ENV=production cross-env BUILD_APP_TARGET=CLIENT webpack -p --output-pathinfo",
-    "dev": "cross-env NODE_ENV=development && cross-env BUILD_APP_TARGET=CLIENT webpack-dev-server -p --debug --hot --devtool eval-source-map --output-pathinfo --watch --colors --inline --content-base public --port 8090 --host 0.0.0.0"
+    "start": "cross-env NODE_ENV=production babel-node server",
+    "gen-client": "cross-env APP_NAME=StyleGuideApp cross-env NODE_ENV=production webpack -p --output-pathinfo",
+    "multibit": "cross-env APP_NAME=MultiBitApp cross-env NODE_ENV=development webpack-dev-server -p --debug --hot --devtool eval-source-map --output-pathinfo --watch --colors --inline --content-base public --port 8090 --host 0.0.0.0",
+    "guide": "cross-env APP_NAME=StyleGuideApp cross-env NODE_ENV=development webpack-dev-server -p --debug --devtool eval-source-map --output-pathinfo --colors --inline --content-base public --port 8091 --host 0.0.0.0"
   },
   "engines": {
     "npm": "^3.8.6",
