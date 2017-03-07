@@ -21,48 +21,13 @@
         padding: 0;
         flex-direction: column;
         justify-content: space-between;
-        &.login {
-            width: 270px;
-            padding: 15px 15px 36px 15px;
-            position: relative;
-            a {
-                &.uk-button {
-                    &.uk-button-link {
-                        background: none;
-                        text-decoration: none;
-                        &.login-button-link {
-                            margin: 12px 0 15px;
-                        }
-                    }
-                }
-            }
-        }
     }
-    .footer {
-        position: absolute;
-        width: 100%;
-        left: 0;
-        bottom: 0;
-    }
-
-    .logo {
-        img {
-            margin: auto;
-            display: block;
-            width: 40%;
-            margin-bottom: 54px;
-            margin-top: 61px;
-        }
-    }
-
-    button {
-        &.uk-button {
-            &.uk-button-primary {
-                height: 45px;
-            }
-        }
-    }
-
+    // .footer {
+    //     position: absolute;
+    //     width: 100%;
+    //     left: 0;
+    //     bottom: 0;
+    // }
     input {
         &.uk-input {
             &.input-empty {
@@ -70,7 +35,6 @@
             }
         }
     }
-
     div {
         &.dropdown-container {
             &.dropdown-primary {
@@ -78,46 +42,5 @@
             }
         }
     }
-
-    .topbar-container {
-        display: flex;
-        width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        align-items: center;
-        height: 35px;
-        box-shadow: 0 1px 0 #293048;
-        background-color: #2d364f;
-        border-radius: 3px 3px 0 0;
-        .topbar-round-buttons-container{
-            display: flex;
-            margin-left: 10px;
-            .topbar-round-buttons {
-                width: 12px;
-                height: 12px;
-                text-align: center;
-                padding: 6px 0;
-                font-size: 12px;
-                line-height: 1.42;
-                border-radius: 15px;
-                margin-left: 5px;
-                &.close {
-                    background-color: #f84973; 
-                }
-                &.minify {
-                    background-color: #fdc966;
-                }
-                &.expand {
-                    background-color: #45cd9c;
-                }
-            }
-        }
-        .topbar-title {
-            margin-left: 70px;
-            font-size: 11px;
-        }
-    }
-    
 }
 
