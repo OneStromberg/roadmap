@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import { Image } from 'components';
 
 class Logo extends Component {
     render() {
         return (
-            <div>
-                
-            </div>
+                <div className="logo">
+                    <img src="assets/img/multibit-lg@2x.png" />    
+                </div>
         );
     }
 }

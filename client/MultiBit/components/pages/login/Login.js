@@ -29,10 +29,10 @@ class Login extends Component {
                     <InputPassword />
                 </View>
                 <View>
-                    <ButtonLink />
+                    <ButtonLink className="login-button-link">or Create new profile</ButtonLink>
                 </View>
                 <Footer>
-                    <Button primary/>
+                    <Button primary>Login</Button>
                 </Footer>
             </Page>
         );
