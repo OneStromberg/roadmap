@@ -1,7 +1,6 @@
 import React from 'react';
 import Page from './../../../../common/components/Page';
 import Topbar from './../../partials/Topbar';
-
 import Select from './../../partials/Select';
 import InputPassword from './../../partials/InputPassword';
 import Logo from './../../partials/Logo';
@@ -20,9 +19,7 @@ class Login extends Component {
     render() {
         return (
             <Page className="login">
-                <Header>
-                    <Topbar />
-                </Header>
+                <Topbar />
                 <Logo />
                 <Select list={profile} selected={0} />
                 <View>
