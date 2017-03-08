@@ -8,7 +8,7 @@ import { Routes } from './../constants';
 
 const styleRoute = (
      <Route path="/" component={MultibitWrapper}>
-        <IndexRoute component={Pincode} />
+        <IndexRoute component={Login} />
         <Route path={Routes.LOGIN} component={Login} />
         <Route path={Routes.PINCODE} component={Pincode} />
      </Route>
