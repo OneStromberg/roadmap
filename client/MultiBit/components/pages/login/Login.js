@@ -4,8 +4,9 @@ import Topbar from './../../partials/Topbar';
 import Select from './../../partials/Select';
 import InputPassword from './../../partials/InputPassword';
 import Logo from './../../partials/Logo';
+import Button from './../../partials/Button';
 
-import { Component, View, ButtonLink, Button, Footer, Header } from 'components';
+import { Component, View, ButtonLink, Footer, Title, Header } from 'components';
 
 var profile = [{
     name: "Roberta profile"
@@ -19,7 +20,14 @@ class Login extends Component {
     render() {
         return (
             <Page className="login">
-                <Topbar />
+                <Topbar>
+                    <View className="topbar-round-buttons-container">
+                        <Button className="topbar-round-buttons close" />
+                        <Button className="topbar-round-buttons minify" />
+                        <Button className="topbar-round-buttons expand" />
+                    </View>
+                    <Title>Multibit</Title>
+                </Topbar>
                 <Logo />
                 <Select list={profile} selected={0} />
                 <View>
