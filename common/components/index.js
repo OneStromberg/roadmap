@@ -34,6 +34,7 @@ import ButtonLink from './ButtonLink';
 import InputValidate from './InputValidate';
 import Switch from './Switch';
 import Notification from './Notification';
+import Section from './Section';
 
 export {
     Application, 
@@ -71,6 +72,7 @@ export {
     InputValidate,
     Switch,
     ButtonLink,
-    Notification
+    Notification,
+    Section
 };
 
