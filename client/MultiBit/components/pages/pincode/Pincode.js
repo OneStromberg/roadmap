@@ -6,7 +6,7 @@ import Button from './../../partials/Button';
 
 import { Component, View, ButtonLink, Title, Text, Input, Label, Footer } from 'components';
 
-class Login extends Component {
+class Pincode extends Component {
     render() {
         return (
             <Page className="pincode">
@@ -43,6 +43,6 @@ class Login extends Component {
     }
 }
 
-export default Login;
+export default Pincode;
 
             

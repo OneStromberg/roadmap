@@ -8,19 +8,21 @@
     height: 100vh;
     background-color: #6c75da;
     &:before {
-        content: " ";
+        content: "";
         position: absolute;
         top: 0;
         left: 0;
         bottom: 0;
         right: 0; 
         background-image: url("/assets/img/mb-bg.png");
+        background-size: cover;
     }
     .page {
         display: flex;
         padding: 0;
         flex-direction: column;
         justify-content: space-between;
+        overflow: hidden;
     }
     // .footer {
     //     position: absolute;

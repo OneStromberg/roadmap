@@ -1,0 +1,42 @@
+.create-acc-keywords-filled {
+    width: 600px;
+    background-image: @paletteGradient2;
+    border-radius: 3px;
+	.create-acc-keywords-filled-topbar {
+		.uk-button.uk-button-keepkey {
+			padding: 0;
+			width: 20px;
+		}
+		.uk-button.uk-button-back {
+			width: auto;
+		}
+	}
+    > div {
+        .title {
+            display: block;
+            text-align: center;
+            margin: @xsmall-padding*2 auto @xsmall-padding;
+            .text-secondary;
+        }
+		.uk-text {
+			display: block;
+			text-align: center;
+			.dropdown-label;
+			margin-bottom: @xsmall-padding*2;
+		}
+    }
+	.footer {
+		display: flex;
+		position: relative;
+		align-items: center;
+		justify-content: center;
+		padding: @global-margin @global-gutter;
+		.uk-button.uk-button-default {
+			width: auto;
+		}
+		.uk-button.uk-button-help {
+			position: absolute;
+			right: 30px;
+		}
+	}
+}
