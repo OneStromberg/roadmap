@@ -9,33 +9,40 @@ import Sidebar from './../../partials/Sidebar';
 class AppWindow extends Component {
     render() {
         return (
-            <Page>
+            <Page className="app-window-container">
                 <Sidebar />
                 <View>
                     <Header>
-                        <View>
-                            <Label />
+                        <View className="upbar">
+                            <Label>Transact</Label>
+                            <View className="header-right-button-block">
+                                <Button notification />
+                                <Button keepkey>KeepKey On</Button>
+                            </View>
                         </View>
-                        <View>
-                            <Button />
-                            <Button />
-                        </View>
-                        <View>
-                            <Dropdown list={[]} />
-                            <Dropdown list={[]} />
+                        <View className="subbar">
+                            <View className="header-dropdown-block">
+                                <Dropdown className="dropdown-simple" title="Sort by Name" list={[]} />
+                                <Dropdown className="dropdown-secondary" title="Asset control" list={[]} />
+                            </View>
+                            <Button asset>Add new asset</Button>
                         </View>
                     </Header>
-                    <Section>
-                        <List>
-                            <ListItem><Button /></ListItem>
-                            <ListItem><Button /></ListItem>
-                            <ListItem><Button /></ListItem>
-                        </List>
+                    <Section className="app-window-section">
+                        <View className="app-window-section-list">
+                            <List>
+                                <ListItem><Button>Bitcoin</Button></ListItem>
+                                <ListItem><Button>Ethereum</Button></ListItem>
+                                <ListItem><Button>Dogcoin</Button></ListItem>
+                            </List>
+                        </View>
                         <View>
-                            <CurrencyInfo />
-                            <View>
-                                <Button />
-                                <Button />
+                            <View  className="currency-info">
+                                <CurrencyInfo />
+                            </View>
+                            <View className="currency-info-button">
+                                <Button>Send</Button>
+                                <Button>Receive</Button>
                             </View>
                         </View>
                     </Section>

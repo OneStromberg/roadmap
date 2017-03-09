@@ -6,16 +6,16 @@ class CurrencyInfo extends Component {
         return (
             <View>
                 <View>
-                    <Image />
+                    <Image src="/assets/img/bitcoin-icon.png"/>
                 </View>
                 <View>
-                    <Label />
+                    <Label>Bitcoin Assets</Label>
                 </View>
                 <View>
-                    <Label />
+                    <Label>0.00347 BTC</Label>
                 </View>
                 <View>
-                    <Label />
+                    <Label>$ 200.78 USD</Label>
                 </View>
             </View>
         );
