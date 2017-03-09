@@ -7,7 +7,7 @@ class Button extends Component {
     getClassName(props){
         var newProps = "";
         newProps += (props.hasOwnProperty('primary') && props.primary !== false) ? ButtonClassPrefix + "primary" : "";
-        newProps += (props.hasOwnProperty('default') && props.primary !== false) ? ButtonClassPrefix + "default" : "";
+        newProps += (props.hasOwnProperty('default') && props.default !== false) ? ButtonClassPrefix + "default" : "";
         newProps += (props.hasOwnProperty('secondary') && props.secondary !==false) ? ButtonClassPrefix + "secondary" : "";
         newProps += (props.hasOwnProperty('danger') && props.danger !== false) ? ButtonClassPrefix + "danger" : "";
         newProps += (props.hasOwnProperty('text') && props.text !== false) ? ButtonClassPrefix + "text" : "";
