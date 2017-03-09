@@ -10,7 +10,7 @@ class AppWindow extends Component {
     render() {
         return (
             <Page className="app-window-container">
-                <Sidebar />
+                <Sidebar src="./assets//img/multibit-lg@2x.png"/>
                 <View>
                     <Header>
                         <View className="upbar">
@@ -36,13 +36,13 @@ class AppWindow extends Component {
                                 <ListItem><Button>Dogcoin</Button></ListItem>
                             </List>
                         </View>
-                        <View>
+                        <View className="currency-info-container">
                             <View  className="currency-info">
                                 <CurrencyInfo />
                             </View>
                             <View className="currency-info-button">
-                                <Button>Send</Button>
-                                <Button>Receive</Button>
+                                <Button default>Send</Button>
+                                <Button default>Receive</Button>
                             </View>
                         </View>
                     </Section>
