@@ -8,7 +8,7 @@ const keyWords = ['sludge', 'crypto', 'nothing', 'vanish', 'town', 'town', 'town
 
 import { Component, View, Title, Text, List, ListItem, Input, Label, Footer } from 'components';
 
-class CreateaccKeywordsFilled extends Component {
+class CreateAccKeywordsFilled extends Component {
     render() {
         return (
             <Page className="create-acc-keywords-filled">
@@ -45,6 +45,6 @@ class CreateaccKeywordsFilled extends Component {
     }
 }
 
-export default CreateaccKeywordsFilled;
+export default CreateAccKeywordsFilled;
 
             

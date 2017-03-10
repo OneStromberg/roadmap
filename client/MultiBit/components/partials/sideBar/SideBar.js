@@ -13,7 +13,7 @@ const menuItemsArray = [
 	{src: "./../../assets/multibit/img/help.svg", title: "Help"}
 ];
 
-class Sidebar extends Component {
+class SideBar extends Component {
 	
     render(){
         return(
@@ -29,5 +29,5 @@ class Sidebar extends Component {
     }
 }
 
-export default Sidebar;
+export default SideBar;
 

@@ -5,9 +5,9 @@ import Select from './../../partials/Select';
 import InputPassword from './../../partials/InputPassword';
 import Logo from './../../partials/Logo';
 import Button from './../../partials/Button';
-
+import { browserHistory } from 'react-router'
 import { Component, View, ButtonLink, Footer, Title, Header } from 'components';
-
+import { Routes } from './../../../constants'
 var profile = [{
     name: "Roberta profile"
 }, {
@@ -17,6 +17,9 @@ var profile = [{
 }];
 
 class Login extends Component {
+    onLogingClick(){
+        browserHistory.push(Routes.OVERVIEW);
+    }
     render() {
         return (
             <Page className="login">
@@ -37,7 +40,7 @@ class Login extends Component {
                     <ButtonLink className="login-button-link">or Create new profile</ButtonLink>
                 </View>
                 <Footer>
-                    <Button primary>Login</Button>
+                    <Button onClick={this.onLogingClick} primary>Login</Button>
                 </Footer>
             </Page>
         );

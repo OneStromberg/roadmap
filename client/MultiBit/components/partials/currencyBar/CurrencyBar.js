@@ -1,6 +1,6 @@
 import React from 'react';
 import { Component, View } from 'components';
-import SidebarMenu from './SidebarMenu';
+import SideBar from './sideBar';
 
 const menuItemsArray = [
 	{src: "./../../../..", title: "Bitcoin"},
@@ -11,8 +11,10 @@ const menuItemsArray = [
 class CurrencyBar extends Component {
     render() {
         return (
-            <View>
-                <SidebarMenu menuItemsArray={menuItemsArray} />
+            <View className="app-window-section-sidebar-container">
+                <View>
+                    <SideBar menuItemsArray={menuItemsArray} />
+                </View>
             </View>
         );
     }

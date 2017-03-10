@@ -9,13 +9,13 @@ class CurrencyInfo extends Component {
                     <Image src=""/>
                 </View>
                 <View>
-                    <Label>Bitcoin Assets</Label>
+                    <Label>{this.props.data[0]}</Label>
                 </View>
                 <View>
-                    <Label>0.00347 BTC</Label>
+                    <Label>{this.props.data[1]}</Label>
                 </View>
                 <View>
-                    <Label>$ 200.78 USD</Label>
+                    <Label>{this.props.data[2]}</Label>
                 </View>
             </View>
         );

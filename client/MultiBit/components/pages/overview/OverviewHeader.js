@@ -3,7 +3,7 @@ import { Component, Header, Label, View } from 'components';
 import Button from './../../partials/Button';
 import Dropdown from './../../partials/Dropdown';
 
-class AppWindowHeader extends Component {
+class OverviewHeader extends Component {
     render() {
         return (
             <Header>
@@ -26,4 +26,4 @@ class AppWindowHeader extends Component {
     }
 }
 
-export default AppWindowHeader;
+export default OverviewHeader;

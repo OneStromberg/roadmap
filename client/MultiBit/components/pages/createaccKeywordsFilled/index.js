@@ -1,2 +1,2 @@
-import CreateaccKeywordsFilled from './CreateaccKeywordsFilled';
-export default CreateaccKeywordsFilled;
+import CreateAccKeywordsFilled from './CreateAccKeywordsFilled';
+export default CreateAccKeywordsFilled;
