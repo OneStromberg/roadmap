@@ -7,7 +7,7 @@ import OverviewBody from './OverviewBody';
 class Overview extends Component {
     render() {
         return (
-            <View>
+            <View className="overview">
                 <OverviewHeader />
                 <OverviewBody />
             </View>       
