@@ -4,9 +4,10 @@ import {Component, View, Text, Title, Label, Button, Image, List, ListItem} from
 class SideBarItem extends Component {
     render(){
         return(
-		   <ListItem className="sidebar-menu-item">
+		   <ListItem className="currency-bar-item">
 				<Image src={this.props.src} />
-				<Text>{this.props.text}</Text>
+				<Text>{this.props.title}</Text>
+                <Text>{this.props.value}</Text>
 			</ListItem>
         )
     }

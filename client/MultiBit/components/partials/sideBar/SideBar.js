@@ -2,15 +2,15 @@ import React from 'react';
 import {Component, View, Text, Title, Label, Button, Image} from 'components';
 import SidebarHeader from './SidebarHeader';
 import SidebarMenu from './SidebarMenu';
-
+import { Routes } from './../../../constants'
 const menuItemsArray = [
-	{src: "./../../assets/multibit/img/overview.svg", title: "Overview"},
-	{src: "./../../assets/multibit/img/transact.svg", title: "Transact"},
-	{src: "./../../assets/multibit/img/exchange.svg", title: "Exchange"},
-	{src: "./../../assets/multibit/img/contacts.svg", title: "Contacts"},
-	{src: "./../../assets/multibit/img/history.svg", title: "History"},
-	{src: "./../../assets/multibit/img/settings.svg", title: "Settings"},
-	{src: "./../../assets/multibit/img/help.svg", title: "Help"}
+	{src: "./../../assets/multibit/img/overview.svg", 	title: "Overview", 	url: Routes.Overview},
+	{src: "./../../assets/multibit/img/transact.svg", 	title: "Transact"},
+	{src: "./../../assets/multibit/img/exchange.svg", 	title: "Exchange"},
+	{src: "./../../assets/multibit/img/contacts.svg", 	title: "Contacts"},
+	{src: "./../../assets/multibit/img/history.svg", 	title: "History"},
+	{src: "./../../assets/multibit/img/settings.svg", 	title: "Settings"},
+	{src: "./../../assets/multibit/img/help.svg", 		title: "Help"}
 ];
 
 class SideBar extends Component {
