@@ -5,6 +5,7 @@ import CurrencyInfo from './../../partials/CurrencyInfo';
 import Dropdown from './../../partials/Dropdown';
 import Page from './../../../../common/components/Page';
 import Sidebar from './../../partials/Sidebar';
+import SubSidebar from './../../partials/SubSubsidebar';
 
 class AppWindow extends Component {
     render() {
@@ -29,12 +30,8 @@ class AppWindow extends Component {
                         </View>
                     </Header>
                     <Section className="app-window-section">
-                        <View className="app-window-section-list">
-                            <List>
-                                <ListItem><Button>Bitcoin</Button></ListItem>
-                                <ListItem><Button>Ethereum</Button></ListItem>
-                                <ListItem><Button>Dogcoin</Button></ListItem>
-                            </List>
+                        <View className="app-window-section-sidebar-container">
+                            <SubSidebar />
                         </View>
                         <View className="currency-info-container">
                             <View  className="currency-info">

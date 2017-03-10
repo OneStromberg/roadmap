@@ -6,7 +6,7 @@ class CurrencyInfo extends Component {
         return (
             <View>
                 <View>
-                    <Image src="/assets/img/bitcoin-icon.png"/>
+                    <Image src=""/>
                 </View>
                 <View>
                     <Label>Bitcoin Assets</Label>
