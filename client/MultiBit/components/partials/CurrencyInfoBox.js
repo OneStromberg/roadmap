@@ -4,7 +4,7 @@ import { Component, Image, Label, View } from 'components';
 class CurrencyInfoBox extends Component {
     render() {
         return (
-            <View>
+            <View className="currency-info">
                 <View>
                     <Image src="assets/img/bitcoin-icon.png"/>
                 </View>
