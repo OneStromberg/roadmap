@@ -26,14 +26,12 @@ class CreateAccKeywordsFilled extends Component {
                     <Title>Enter Keywords</Title>
 					<Text>Look at the device for number positions</Text>
                     <View className='keywords-bar'>
-                        <List>
-						{this.props.keyWords.map((keyword, i) => {
-						return <ListItem>
-							<Label>{i + 1}.</Label>
-							<Input value={keyword} placeholder={keyword} disabled />
-						</ListItem>
-						})}
-					</List>
+                        {keyWords.map((keyword, i) => {
+                            return <View key={i}>
+                                        <Label>{i + 1}.</Label>
+                                        <Input value={keyword} placeholder={keyword} disabled />
+                                    </View>
+                        })}
                     </View>
                 </View>
 				<Footer>
