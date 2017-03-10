@@ -3,9 +3,9 @@ import { Component, View } from 'components';
 import SideBar from './sideBar';
 
 const menuItemsArray = [
-	{src: "./../../../..", title: "Bitcoin"},
-	{src: "./../../assets/multibit/img/transact.svg", title: "Ethereum"},
-	{src: "./../../assets/multibit/img/exchange.svg", title: "Dogcoin"}
+	{src: "./../../../../../public/assets/img/multibit-icon-with-border.png", title: "Bitcoin", value: ""},
+	{src: "./../../../../../public/assets/img/ethereum-icon@2x.png", title: "Ethereum", value: ""},
+	{src: "./../../../../../public/assets/img/dogoin-icon@2x.png", title: "Dogcoin", value: ""}
 ];
 
 class CurrencyBar extends Component {

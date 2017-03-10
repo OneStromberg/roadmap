@@ -1,7 +1,7 @@
 import React from 'react';
 import { Component, Section } from 'components';
 
-import CurrencyInfo from './CurrencyInfo';
+import CurrencyInfo from './../../partials/CurrencyInfo';
 import CurrencyBar from './../../partials/currencyBar';
 
 class OverviewBody extends Component {
