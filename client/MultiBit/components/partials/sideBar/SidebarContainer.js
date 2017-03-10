@@ -11,7 +11,7 @@ class PopupContainer extends Component {
                     <Text> Sidebar</Text>
                 </Header>
                 <Card className="sidebar-container">
-					<Sidebar src="./../../assets/multibit/img/profile-photo.png" alt="Roberta Profile" title="Roberta Profile" costs="$ 200.77" />	
+					<Sidebar src="assets/img/multibit-profile-icon" alt="Roberta Profile" title="Roberta Profile" costs="$ 200.77" />	
                 </Card>
             </Container>
         )

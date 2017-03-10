@@ -6,7 +6,7 @@ class CurrencyInfoBox extends Component {
         return (
             <View>
                 <View>
-                    <Image src=""/>
+                    <Image src="assets/img/bitcoin-icon.png"/>
                 </View>
                 <View>
                     <Label>{this.props.data[0]}</Label>
