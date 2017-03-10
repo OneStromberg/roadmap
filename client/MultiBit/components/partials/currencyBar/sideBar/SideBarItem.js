@@ -5,9 +5,13 @@ class SideBarItem extends Component {
     render(){
         return(
 		   <ListItem className="currency-bar-item">
-				<Image src={this.props.src} />
-				<Text>{this.props.title}</Text>
-                <Text>{this.props.value}</Text>
+                <View>
+				    <Image src={this.props.src} />
+                </View>
+                <View>
+				    <Text>{this.props.title}</Text>
+                    <Text>{this.props.value}</Text>
+                </View>
 			</ListItem>
         )
     }
