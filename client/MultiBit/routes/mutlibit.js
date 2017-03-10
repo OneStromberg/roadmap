@@ -4,7 +4,7 @@ import MultibitWrapper from './../components/templates/MultibitWrapper';
 import AppWindow from './../components/pages/appWindow';
 import Login from './../components/pages/login';
 import Pincode from './../components/pages/Pincode';
-import Createacc_keywords_filled from './../components/pages/Createacc_keywords_filled';
+import CreateaccKeywordsFilled from './../components/pages/CreateaccKeywordsFilled';
 
 import { Routes } from './../constants';
 
@@ -15,8 +15,7 @@ const styleRoute = (
         <Route path={Routes.LOGIN} component={Login} />
         <Route path={Routes.PINCODE} component={Pincode} />
         <Route path={Routes.APPWINDOW} component={AppWindow} />
-        <Route path={Routes.CREATEACC_KEYWORDS_FILLED} component={Createacc_keywords_filled} />
-
+        <Route path={Routes.CREATEACC_KEYWORDS_FILLED} component={CreateaccKeywordsFilled} />
      </Route>
 );
 

@@ -8,7 +8,7 @@ const menuItemsArray = [
 	{src: "./../../assets/multibit/img/exchange.svg", title: "Dogcoin"}
 ];
 
-class SubSidebar extends Component {
+class CurrencyBar extends Component {
     render() {
         return (
             <View>
@@ -18,4 +18,4 @@ class SubSidebar extends Component {
     }
 }
 
-export default SubSidebar;
+export default CurrencyBar;
