@@ -1,5 +1,10 @@
-export const OVERVIEW                  = './overview';
-export const APPWINDOW_CURRENCY         = './appWindow/currency';
+export const OVERVIEW                   = './overview';
+export const TRANSACT                   = './transact';
+export const EXCHANGE                   = './exchange';
+export const CONTACTS                   = './contacts';
+export const HISTORY                    = './history';
+export const SETTINGS                   = './settings';
+export const HELP                       = './help';
 export const MAIN       				= './main';
 export const LOGIN      				= './login';
 export const PINCODE      				= './pincode';

@@ -7,7 +7,11 @@ class SidebarMenu extends Component {
     render(){
         return(
 		   <List className="sidebar-menu">
-               {this.props.menuItemsArray.map((item, i) => <SidebarMenuItem src={item.src} key={i} text={item.title}/>)}
+               {this.props.menuItemsArray.map((item, i) => <SidebarMenuItem 
+                                                                url={item.url}
+                                                                src={item.src} 
+                                                                key={i} 
+                                                                text={item.title}/>)}
            </List>
         )
     }

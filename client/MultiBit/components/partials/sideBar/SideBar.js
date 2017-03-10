@@ -4,13 +4,13 @@ import SidebarHeader from './SidebarHeader';
 import SidebarMenu from './SidebarMenu';
 import { Routes } from './../../../constants'
 const menuItemsArray = [
-	{src: "./../../assets/multibit/img/overview.svg", 	title: "Overview", 	url: Routes.Overview},
-	{src: "./../../assets/multibit/img/transact.svg", 	title: "Transact"},
-	{src: "./../../assets/multibit/img/exchange.svg", 	title: "Exchange"},
-	{src: "./../../assets/multibit/img/contacts.svg", 	title: "Contacts"},
-	{src: "./../../assets/multibit/img/history.svg", 	title: "History"},
-	{src: "./../../assets/multibit/img/settings.svg", 	title: "Settings"},
-	{src: "./../../assets/multibit/img/help.svg", 		title: "Help"}
+	{src: "./../../assets/multibit/img/overview.svg", 	title: "Overview", 	url: Routes.OVERVIEW},
+	{src: "./../../assets/multibit/img/transact.svg", 	title: "Transact",	url: Routes.TRANSACT},
+	{src: "./../../assets/multibit/img/exchange.svg", 	title: "Exchange", 	url: Routes.EXCHANGE},
+	{src: "./../../assets/multibit/img/contacts.svg", 	title: "Contacts",	url: Routes.CONTACTS},
+	{src: "./../../assets/multibit/img/history.svg", 	title: "History",	url: Routes.HISTORY},
+	{src: "./../../assets/multibit/img/settings.svg", 	title: "Settings",	url: Routes.SETTINGS},
+	{src: "./../../assets/multibit/img/help.svg", 		title: "Help",		url: Routes.HELP}
 ];
 
 class SideBar extends Component {
