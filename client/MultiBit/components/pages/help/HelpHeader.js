@@ -3,12 +3,12 @@ import { Component, Header, Label, View } from 'components';
 import Button from './../../partials/Button';
 import Dropdown from './../../partials/Dropdown';
 
-class TransactHeader extends Component {
+class HelpHeader extends Component {
     render() {
         return (
             <Header>
                 <View className="upbar">
-                    <Label>Transact</Label>
+                    <Label>Help</Label>
                     <View className="header-right-button-block">
                         <Button notification />
                         <Button keepkey>KeepKey On</Button>
@@ -26,4 +26,4 @@ class TransactHeader extends Component {
     }
 }
 
-export default TransactHeader;
+export default HelpHeader;

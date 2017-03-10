@@ -7,7 +7,7 @@ import TransactBody from './TransactBody';
 class Transact extends Component {
     render() {
         return (
-            <View>
+            <View  className="overview">
                 <TransactHeader />
                 <TransactBody />
             </View>       
