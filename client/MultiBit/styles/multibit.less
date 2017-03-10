@@ -1,6 +1,12 @@
 @import "./styles.less";
 
 .multibit {
+    @import "./topbar";
+    @import "./login";
+    @import "./pincode";
+    @import "./pages/overview";
+    @import "./create-account";
+    @import "./currencybar/currencybar";
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,7 +26,6 @@
     .page {
         display: flex;
         padding: 0;
-        flex-direction: column;
         justify-content: space-between;
         overflow: hidden;
     }
