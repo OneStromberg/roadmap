@@ -1,10 +1,11 @@
 import React from 'react';
 import Page from './../../../../common/components/Page';
-import Topbar from './../../partials/Topbar';
+
 import Select from './../../partials/Select';
 import InputPassword from './../../partials/InputPassword';
 import Logo from './../../partials/Logo';
 import Button from './../../partials/Button';
+import AppWindowControls from './../../partials/AppWindowControls';
 import { browserHistory } from 'react-router'
 import { Component, View, ButtonLink, Footer, Title, Header } from 'components';
 import { Routes } from './../../../constants'
@@ -23,14 +24,7 @@ class Login extends Component {
     render() {
         return (
             <Page className="login">
-                <Topbar>
-                    <View className="topbar-round-buttons-container">
-                        <Button className="topbar-round-buttons close" />
-                        <Button className="topbar-round-buttons minify" />
-                        <Button className="topbar-round-buttons expand" />
-                    </View>
-                    <Title>Multibit</Title>
-                </Topbar>
+                <AppWindowControls />
                 <Logo />
                 <Select list={profile} selected={0} />
                 <View>

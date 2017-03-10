@@ -1,8 +1,10 @@
 import React from 'react';
 import {Component, View, Text, Title, Label, Button, Image} from 'components';
 import SidebarHeader from './SidebarHeader';
+import AppWindowControls from './../AppWindowControls';
 import SidebarMenu from './SidebarMenu';
-import { Routes } from './../../../constants'
+import { Routes } from './../../../constants';
+
 const menuItemsArray = [
 	{src: "./../../assets/multibit/img/overview.svg", 	title: "Overview", 	url: Routes.OVERVIEW},
 	{src: "./../../assets/multibit/img/transact.svg", 	title: "Transact",	url: Routes.TRANSACT},
@@ -14,10 +16,10 @@ const menuItemsArray = [
 ];
 
 class SideBar extends Component {
-	
     render(){
         return(
             <View className="sidebar-wrapper">
+				<AppWindowControls />
 				<SidebarHeader>
 					<Image src={this.props.src} alt={this.props.title} />
 					<Text>{this.props.title}</Text>
