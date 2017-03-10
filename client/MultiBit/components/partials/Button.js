@@ -1,9 +1,15 @@
 import React from 'react';
 import {Component} from 'components';
+import _ from 'lodash';
 
 const ButtonClassPrefix = "uk-button-";
 
 class Button extends Component {
+    onClick(){
+        if (!_.isNil(this.props.onClick)){
+            this.props.onClick();
+        }
+    }
     getClassName(props){
         var newProps = "";
         newProps += (props.hasOwnProperty('primary') && props.primary !== false) ? ButtonClassPrefix + "primary" : "";
@@ -23,7 +29,7 @@ class Button extends Component {
     }
     render(){
         return(
-            <button onClick={this.props.onClick} className={"uk-button " + this.getClassName(this.props)}>
+            <button onClick={this.onClick.bind(this)} className={"uk-button " + this.getClassName(this.props)}>
                 {this.props.children}
             </button>    
         )

@@ -21,17 +21,22 @@ class Login extends Component {
     onLogingClick(){
         browserHistory.push(Routes.OVERVIEW);
     }
+    onCreateClick(){
+        browserHistory.push(Routes.CREATEACC_KEYWORDS_FILLED);
+    }
     render() {
         return (
             <Page className="login">
-                <AppWindowControls />
+                <AppWindowControls>
+                    <Title>Multibit</Title>
+                </AppWindowControls>
                 <Logo />
                 <Select list={profile} selected={0} />
                 <View>
                     <InputPassword />
                 </View>
                 <View>
-                    <ButtonLink className="login-button-link">or Create new profile</ButtonLink>
+                    <ButtonLink onClick={this.onCreateClick} className="login-button-link">or Create new profile</ButtonLink>
                 </View>
                 <Footer>
                     <Button onClick={this.onLogingClick} primary>Login</Button>
