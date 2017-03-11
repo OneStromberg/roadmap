@@ -61,7 +61,7 @@
     "throng": "^4.0.0",
     "uikit": "^3.0.0-beta.11",
     "url-loader": "^0.5.6",
-    "webpack": "^1.13.*"
+    "zajno-react-ui-kit": "^0.0.5"
   },
   "devDependencies": {
     "babel-cli": "^6.16.0",

@@ -16,8 +16,7 @@ module.exports = {
        root: path.resolve(__dirname),
        extensions: ['', '.js'],
        alias: {
-           components: 'common/components',
-           styles: 'common/styles'
+           components: 'zajno-react-ui-kit/components'
        }
    },
    devServer: {
