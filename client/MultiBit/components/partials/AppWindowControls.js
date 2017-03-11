@@ -12,7 +12,9 @@ class AppWindowControls extends Component {
                     <Button className="topbar-round-buttons minify" />
                     <Button className="topbar-round-buttons expand" />
                 </View>
-                {this.props.children}
+                <View>
+                    {this.props.children}
+                </View>
             </Topbar>
         );
     }
